@@ -83,6 +83,7 @@ h1 {
 
 h2 {
   font-size: 40px;
+  line-height: 5.4rem;
 }
 
 h3 {
@@ -138,9 +139,8 @@ strong {
 .btn-orange:visited {
   display: inline-block;
   text-decoration: none !important;
-  font-family: "poppins", sans-serif;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   padding: 1.6rem 3.2rem;
   border-radius: 12px;
   color: black;

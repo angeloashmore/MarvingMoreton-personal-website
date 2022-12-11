@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import HeroHome from "../components/ui/HeroHome";
 import PartnersBox from "../components/ui/PartnersBox";
+import FeaturedAbout from "../components/ui/FeaturedAbout";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <HeroHome />
         <PartnersBox />
+        <FeaturedAbout />
       </main>
     </div>
   );
