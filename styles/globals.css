@@ -1,9 +1,67 @@
+/* ************************ */
+/* DESIGN SYSTEM */
+/* ************************ */
+/*
+
+COLORS
+
+
+SHADOWS
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+BORDER-RADIUS
+default: 8px
+min: 4px
+
+BORDER-RADIUS
+default: 8px
+min: 4px
+
+
+WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+body {
+  --primary-blue: #141a31;
+  --primary-gold: #fab874;
+  --paragraph-grey: #e2dfdf;
+  --blue-header: #1f2235;
+  --blue-transparent-background: rgba(31, 34, 53, 0.8);
+}
+html {
+  font-size: 62.5%;
+  /* 10px/16 px = 0.626= 62.5%; do not set a fix font-size, use % instead. *Percentage of user's browser font-size setting */
+  background-color: #141a31;
+
+  overflow-x: hidden;
+}
+
 html,
 body {
+  /* padding: 0;
+  margin: 0; */
+  font-family: "lato", sans-serif;
+}
+
+body {
+  /* DJ - Body Regular */
+  font-family: "lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 120%;
+
+  /* Dark Blue title */
+
+  color: #ffffff;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -11,16 +69,66 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+a:hover {
+  color: #4a3aff;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 6.4rem;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+p,
+span {
+  font-size: 1.6rem;
+  color: #e2dfdf;
+}
+
+hr {
+  border: 0.2px solid rgba(226, 223, 223, 0.15);
+  box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.25);
+  margin: 4rem auto 0 auto;
+  display: none;
+}
+
+strong {
+  white-space: break;
+}
+
+/* ************************ */
+/* GENERAL REUSABLE COMPONENTS */
+/* ************************ */
+
+.container {
+  /* 114px convention can be used; or 120 rem also is a convention used */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  /* Reminder : "margin 0 auto" gives the same margin to the left and right side and figure out automatically --> allow to center always*/
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  /* margin-bottom: 9.6rem; */
 }

@@ -1,0 +1,15 @@
+.section--header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* .logo-navbar {
+  width: 5rem;
+} */
