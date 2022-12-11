@@ -1,0 +1,73 @@
+/* ************************ */
+/* FOOTER SECTION */
+/* ************************ */
+
+.section--footer {
+  background: #1f2235;
+}
+.footer-nav {
+  list-style: none;
+  display: flex;
+  padding: 4.4rem 3.4rem 3.4rem 3.4rem;
+
+  gap: 2.4rem;
+  justify-content: center;
+}
+
+.footer-link {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  /* or 75% */
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.footer-link:link,
+.footer-link:visited .skill-icon-link:link,
+.skill-icon-link:visited {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active,
+.skill-icon-link:hover,
+.skill-icon-link:active {
+  color: #fab874;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.4rem;
+}
+
+.social-icon {
+  height: 3rem;
+  line-height: 1.6;
+  width: 3rem;
+}
+
+.line {
+  border: 0.05px solid rgba(196, 196, 196, 0.02);
+}
+
+.copyright {
+  text-align: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+
+  color: #ffffff;
+  /* margin-bottom: 5rem; */
+  padding: 3.4rem;
+}
