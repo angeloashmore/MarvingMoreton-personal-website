@@ -1,0 +1,28 @@
+.section--partners {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.featured-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.partners-logos-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.partners-logos-box img {
+  align-self: center;
+}
+
+.accor-hotel {
+  margin-bottom: 1rem;
+}

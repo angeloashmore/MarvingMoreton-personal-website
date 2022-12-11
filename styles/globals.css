@@ -120,7 +120,7 @@ strong {
 
 .container {
   /* 114px convention can be used; or 120 rem also is a convention used */
-  max-width: 120rem;
+  max-width: 140rem;
   padding: 0 3.2rem;
   margin: 0 auto;
   /* Reminder : "margin 0 auto" gives the same margin to the left and right side and figure out automatically --> allow to center always*/

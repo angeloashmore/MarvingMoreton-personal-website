@@ -1,7 +1,7 @@
 .section--hero {
-  min-height: calc(300px + 15vw);
+  /* min-height: calc(300px + 15vw); */
 
-  padding: 3.2rem 0 6.8rem 0;
+  padding: 4.9rem 0 6.8rem 0;
   max-width: 120rem;
   margin: 0 auto;
   /* margin-top: 5rem; */
@@ -12,11 +12,12 @@
   max-width: 130rem;
   margin: 0 auto;
   /* margin 0 auto = trick to center it */
-  padding: 3.2rem;
+  padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
   align-items: center;
+  /* margin-bottom: 5rem; */
 }
 
 .hero-text-box {

@@ -34,9 +34,12 @@ export default function HeroHome() {
         <Image
             className={classes["hero-image"]}
             src={photo}
+            // width={743}
+            // height={800}
+            // src="/marving-hero-image.png"
+
             alt="Marving Moreton"
-            // width={50}
-            // height={50}
+
             // blurDataURL="data:..." automatically provided
             // placeholder="blur" // Optional blur-up while loading
           />
