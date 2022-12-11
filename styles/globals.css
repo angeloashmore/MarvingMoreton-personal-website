@@ -132,3 +132,30 @@ strong {
   row-gap: 9.6rem;
   /* margin-bottom: 9.6rem; */
 }
+
+.btn-orange,
+.btn-orange:link,
+.btn-orange:visited {
+  display: inline-block;
+  text-decoration: none !important;
+  font-family: "poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 12px;
+  color: black;
+  background-color: #fab874;
+  border: none;
+  /* Only necessary for.btn from form
+    border: none;
+    cursor: pointer;
+    font-family: inherit; */
+
+  /* trick annimation btn with CSS */
+  transition: all 0.3s;
+  /* WHAT will be animated& HOW MUICH TIME animation to happens : ALL elements for 0.3second
+    */
+}
+.btn-orange a {
+  color: black !important;
+}

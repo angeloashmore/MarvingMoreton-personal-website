@@ -1,0 +1,54 @@
+.section--hero {
+  min-height: calc(300px + 15vw);
+
+  padding: 3.2rem 0 6.8rem 0;
+  max-width: 120rem;
+  margin: 0 auto;
+  /* margin-top: 5rem; */
+  overflow-x: hidden;
+}
+
+.hero-box {
+  max-width: 130rem;
+  margin: 0 auto;
+  /* margin 0 auto = trick to center it */
+  padding: 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-text-box {
+  overflow-x: hidden;
+  padding-top: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 2.8rem;
+  color: #e2dfdf;
+  margin-bottom: 1rem;
+}
+.emoji {
+  font-size: 3.8rem;
+}
+.hero-title {
+  font-size: 3.8rem;
+  /* line-height: 1.05; */
+  margin-bottom: 2.4rem;
+  font-family: "Lato";
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-description {
+  font-size: 2.4rem;
+  /* line-height: 1.6; */
+  margin-bottom: 3.2rem;
+  color: #e2dfdf;
+  line-height: 1.2;
+}
+
+.hero-image {
+  width: 115%;
+}

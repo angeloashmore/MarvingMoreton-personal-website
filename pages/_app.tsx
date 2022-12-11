@@ -8,7 +8,6 @@ import Layout from "../components/layout/Layout";
 const lato = Lato({
   subsets: ["latin"],
   weight: ["300", "400", "700", "900"],
-  style: "italic",
 });
 
 const poppins = Poppins({
