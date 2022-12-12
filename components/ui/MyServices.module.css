@@ -1,0 +1,77 @@
+.section-services {
+  padding: 9.6rem 12.8rem;
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.services-box {
+  max-width: 140rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 6.4rem;
+
+  justify-content: center;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2dfdf;
+  /* width: 29.1rem;
+  height: 33.1rem;
+  left: 24.3rem;
+  top: 26.2rem; */
+  min-height: 40rem;
+  background: #1f2235;
+  border-radius: 8px;
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+/* .service-card img {
+  width: 4.8rem;
+  height: 4.8rem;
+  left: 36.4rem;
+  top: 268.5rem;
+} */
+
+.service-card span {
+  text-align: center;
+  font-family: "lato";
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  white-space: nowrap;
+}
+
+.service-card p {
+  font-family: "lato";
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.service-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.6rem;
+  /* width: 8.4rem;
+  height: 9rem;
+  left: 34.7rem;
+  top: 266.5rem; */
+
+  width: 12rem;
+  height: 12rem;
+  /* height: 11.9rem; */
+
+  border-radius: 50%;
+  background: #24263b;
+  box-shadow: 0rem 0rem 2.4rem rgba(15, 16, 24, 0.42);
+}
+
+.service-link {
+  color: #fab874;
+  margin-top: 4.8rem;
+}

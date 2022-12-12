@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import HeroHome from "../components/ui/HeroHome";
 import PartnersBox from "../components/ui/PartnersBox";
 import FeaturedAbout from "../components/ui/FeaturedAbout";
+import MyServices from "../components/ui/MyServices";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <HeroHome />
         <PartnersBox />
         <FeaturedAbout />
+        <MyServices />
       </main>
     </div>
   );

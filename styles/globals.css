@@ -134,6 +134,13 @@ strong {
   /* margin-bottom: 9.6rem; */
 }
 
+.heading-secondary {
+  text-align: center;
+  font-size: 3.4rem;
+  line-height: 1.2;
+  margin-bottom: 8rem;
+}
+
 .btn-orange,
 .btn-orange:link,
 .btn-orange:visited {
