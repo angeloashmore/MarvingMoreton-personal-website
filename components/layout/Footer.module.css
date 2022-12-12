@@ -4,6 +4,9 @@
 
 .section--footer {
   background: #1f2235;
+  position: relative;
+  padding-top: 20rem;
+  margin-top: 20rem;
 }
 .footer-nav {
   list-style: none;
@@ -70,4 +73,54 @@
   color: #ffffff;
   /* margin-bottom: 5rem; */
   padding: 3.4rem;
+}
+
+/* CTA */
+
+.cta-container {
+  padding: 4.8rem 6.4rem;
+  max-width: 140rem;
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+
+  top: -30%;
+  /* right: 0%;
+  left: 3%; */
+}
+
+.cta-banner {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* box-shadow: 0 2.4rem 4.8rem rgba(250, 184, 116, 0.075); */
+  border-radius: 0.8rem;
+  background-color: rgba(250, 184, 116, 1);
+  overflow: hidden;
+  color: black;
+  justify-items: center;
+  align-items: center;
+  z-index: 2;
+  /* padding: 2rem; */
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-text-box H3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 2;
+  padding-bottom: 1.6rem;
+}
+.cta-text-box p {
+  font-family: "Lato";
+  color: black;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.4;
 }
