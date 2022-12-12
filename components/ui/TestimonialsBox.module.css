@@ -1,0 +1,24 @@
+.section-testimonials {
+  padding: 9.6rem 12.8rem;
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.background {
+  background: rgba(31, 34, 53, 0.8);
+  /* blurred shadow */
+
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(20px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 8px;
+}
+
+.slider-box {
+  background-color: #ffff;
+}
+
+.upper-line span {
+  color: #fab874;
+}
