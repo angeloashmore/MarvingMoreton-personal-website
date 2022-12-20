@@ -1,11 +1,15 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import MainHero from "../../components/ui/Shared/mainHero";
+import HomeBlogHero from "../../components/ui/Blog/HomeBlogHero";
+
+import TextBoxLight from "../../components/ui/Shared/TextBoxLight";
+
 export default function BlogHome() {
   return (
     <React.Fragment>
-      <MainHero />
+      <HomeBlogHero />
+      <TextBoxLight />
     </React.Fragment>
   );
 }

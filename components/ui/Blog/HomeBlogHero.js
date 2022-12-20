@@ -1,10 +1,10 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import classes from "./mainHero.module.css";
+import classes from "./homeBlogHero.module.css";
 import photo from "../../../public/photos/denver-random.jpg";
 
-export default function mainHero() {
+export default function homeBlogHero() {
   return (
     <React.Fragment>
       <section className={classes["section-hero"]}>
@@ -17,7 +17,6 @@ export default function mainHero() {
             </span>
             <div className={classes["btn-box"]}>
               <a className="btn-orange">Découvrir</a>
-              <a className="btn-white">Pricing</a>
             </div>
           </div>
           <div className={classes["image-box"]}>

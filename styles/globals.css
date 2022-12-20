@@ -167,8 +167,9 @@ strong {
   /* WHAT will be animated& HOW MUICH TIME animation to happens : ALL elements for 0.3second
     */
 }
-.btn-orange a {
-  color: black !important;
+
+.btn-orange:hover {
+  color: black;
 }
 
 .btn-dark,
@@ -187,6 +188,30 @@ strong {
   color: #ffff;
   background-color: #141a31;
   border: none;
+  /* Only necessary for.btn from form
+    border: none;
+    cursor: pointer;
+    font-family: inherit; */
+
+  /* trick annimation btn with CSS */
+  transition: all 0.3s;
+  /* WHAT will be animated& HOW MUICH TIME animation to happens : ALL elements for 0.3second
+    */
+}
+
+.btn-white,
+.btn-white:link,
+.btn-white:visited {
+  display: inline-block;
+  text-decoration: none !important;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1.6rem 3.2rem;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 12px;
   /* Only necessary for.btn from form
     border: none;
     cursor: pointer;
