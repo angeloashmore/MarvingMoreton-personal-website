@@ -1,18 +1,18 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { Lato, Poppins } from "@next/font/google";
+import { Inter, Source_Sans_Pro } from "@next/font/google";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
 import Layout from "../components/layout/Layout";
-const lato = Lato({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "700", "900"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
-const poppins = Poppins({
+const SourceSansPro = Source_Sans_Pro({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "600", "700"],
 });
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <link rel="canonical" href={canonicalUrl} />
       </Head>
-      <main className={lato.className}>
+      <main className={inter.className}>
         <Component {...pageProps} />
       </main>
     </Layout>

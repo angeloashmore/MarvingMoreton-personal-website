@@ -1,0 +1,33 @@
+.section-hero {
+  padding: 9.6rem 0;
+}
+
+.hero-container {
+  margin: 0 auto;
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  gap: 2rem;
+  width: 35%;
+}
+
+.hero-image {
+  border-radius: 12px;
+}
+
+.text-box > h1 {
+  margin-bottom: 2rem;
+}
+
+.line {
+  border: 0.5px solid rgba(212, 210, 210, 0.05);
+  transform: rotate(-0.15deg);
+}

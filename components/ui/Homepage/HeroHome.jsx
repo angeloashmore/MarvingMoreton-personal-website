@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import photo from "../../public/marving-hero-image.png";
+import photo from "../../../public/marving-hero-image.png";
 
 export default function HeroHome() {
   return (

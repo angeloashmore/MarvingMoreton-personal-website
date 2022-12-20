@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import classes from "./PartnersBox.module.css";
-import continental from "../../public/logos/continental-grey.svg";
+import continental from "../../../public/logos/continental-grey.svg";
 
 export default function PartnersBox() {
   return (

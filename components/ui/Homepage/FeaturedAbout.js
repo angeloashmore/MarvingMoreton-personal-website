@@ -2,9 +2,9 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import classes from "./FeaturedAbout.module.css";
-import photo from "../../public/marving-audio.png";
-import photoGrouped from "../../public/marving-audio-grouped.png";
-import illustration from "../../public/illustrations/best-design-award.png";
+import photo from "../../../public/marving-audio.png";
+import photoGrouped from "../../../public/marving-audio-grouped.png";
+import illustration from "../../../public/illustrations/best-design-award.png";
 
 export default function FeaturedAbout() {
   return (

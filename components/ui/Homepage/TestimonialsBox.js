@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import classes from "./FeaturedAbout.module.css";
-import photo from "../../public/marving-audio.png";
+import photo from "../../../public/marving-audio.png";
 
 export default function FeaturedAbout() {
   return (
