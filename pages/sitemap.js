@@ -4,7 +4,6 @@ import Link from "next/link";
 // import { PrismicLink, PrismicText } from "@prismicio/react";
 // // import { createClient } from "../prismicio";
 
-import classes from "../components/ui/Shared/sitemapHtml.module.css";
 
 function SitemapHtml({ pillarPages, companies }) {
   const metaTitle = "Exhaustive sitemap of marvingmoreton.com";

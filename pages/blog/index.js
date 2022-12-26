@@ -10,8 +10,8 @@ import { PrismicRichText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 import { SliceZone } from "@prismicio/react";
 
-import { createClient } from "../../prismicio";
-import { components } from "../../slices";
+import { createClient } from '../../prismicio'
+import { components } from '../../slices'
 
 export default function BlogHome() {
   return (
