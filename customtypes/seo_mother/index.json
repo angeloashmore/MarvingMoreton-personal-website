@@ -1,9 +1,0 @@
-{
-  "id": "seo_mother",
-  "label": "SEO_Mother",
-  "repeatable": false,
-  "status": true,
-  "json": {
-    "Main": {}
-  }
-}

@@ -22,6 +22,7 @@
     "components/layout/FooterCta.js",
     "components/layout/Layout.jsx",
     "pages/index.js"
-  ],
+, "pages/_app.js",
+"./.slicemachine/prismicio.d.ts"  ],
   "exclude": ["node_modules"]
 }

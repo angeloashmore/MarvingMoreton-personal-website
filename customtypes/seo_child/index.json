@@ -1,9 +1,0 @@
-{
-  "id": "seo_child",
-  "label": "SEO_Child",
-  "repeatable": true,
-  "status": true,
-  "json": {
-    "Main": {}
-  }
-}

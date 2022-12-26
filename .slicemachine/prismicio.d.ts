@@ -6,56 +6,30 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = {
     [KeyType in keyof T]: T[KeyType];
 };
-/** Content for Blog_Home documents */
-type BlogHomeDocumentData = Record<string, never>;
-/**
- * Blog_Home document from Prismic
- *
- * - **API ID**: `blog_home`
- * - **Repeatable**: `false`
- * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type BlogHomeDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<BlogHomeDocumentData>, "blog_home", Lang>;
-/** Content for Blog_Post documents */
-type BlogPostDocumentData = Record<string, never>;
-/**
- * Blog_Post document from Prismic
- *
- * - **API ID**: `blog_post`
- * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type BlogPostDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<BlogPostDocumentData>, "blog_post", Lang>;
-/** Content for DEV_Child documents */
-type DevChildDocumentData = Record<string, never>;
-/**
- * DEV_Child document from Prismic
- *
- * - **API ID**: `dev_child`
- * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type DevChildDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<DevChildDocumentData>, "dev_child", Lang>;
-/** Content for DEV_Mother documents */
-type DevMotherDocumentData = Record<string, never>;
-/**
- * DEV_Mother document from Prismic
- *
- * - **API ID**: `dev_mother`
- * - **Repeatable**: `false`
- * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type DevMotherDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<DevMotherDocumentData>, "dev_mother", Lang>;
 /** Content for Homepage documents */
 interface HomepageDocumentData {
+    /**
+     * title field in *Homepage*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: homepage.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * description field in *Homepage*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: homepage.description
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    description: prismicT.KeyTextField;
     /**
      * Slice Zone field in *Homepage*
      *
@@ -72,7 +46,7 @@ interface HomepageDocumentData {
  * Slice for *Homepage → Slice Zone*
  *
  */
-type HomepageDocumentDataSlicesSlice = HeroHomeSlice;
+type HomepageDocumentDataSlicesSlice = FaqSlice | ImageFeaturedSlice | HeroHomeSlice;
 /**
  * Homepage document from Prismic
  *
@@ -83,71 +57,56 @@ type HomepageDocumentDataSlicesSlice = HeroHomeSlice;
  * @typeParam Lang - Language API ID of the document.
  */
 export type HomepageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<HomepageDocumentData>, "homepage", Lang>;
-/** Content for Page documents */
-interface PageDocumentData {
+export type AllDocumentTypes = HomepageDocument;
+/**
+ * Primary content in BlogHero → Primary
+ *
+ */
+interface BlogHeroSliceDefaultPrimary {
     /**
-     * title field in *Page*
+     * Title field in *BlogHero → Primary*
      *
      * - **Field Type**: Title
-     * - **Placeholder**: *None*
-     * - **API ID Path**: page.title
-     * - **Tab**: Main
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: blog_hero.primary.title
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
     title: prismicT.TitleField;
     /**
-     * Slice Zone field in *Page*
+     * Description field in *BlogHero → Primary*
      *
-     * - **Field Type**: Slice Zone
-     * - **Placeholder**: *None*
-     * - **API ID Path**: page.slices[]
-     * - **Tab**: Main
-     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: blog_hero.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    slices: prismicT.SliceZone<PageDocumentDataSlicesSlice>;
+    description: prismicT.RichTextField;
 }
 /**
- * Slice for *Page → Slice Zone*
+ * Default variation for BlogHero Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `BlogHero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-type PageDocumentDataSlicesSlice = HeroHomeSlice;
+export type BlogHeroSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<BlogHeroSliceDefaultPrimary>, never>;
 /**
- * Page document from Prismic
+ * Slice variation for *BlogHero*
  *
- * - **API ID**: `page`
- * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
  */
-export type PageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
-/** Content for SEO_Child documents */
-type SeoChildDocumentData = Record<string, never>;
+type BlogHeroSliceVariation = BlogHeroSliceDefault;
 /**
- * SEO_Child document from Prismic
+ * BlogHero Shared Slice
  *
- * - **API ID**: `seo_child`
- * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ * - **API ID**: `blog_hero`
+ * - **Description**: `BlogHero`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
- * @typeParam Lang - Language API ID of the document.
  */
-export type SeoChildDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<SeoChildDocumentData>, "seo_child", Lang>;
-/** Content for SEO_Mother documents */
-type SeoMotherDocumentData = Record<string, never>;
-/**
- * SEO_Mother document from Prismic
- *
- * - **API ID**: `seo_mother`
- * - **Repeatable**: `false`
- * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type SeoMotherDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<SeoMotherDocumentData>, "seo_mother", Lang>;
-export type AllDocumentTypes = BlogHomeDocument | BlogPostDocument | DevChildDocument | DevMotherDocument | HomepageDocument | PageDocument | SeoChildDocument | SeoMotherDocument;
+export type BlogHeroSlice = prismicT.SharedSlice<"blog_hero", BlogHeroSliceVariation>;
 /**
  * Primary content in Faq → Primary
  *
@@ -361,11 +320,60 @@ type ImageFeaturedSliceVariation = ImageFeaturedSliceDefault;
  *
  */
 export type ImageFeaturedSlice = prismicT.SharedSlice<"image_featured", ImageFeaturedSliceVariation>;
+/**
+ * Primary content in Services → Primary
+ *
+ */
+interface ServicesSliceDefaultPrimary {
+    /**
+     * Title field in *Services → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: services.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Description field in *Services → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: services.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+}
+/**
+ * Default variation for Services Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Services`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ServicesSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ServicesSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *Services*
+ *
+ */
+type ServicesSliceVariation = ServicesSliceDefault;
+/**
+ * Services Shared Slice
+ *
+ * - **API ID**: `services`
+ * - **Description**: `Services`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ServicesSlice = prismicT.SharedSlice<"services", ServicesSliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { BlogHomeDocumentData, BlogHomeDocument, BlogPostDocumentData, BlogPostDocument, DevChildDocumentData, DevChildDocument, DevMotherDocumentData, DevMotherDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, SeoChildDocumentData, SeoChildDocument, SeoMotherDocumentData, SeoMotherDocument, AllDocumentTypes, FaqSliceDefaultPrimary, FaqSliceDefaultItem, FaqSliceDefault, FaqSliceVariation, FaqSlice, HeroHomeSliceDefaultPrimary, HeroHomeSliceDefault, HeroHomeSliceVariation, HeroHomeSlice, ImageFeaturedSliceDefaultPrimary, ImageFeaturedSliceDefault, ImageFeaturedSliceVariation, ImageFeaturedSlice };
+        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, AllDocumentTypes, BlogHeroSliceDefaultPrimary, BlogHeroSliceDefault, BlogHeroSliceVariation, BlogHeroSlice, FaqSliceDefaultPrimary, FaqSliceDefaultItem, FaqSliceDefault, FaqSliceVariation, FaqSlice, HeroHomeSliceDefaultPrimary, HeroHomeSliceDefault, HeroHomeSliceVariation, HeroHomeSlice, ImageFeaturedSliceDefaultPrimary, ImageFeaturedSliceDefault, ImageFeaturedSliceVariation, ImageFeaturedSlice, ServicesSliceDefaultPrimary, ServicesSliceDefault, ServicesSliceVariation, ServicesSlice };
     }
 }

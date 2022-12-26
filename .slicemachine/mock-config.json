@@ -1,14 +1,6 @@
 {
   "_cts": {
-    "homepage": {},
-    "blog_homepage": {},
-    "blog_post": {},
-    "blog_home": {},
-    "seo_mother": {},
-    "dev_mother": {},
-    "seo_child": {},
-    "dev_child": {},
-    "page": {
+    "homepage": {
       "title": {
         "config": {
           "patternType": "HEADING",
@@ -18,12 +10,7 @@
     }
   },
   "slices": {
-    "HeroHome": {
-      "default": {
-        "primary": {}
-      }
-    },
-    "Faq": {},
-    "ImageFeatured": {}
+    "Services": {},
+    "BlogHero": {}
   }
 }

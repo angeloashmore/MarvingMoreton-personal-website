@@ -14,32 +14,32 @@ const routes = [
     type: "homepage",
     path: "/",
   },
-  {
-    type: "page",
-    path: "/:uid",
-  },
-  {
-    type: "seo_mother",
-    path: "/seo",
-  },
-  {
-    type: "seo_child",
-    path: "/seo/:uid",
-  },
-  {
-    type: "dev_mother",
-    path: "/dev",
-  },
-  {
-    type: "dev_child",
-    path: "/dev/:uid",
-  },
+  // {
+  //   type: "page",
+  //   path: "/:uid",
+  // },
+  // {
+  //   type: "seo_mother",
+  //   path: "/seo",
+  // },
+  // {
+  //   type: "seo_child",
+  //   path: "/seo/:uid",
+  // },
+  // {
+  //   type: "dev_mother",
+  //   path: "/dev",
+  // },
+  // {
+  //   type: "dev_child",
+  //   path: "/dev/:uid",
+  // },
 
-  { type: "blog_homepage", path: "/blog" },
-  {
-    type: "blog_post",
-    path: "/blog/:uid",
-  },
+  // { type: "blog_home", path: "/blog" },
+  // {
+  //   type: "blog_post",
+  //   path: "/blog/:uid",
+  // },
 ];
 
 /**

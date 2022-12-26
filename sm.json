@@ -1,5 +1,5 @@
 {
-  "apiEndpoint": "https://marvingmoreton.prismic.io/api/v2",
+  "apiEndpoint": "https://marvinggg.prismic.io/api/v2",
   "localSliceSimulatorURL": "http://localhost:3000/slice-simulator",
   "libraries": [
     "@/slices"

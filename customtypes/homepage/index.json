@@ -5,11 +5,33 @@
   "status": true,
   "json": {
     "Main": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "description",
+          "placeholder": ""
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "faq": {
+              "type": "SharedSlice"
+            },
+            "image_featured": {
+              "type": "SharedSlice"
+            },
             "hero_home": {
               "type": "SharedSlice"
             }

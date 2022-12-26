@@ -13,7 +13,7 @@ import { SliceZone } from "@prismicio/react";
 import { createClient } from '../../prismicio'
 import { components } from '../../slices'
 
-export default function BlogHome() {
+export default function BlogHome({ page, navigation, settings }) {
   return (
     <React.Fragment>
       <HomeBlogHero />

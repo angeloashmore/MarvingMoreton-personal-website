@@ -1,9 +1,0 @@
-{
-  "id": "dev_child",
-  "label": "DEV_Child",
-  "repeatable": true,
-  "status": true,
-  "json": {
-    "Main": {}
-  }
-}
