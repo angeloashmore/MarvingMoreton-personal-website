@@ -4,6 +4,7 @@ import Image from "next/image";
 import HomeBlogHero from "../../components/ui/Blog/HomeBlogHero"
 import TextBoxLight from "../../components/ui/Shared/TextBoxLight";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import ImageFeaturedLeft from "../../components/ui/Shared/ImageFeaturedLeft";
 
 import { PrismicLink, PrismicText } from "@prismicio/react";
@@ -16,6 +17,8 @@ import { components } from '../../slices'
 
 export default function BlogHome({ page, navigation, settings }) {
 =======
+=======
+>>>>>>> parent of 02f2368 (set up new component blogpostlist)
 
 export default function BlogHome() {
 >>>>>>> parent of 02f2368 (set up new component blogpostlist)
@@ -24,8 +27,11 @@ export default function BlogHome() {
       <HomeBlogHero />
       <TextBoxLight />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <ImageFeaturedLeft />
   <SliceZone slices={page.data.slices} components={components} />
+=======
+>>>>>>> parent of 02f2368 (set up new component blogpostlist)
 =======
 >>>>>>> parent of 02f2368 (set up new component blogpostlist)
     </React.Fragment>
