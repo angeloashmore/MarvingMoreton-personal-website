@@ -1,8 +1,8 @@
 import { SliceZone } from '@prismicio/react'
 import * as prismicH from '@prismicio/helpers'
 
-import { createClient } from '../prismicio'
-import { components } from '../slices'
+import { createClient } from '../../prismicio'
+import { components } from '../../slices'
 
 const DevChild = ({ page, navigation, settings }) => {
   return <SliceZone slices={page.data.slices} components={components} />
