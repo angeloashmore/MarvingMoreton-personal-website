@@ -7,14 +7,13 @@ import continental from "../../../public/logos/continental-grey.svg";
 export default function PartnersBox() {
   return (
     <section className={classes["section--partners"]}>
-
       <div className="container">
-        <h2 className={classes["featured-title"]}>
-        At Agency side, Client side or as Freelancer
+        <h2 className="heading-secondary">
+          At Agency side, Client side or as Freelancer
         </h2>
 
         <div className={classes["partners-logos-box"]}>
-        <Image
+          <Image
             className={`${classes["partner-logo"]} ${classes["continental"]}`}
             src="/logos/continental-grey.svg"
             width={184.61}
@@ -102,11 +101,8 @@ export default function PartnersBox() {
             // blurDataURL="data:..." automatically provided
             // placeholder="blur" // Optional blur-up while loading
           />
-
-
         </div>
       </div>
-
     </section>
-  )
+  );
 }
