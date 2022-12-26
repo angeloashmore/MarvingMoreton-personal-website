@@ -149,6 +149,71 @@ type SeoMotherDocumentData = Record<string, never>;
 export type SeoMotherDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<SeoMotherDocumentData>, "seo_mother", Lang>;
 export type AllDocumentTypes = BlogHomeDocument | BlogPostDocument | DevChildDocument | DevMotherDocument | HomepageDocument | PageDocument | SeoChildDocument | SeoMotherDocument;
 /**
+ * Primary content in Faq → Primary
+ *
+ */
+interface FaqSliceDefaultPrimary {
+    /**
+     * Title field in *Faq → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: faq.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Description field in *Faq → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: faq.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+}
+/**
+ * Item in Faq → Items
+ *
+ */
+export interface FaqSliceDefaultItem {
+    /**
+     * test field in *Faq → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.items[].test
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    test: prismicT.RichTextField;
+}
+/**
+ * Default variation for Faq Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Faq`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type FaqSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<FaqSliceDefaultPrimary>, Simplify<FaqSliceDefaultItem>>;
+/**
+ * Slice variation for *Faq*
+ *
+ */
+type FaqSliceVariation = FaqSliceDefault;
+/**
+ * Faq Shared Slice
+ *
+ * - **API ID**: `faq`
+ * - **Description**: `Faq`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type FaqSlice = prismicT.SharedSlice<"faq", FaqSliceVariation>;
+/**
  * Primary content in HeroHome → Primary
  *
  */
@@ -247,11 +312,60 @@ type HeroHomeSliceVariation = HeroHomeSliceDefault;
  *
  */
 export type HeroHomeSlice = prismicT.SharedSlice<"hero_home", HeroHomeSliceVariation>;
+/**
+ * Primary content in ImageFeatured → Primary
+ *
+ */
+interface ImageFeaturedSliceDefaultPrimary {
+    /**
+     * Title field in *ImageFeatured → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: image_featured.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Description field in *ImageFeatured → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: A nice description of your feature
+     * - **API ID Path**: image_featured.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    description: prismicT.RichTextField;
+}
+/**
+ * Default variation for ImageFeatured Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `ImageFeatured`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ImageFeaturedSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ImageFeaturedSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *ImageFeatured*
+ *
+ */
+type ImageFeaturedSliceVariation = ImageFeaturedSliceDefault;
+/**
+ * ImageFeatured Shared Slice
+ *
+ * - **API ID**: `image_featured`
+ * - **Description**: `ImageFeatured`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ImageFeaturedSlice = prismicT.SharedSlice<"image_featured", ImageFeaturedSliceVariation>;
 declare module "@prismicio/client" {
     interface CreateClient {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { BlogHomeDocumentData, BlogHomeDocument, BlogPostDocumentData, BlogPostDocument, DevChildDocumentData, DevChildDocument, DevMotherDocumentData, DevMotherDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, SeoChildDocumentData, SeoChildDocument, SeoMotherDocumentData, SeoMotherDocument, AllDocumentTypes, HeroHomeSliceDefaultPrimary, HeroHomeSliceDefault, HeroHomeSliceVariation, HeroHomeSlice };
+        export type { BlogHomeDocumentData, BlogHomeDocument, BlogPostDocumentData, BlogPostDocument, DevChildDocumentData, DevChildDocument, DevMotherDocumentData, DevMotherDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, SeoChildDocumentData, SeoChildDocument, SeoMotherDocumentData, SeoMotherDocument, AllDocumentTypes, FaqSliceDefaultPrimary, FaqSliceDefaultItem, FaqSliceDefault, FaqSliceVariation, FaqSlice, HeroHomeSliceDefaultPrimary, HeroHomeSliceDefault, HeroHomeSliceVariation, HeroHomeSlice, ImageFeaturedSliceDefaultPrimary, ImageFeaturedSliceDefault, ImageFeaturedSliceVariation, ImageFeaturedSlice };
     }
 }
