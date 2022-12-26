@@ -17,7 +17,6 @@ export default function homeBlogHero() {
             </span>
             <div className={classes["btn-box"]}>
               <a className="btn-orange">Découvrir</a>
-              <a className="btn-white">Random</a>
             </div>
           </div>
           <div className={classes["image-box"]}>

@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import HomeBlogHero from "../../components/ui/Blog/HomeBlogHero"
 import TextBoxLight from "../../components/ui/Shared/TextBoxLight";
+<<<<<<< HEAD
 import ImageFeaturedLeft from "../../components/ui/Shared/ImageFeaturedLeft";
 
 import { PrismicLink, PrismicText } from "@prismicio/react";
@@ -14,12 +15,19 @@ import { createClient } from '../../prismicio'
 import { components } from '../../slices'
 
 export default function BlogHome({ page, navigation, settings }) {
+=======
+
+export default function BlogHome() {
+>>>>>>> parent of 02f2368 (set up new component blogpostlist)
   return (
     <React.Fragment>
       <HomeBlogHero />
       <TextBoxLight />
+<<<<<<< HEAD
       <ImageFeaturedLeft />
   <SliceZone slices={page.data.slices} components={components} />
+=======
+>>>>>>> parent of 02f2368 (set up new component blogpostlist)
     </React.Fragment>
   );
 }
