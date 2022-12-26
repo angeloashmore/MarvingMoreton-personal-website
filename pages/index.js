@@ -5,8 +5,11 @@ import HeroHome from "../components/ui/Homepage/HeroHome";
 import PartnersBox from "../components/ui/Homepage/PartnersBox";
 import FeaturedAbout from "../components/ui/Homepage/FeaturedAbout";
 import MyServices from "../components/ui/Homepage/MyServices";
+import { createClient } from "../prismicio";
+import { components } from "../slices";
+import { SliceZone } from "@prismicio/react";
 
-export default function Home() {
+export default function Homepage({ page, navigation, settings }) {
   return (
     <div>
       <Head>
@@ -20,7 +23,20 @@ export default function Home() {
         <PartnersBox />
         <FeaturedAbout />
         <MyServices />
+        <SliceZone slices={page.data.slices} components={components} />
       </main>
     </div>
   );
+}
+
+export async function getStaticProps({ previewData }) {
+  const client = createClient({ previewData });
+
+  const page = await client.getSingle("homepage");
+
+  return {
+    props: {
+      page,
+    },
+  };
 }

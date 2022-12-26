@@ -1,0 +1,27 @@
+{
+  "_cts": {
+    "homepage": {},
+    "blog_homepage": {},
+    "blog_post": {},
+    "blog_home": {},
+    "seo_mother": {},
+    "dev_mother": {},
+    "seo_child": {},
+    "dev_child": {},
+    "page": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "slices": {
+    "HeroHome": {
+      "default": {
+        "primary": {}
+      }
+    }
+  }
+}

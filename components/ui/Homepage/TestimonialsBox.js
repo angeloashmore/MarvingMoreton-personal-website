@@ -9,7 +9,7 @@ export default function FeaturedAbout() {
     <section className={classes["section-testimonials"]}>
       <div className={classes["background"]}>
         <div className={classes["fixed-box"]}>
-          <span>&quot;"</span>
+          {/* <span>"</span> */}
           <h2>What they say about xxx</h2>
           <span>
             More than 3000 users have been helped by World Online Course.

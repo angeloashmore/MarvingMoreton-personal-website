@@ -4,16 +4,16 @@ import * as prismicH from '@prismicio/helpers'
 import { createClient } from '../prismicio'
 import { components } from '../slices'
 
-const Page = ({ page, navigation, settings }) => {
+const DevChild = ({ page, navigation, settings }) => {
   return <SliceZone slices={page.data.slices} components={components} />
 }
 
-export default Page
+export default DevChild
 
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData })
 
-  const page = await client.getByUID('blog_post', params.uid)
+  const page = await client.getByUID('dev_child', params.uid)
 
   return {
     props: {
@@ -25,7 +25,7 @@ export async function getStaticProps({ params, previewData }) {
 export async function getStaticPaths() {
   const client = createClient()
 
-  const pages = await client.getAllByType('blog_post')
+  const pages = await client.getAllByType('dev_child')
 
   return {
     paths: pages.map((page) => prismicH.asLink(page)),
