@@ -4,4 +4,12 @@ const nextConfig = {
   swcMinify: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  images: {
+    domains: [
+      "marving-moreton.cdn.prismic.io",
+      "images.prismic.io",
+      "res.cloudinary.com",
+    ],
+  },
+};

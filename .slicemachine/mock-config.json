@@ -66,6 +66,65 @@
     }
   },
   "slices": {
-    "Faq": {}
+    "Faq": {},
+    "HeroHome": {},
+    "PartnersLine": {
+      "default": {
+        "items": {},
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "CtaHorizontal": {},
+    "Testimonials": {},
+    "HeroStandard": {},
+    "TextBoxLight": {},
+    "ImageAlone": {},
+    "ImageFeaturedLeft": {
+      "default": {
+        "items": {
+          "paragraph": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        },
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "ImageFeaturedRight": {},
+    "BlogPostsList": {},
+    "PartnersSeo": {},
+    "PartnersDev": {},
+    "PartnersSliderDev": {},
+    "PartnersSliderSeo": {},
+    "VideoPlayer": {},
+    "TextContent": {
+      "default": {
+        "primary": {},
+        "items": {
+          "content_box": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
   }
 }

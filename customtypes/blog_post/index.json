@@ -21,15 +21,103 @@
           "single": "heading1"
         }
       },
+      "image_featured": {
+        "type": "Image",
+        "config": {
+          "label": "image_featured",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "excerpt": {
+        "type": "Text",
+        "config": {
+          "label": "excerpt",
+          "placeholder": ""
+        }
+      },
+      "publication_date": {
+        "type": "Date",
+        "config": {
+          "label": "publication_date",
+          "placeholder": ""
+        }
+      },
+      "time_to_read": {
+        "type": "Text",
+        "config": {
+          "label": "time_to_read",
+          "placeholder": ""
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "faq": {
+            "blog_posts_list": {
+              "type": "SharedSlice"
+            },
+            "cta_horizontal": {
+              "type": "SharedSlice"
+            },
+            "image_alone": {
+              "type": "SharedSlice"
+            },
+            "hero_standard": {
+              "type": "SharedSlice"
+            },
+            "image_featured_left": {
+              "type": "SharedSlice"
+            },
+            "image_featured_right": {
+              "type": "SharedSlice"
+            },
+            "partners_slider_dev": {
+              "type": "SharedSlice"
+            },
+            "partners_line": {
+              "type": "SharedSlice"
+            },
+            "text_box_light": {
+              "type": "SharedSlice"
+            },
+            "testimonials": {
+              "type": "SharedSlice"
+            },
+            "partners_slider_seo": {
+              "type": "SharedSlice"
+            },
+            "video_player": {
+              "type": "SharedSlice"
+            },
+            "text_content": {
               "type": "SharedSlice"
             }
           }
+        }
+      }
+    },
+    "SEO": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "meta_title",
+          "placeholder": ""
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "meta_description",
+          "placeholder": ""
+        }
+      },
+      "og_image": {
+        "type": "Text",
+        "config": {
+          "label": "OG_image",
+          "placeholder": ""
         }
       }
     }

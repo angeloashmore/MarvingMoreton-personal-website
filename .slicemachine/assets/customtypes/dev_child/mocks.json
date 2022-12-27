@@ -1,7 +1,7 @@
 {
   "uid": {
     "__TYPE__": "UIDContent",
-    "value": "lovely"
+    "value": "dark"
   },
   "title": {
     "__TYPE__": "StructuredTextContent",
@@ -9,17 +9,43 @@
       {
         "type": "heading1",
         "content": {
-          "text": "Another"
+          "text": "Railroad"
         }
       }
     ]
+  },
+  "image_featured": {
+    "__TYPE__": "ImageContent",
+    "origin": {
+      "id": "main",
+      "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869",
+      "width": 3199,
+      "height": 3199
+    },
+    "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869",
+    "width": 3199,
+    "height": 3199,
+    "edit": {
+      "zoom": 1,
+      "crop": {
+        "x": 0,
+        "y": 0
+      },
+      "background": "transparent"
+    },
+    "thumbnails": {}
+  },
+  "excerpt": {
+    "__TYPE__": "FieldContent",
+    "value": "greatest",
+    "type": "Text"
   },
   "slices": {
     "__TYPE__": "SliceContentType",
     "value": [
       {
-        "key": "faq$a0e0c2c4-8569-4676-bbf6-276891dd6dbb",
-        "name": "faq",
+        "key": "blog_posts_list$765fc2c5-825a-47af-a0af-3142b0786f50",
+        "name": "blog_posts_list",
         "widget": {
           "__TYPE__": "SharedSliceContent",
           "variation": "default",
@@ -30,7 +56,7 @@
                 {
                   "type": "heading1",
                   "content": {
-                    "text": "Sometime"
+                    "text": "Range"
                   }
                 }
               ]
@@ -41,7 +67,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Culpa deserunt pariatur mollit mollit dolore dolore ad excepteur in laborum ipsum non culpa. Incididunt excepteur incididunt ut nulla incididunt Lorem ullamco consectetur aute laborum pariatur excepteur consectetur reprehenderit aliqua. Irure enim duis culpa id eu sit laborum duis Lorem dolore."
+                    "text": "Culpa et pariatur quis. Sint occaecat in pariatur magna aliqua nostrud dolor duis quis."
                   }
                 }
               ]
@@ -54,7 +80,508 @@
             }
           ]
         }
+      },
+      {
+        "key": "cta_horizontal$e72c1a6d-29e7-4627-957a-baf786f0221c",
+        "name": "cta_horizontal",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Structure"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Pariatur magna reprehenderit veniam nostrud. Incididunt tempor consequat cupidatat. Duis do consectetur eiusmod minim ad anim exercitation fugiat consequat enim amet ad."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "image_alone$6dff64c7-2381-44b2-8e6b-487b2a5647f7",
+        "name": "image_alone",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Steep"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Culpa cupidatat dolor eu officia nostrud voluptate reprehenderit id qui ea enim enim. Et qui reprehenderit voluptate deserunt ex adipisicing tempor exercitation ea magna."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "hero_standard$6e275f67-3231-43d3-8f98-7e6852daedab",
+        "name": "hero_standard",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Church"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "In id eiusmod ipsum. Ullamco culpa minim magna esse reprehenderit ex eiusmod sunt incididunt ut non. Ad aute et eu dolore non aliquip aliqua cillum quis."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "image_featured_left$3361bb53-c00f-43d3-a286-5b7a5d0ab338",
+        "name": "image_featured_left",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Spring"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Sit magna aute pariatur enim ea excepteur aliqua veniam. Velit id sunt duis."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "image_featured_right$ccb6ff6f-31f6-4eca-84e9-f35700b3992d",
+        "name": "image_featured_right",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Welcome"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Est elit aliquip duis sint ea eiusmod irure. Consectetur elit est ut nostrud veniam."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "partners_dev$148f83c5-6eb9-46bd-9373-9a4532f2cbd0",
+        "name": "partners_dev",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Grass"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "In pariatur non voluptate veniam culpa excepteur. Est Lorem non nulla pariatur ut voluptate ipsum Lorem ullamco id ad quis."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "partners_line$cdb4440c-9051-48ee-9f42-741cc05b457b",
+        "name": "partners_line",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Shade"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Sint Lorem veniam exercitation elit ut deserunt. Ex ea consectetur cupidatat in est pariatur ut."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "partners_slider_dev$a504c29c-24fe-42ea-a715-db209ef43171",
+        "name": "partners_slider_dev",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Shadow"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Commodo deserunt consectetur consequat eiusmod minim aliquip dolore dolore cillum quis nulla nulla. Nulla aliquip minim pariatur elit consectetur cillum non cillum voluptate commodo ut non consectetur est."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "text_box_light$8c90be57-25e7-489d-92fb-1d69398a8e56",
+        "name": "text_box_light",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Though"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Nisi sint enim veniam in ullamco ex in amet."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "testimonials$509c1a3c-4d4f-4683-b2e6-7e8381ae40dd",
+        "name": "testimonials",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Longer"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Consectetur voluptate proident voluptate id pariatur sunt exercitation nulla cupidatat esse id excepteur. Id anim deserunt ullamco nulla officia culpa ea."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "partners_slider_seo$2a44ec1b-a025-4d7a-9dcb-7dd2285fa3c1",
+        "name": "partners_slider_seo",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Forest"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Excepteur pariatur quis incididunt fugiat officia in qui excepteur. Voluptate culpa elit sint proident excepteur ad dolore adipisicing proident."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "video_player$175bfde5-19bc-4682-917a-ff02aee98eca",
+        "name": "video_player",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "title": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading1",
+                  "content": {
+                    "text": "Changing"
+                  }
+                }
+              ]
+            },
+            "description": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Ipsum et irure minim laboris voluptate ex dolor duis. Sunt in amet magna quis ipsum consequat elit aliquip qui proident. Nulla et tempor qui eu reprehenderit sint est."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "text_content$5216b4e9-3bcb-4d6a-b991-b9d458b0dc56",
+        "name": "text_content",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {},
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "content_box",
+                  {
+                    "__TYPE__": "StructuredTextContent",
+                    "value": [
+                      {
+                        "type": "paragraph",
+                        "content": {
+                          "text": "Mollit fugiat consectetur tempor nostrud."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        }
       }
     ]
+  },
+  "meta_title": {
+    "__TYPE__": "FieldContent",
+    "value": "constantly",
+    "type": "Text"
+  },
+  "meta_description": {
+    "__TYPE__": "FieldContent",
+    "value": "herself",
+    "type": "Text"
+  },
+  "og_image": {
+    "__TYPE__": "FieldContent",
+    "value": "create",
+    "type": "Text"
   }
 }

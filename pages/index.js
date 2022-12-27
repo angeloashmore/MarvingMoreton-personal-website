@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import HeroHome from "../components/ui/Homepage/HeroHome";
-import PartnersBox from "../components/ui/Homepage/PartnersBox";
+import PartnersBox from "../components/ui/Shared/PartnersBox";
 import FeaturedAbout from "../components/ui/Homepage/FeaturedAbout";
 import MyServices from "../components/ui/Homepage/MyServices";
 import CTAHorizontal from "../components/ui/Shared/CTAHorizontal"
@@ -23,9 +23,9 @@ export default function Homepage({ page, navigation, settings }) {
         <HeroHome />
         <PartnersBox />
         <FeaturedAbout />
-        <MyServices />
-        <CTAHorizontal />
+        {/* <MyServices /> */}
         <SliceZone slices={page.data.slices} components={components} />
+        <CTAHorizontal />
       </main>
     </div>
   );

@@ -14,6 +14,14 @@
           "single": "heading1"
         }
       },
+      "image_featured": {
+        "type": "Image",
+        "config": {
+          "label": "image_featured",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
@@ -21,8 +29,71 @@
           "choices": {
             "faq": {
               "type": "SharedSlice"
+            },
+            "blog_posts_list": {
+              "type": "SharedSlice"
+            },
+            "cta_horizontal": {
+              "type": "SharedSlice"
+            },
+            "image_alone": {
+              "type": "SharedSlice"
+            },
+            "hero_standard": {
+              "type": "SharedSlice"
+            },
+            "image_featured_right": {
+              "type": "SharedSlice"
+            },
+            "image_featured_left": {
+              "type": "SharedSlice"
+            },
+            "partners_slider_dev": {
+              "type": "SharedSlice"
+            },
+            "partners_line": {
+              "type": "SharedSlice"
+            },
+            "testimonials": {
+              "type": "SharedSlice"
+            },
+            "partners_slider_seo": {
+              "type": "SharedSlice"
+            },
+            "text_box_light": {
+              "type": "SharedSlice"
+            },
+            "video_player": {
+              "type": "SharedSlice"
+            },
+            "text_content": {
+              "type": "SharedSlice"
             }
           }
+        }
+      }
+    },
+    "SEO": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "meta_title",
+          "placeholder": ""
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "meta_description",
+          "placeholder": ""
+        }
+      },
+      "og_image": {
+        "type": "Image",
+        "config": {
+          "label": "og_image",
+          "constraint": {},
+          "thumbnails": []
         }
       }
     }
