@@ -6,6 +6,166 @@ import type * as prismic from "@prismicio/client";
 type Simplify<T> = {
     [KeyType in keyof T]: T[KeyType];
 };
+/** Content for Blog_Homepage documents */
+interface BlogHomepageDocumentData {
+    /**
+     * title field in *Blog_Homepage*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_homepage.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Slice Zone field in *Blog_Homepage*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_homepage.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<BlogHomepageDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *Blog_Homepage → Slice Zone*
+ *
+ */
+type BlogHomepageDocumentDataSlicesSlice = FaqSlice;
+/**
+ * Blog_Homepage document from Prismic
+ *
+ * - **API ID**: `blog_homepage`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type BlogHomepageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<BlogHomepageDocumentData>, "blog_homepage", Lang>;
+/** Content for Blog_Post documents */
+interface BlogPostDocumentData {
+    /**
+     * title field in *Blog_Post*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_post.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Slice Zone field in *Blog_Post*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_post.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<BlogPostDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *Blog_Post → Slice Zone*
+ *
+ */
+type BlogPostDocumentDataSlicesSlice = FaqSlice;
+/**
+ * Blog_Post document from Prismic
+ *
+ * - **API ID**: `blog_post`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type BlogPostDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<BlogPostDocumentData>, "blog_post", Lang>;
+/** Content for Dev_Child documents */
+interface DevChildDocumentData {
+    /**
+     * title field in *Dev_Child*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: dev_child.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Slice Zone field in *Dev_Child*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: dev_child.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<DevChildDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *Dev_Child → Slice Zone*
+ *
+ */
+type DevChildDocumentDataSlicesSlice = FaqSlice;
+/**
+ * Dev_Child document from Prismic
+ *
+ * - **API ID**: `dev_child`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type DevChildDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<DevChildDocumentData>, "dev_child", Lang>;
+/** Content for Dev_Mother documents */
+interface DevMotherDocumentData {
+    /**
+     * title field in *Dev_Mother*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: dev_mother.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Slice Zone field in *Dev_Mother*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: dev_mother.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<DevMotherDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *Dev_Mother → Slice Zone*
+ *
+ */
+type DevMotherDocumentDataSlicesSlice = FaqSlice;
+/**
+ * Dev_Mother document from Prismic
+ *
+ * - **API ID**: `dev_mother`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type DevMotherDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<DevMotherDocumentData>, "dev_mother", Lang>;
 /** Content for Homepage documents */
 interface HomepageDocumentData {
     /**
@@ -86,7 +246,87 @@ type PageDocumentDataSlicesSlice = FaqSlice;
  * @typeParam Lang - Language API ID of the document.
  */
 export type PageDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
-export type AllDocumentTypes = HomepageDocument | PageDocument;
+/** Content for Seo_Child documents */
+interface SeoChildDocumentData {
+    /**
+     * title field in *Seo_Child*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: seo_child.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Slice Zone field in *Seo_Child*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: seo_child.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<SeoChildDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *Seo_Child → Slice Zone*
+ *
+ */
+type SeoChildDocumentDataSlicesSlice = FaqSlice;
+/**
+ * Seo_Child document from Prismic
+ *
+ * - **API ID**: `seo_child`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type SeoChildDocument<Lang extends string = string> = prismicT.PrismicDocumentWithUID<Simplify<SeoChildDocumentData>, "seo_child", Lang>;
+/** Content for Seo_Mother documents */
+interface SeoMotherDocumentData {
+    /**
+     * title field in *Seo_Mother*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: seo_mother.title
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+    /**
+     * Slice Zone field in *Seo_Mother*
+     *
+     * - **Field Type**: Slice Zone
+     * - **Placeholder**: *None*
+     * - **API ID Path**: seo_mother.slices[]
+     * - **Tab**: Main
+     * - **Documentation**: https://prismic.io/docs/core-concepts/slices
+     *
+     */
+    slices: prismicT.SliceZone<SeoMotherDocumentDataSlicesSlice>;
+}
+/**
+ * Slice for *Seo_Mother → Slice Zone*
+ *
+ */
+type SeoMotherDocumentDataSlicesSlice = FaqSlice;
+/**
+ * Seo_Mother document from Prismic
+ *
+ * - **API ID**: `seo_mother`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type SeoMotherDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<SeoMotherDocumentData>, "seo_mother", Lang>;
+export type AllDocumentTypes = BlogHomepageDocument | BlogPostDocument | DevChildDocument | DevMotherDocument | HomepageDocument | PageDocument | SeoChildDocument | SeoMotherDocument;
 /**
  * Primary content in Faq → Primary
  *
@@ -141,6 +381,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, AllDocumentTypes, FaqSliceDefaultPrimary, FaqSliceDefault, FaqSliceVariation, FaqSlice };
+        export type { BlogHomepageDocumentData, BlogHomepageDocumentDataSlicesSlice, BlogHomepageDocument, BlogPostDocumentData, BlogPostDocumentDataSlicesSlice, BlogPostDocument, DevChildDocumentData, DevChildDocumentDataSlicesSlice, DevChildDocument, DevMotherDocumentData, DevMotherDocumentDataSlicesSlice, DevMotherDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, SeoChildDocumentData, SeoChildDocumentDataSlicesSlice, SeoChildDocument, SeoMotherDocumentData, SeoMotherDocumentDataSlicesSlice, SeoMotherDocument, AllDocumentTypes, FaqSliceDefaultPrimary, FaqSliceDefault, FaqSliceVariation, FaqSlice };
     }
 }
