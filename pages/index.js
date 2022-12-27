@@ -20,12 +20,12 @@ export default function Homepage({ page, navigation, settings }) {
       </Head>
 
       <main>
-        <HeroHome />
-        <PartnersBox />
-        <FeaturedAbout />
+        {/* <HeroHome />
+        <PartnersBox /> */}
+        {/* <FeaturedAbout /> */}
         {/* <MyServices /> */}
         <SliceZone slices={page.data.slices} components={components} />
-        <CTAHorizontal />
+        {/* <CTAHorizontal /> */}
       </main>
     </div>
   );

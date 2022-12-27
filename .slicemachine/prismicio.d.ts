@@ -800,25 +800,45 @@ export type BlogPostsListSlice = prismicT.SharedSlice<"blog_posts_list", BlogPos
  */
 interface CtaHorizontalSliceDefaultPrimary {
     /**
-     * Title field in *CtaHorizontal → Primary*
+     * h3_title field in *CtaHorizontal → Primary*
      *
      * - **Field Type**: Title
-     * - **Placeholder**: This is where it all begins...
+     * - **Placeholder**: *None*
      * - **API ID Path**: cta_horizontal.primary.title
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
     title: prismicT.TitleField;
     /**
-     * Description field in *CtaHorizontal → Primary*
+     * desc field in *CtaHorizontal → Primary*
      *
      * - **Field Type**: Rich Text
-     * - **Placeholder**: A nice description of your feature
-     * - **API ID Path**: cta_horizontal.primary.description
+     * - **Placeholder**: *None*
+     * - **API ID Path**: cta_horizontal.primary.desc
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    description: prismicT.RichTextField;
+    desc: prismicT.RichTextField;
+    /**
+     * cta_anchor field in *CtaHorizontal → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: cta_horizontal.primary.cta_anchor
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    cta_anchor: prismicT.KeyTextField;
+    /**
+     * cta_link field in *CtaHorizontal → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: cta_horizontal.primary.cta_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    cta_link: prismicT.LinkField;
 }
 /**
  * Default variation for CtaHorizontal Slice

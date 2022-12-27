@@ -27,7 +27,6 @@ function CTAHorizontal(props) {
             </div>
           </div>
         </div>
-
       </section>
     </React.Fragment>
   );

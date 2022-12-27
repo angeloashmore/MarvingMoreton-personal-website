@@ -85,7 +85,24 @@
         }
       }
     },
-    "CtaHorizontal": {},
+    "CtaHorizontal": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "desc": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
     "Testimonials": {},
     "HeroStandard": {},
     "TextBoxLight": {},

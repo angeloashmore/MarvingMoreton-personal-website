@@ -33,6 +33,8 @@
 .emoji {
   font-size: 3.8rem;
 }
+
+.hero-title,
 .hero-title > h1 {
   font-size: 3.8rem;
   /* line-height: 1.05; */
