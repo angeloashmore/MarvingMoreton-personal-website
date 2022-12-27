@@ -24,12 +24,12 @@ export default function BlogHome({ page, navigation, settings }) {
     <React.Fragment>
       <SliceZone slices={page.data.slices} components={components} />
       {/* <BlogHero /> */}
-      <TextBoxLight />
-      <ImageFeaturedRight />
-      <BlogPostsList />
+      {/* <TextBoxLight /> */}
+      {/* <ImageFeaturedRight /> */}
+      {/* <BlogPostsList /> */}
       {/* Pagination */}
-      <Picturing />
-      <CTAHorizontal />
+      {/* <Picturing /> */}
+      {/* <CTAHorizontal /> */}
 
 
     </React.Fragment>

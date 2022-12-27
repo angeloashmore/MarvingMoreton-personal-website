@@ -11,6 +11,29 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "ImageFeaturedRight",
       "primary": {
+        "illustration": {
+          "type": "Image",
+          "config": {
+            "label": "illustration",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "upper_title": {
+          "type": "Text",
+          "config": {
+            "label": "upper_title",
+            "placeholder": ""
+          }
+        },
         "title": {
           "type": "StructuredText",
           "config": {
@@ -19,17 +42,34 @@
             "placeholder": "This is where it all begins..."
           }
         },
-        "description": {
-          "type": "StructuredText",
+        "main_cta_anchor": {
+          "type": "Text",
           "config": {
-            "single": "paragraph",
-            "label": "Description",
-            "placeholder": "A nice description of your feature"
+            "label": "main_cta_anchor",
+            "placeholder": ""
+          }
+        },
+        "main_cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "main_cta_link",
+            "placeholder": "",
+            "select": null
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
-      "items": {}
+      "items": {
+        "paragraph": {
+          "type": "StructuredText",
+          "config": {
+            "label": "paragraph",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]
 }

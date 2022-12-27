@@ -14,22 +14,85 @@
           }
         ]
       },
-      "description": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Tempor ut reprehenderit labore et elit enim laborum ut dolore ex reprehenderit. Quis nostrud voluptate ullamco et qui eu fugiat quis laboris. Qui ad sint excepteur ad id enim sint aute aute."
-            }
-          }
-        ]
+      "illustration": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+          "width": 3168,
+          "height": 4752
+        },
+        "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+        "width": 3168,
+        "height": 4752,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
+      },
+      "image": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
+          "width": 3168,
+          "height": 4752
+        },
+        "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88",
+        "width": 3168,
+        "height": 4752,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
+      },
+      "upper_title": {
+        "__TYPE__": "FieldContent",
+        "value": "substance",
+        "type": "Text"
+      },
+      "main_cta_anchor": {
+        "__TYPE__": "FieldContent",
+        "value": "great",
+        "type": "Text"
+      },
+      "main_cta_link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "http://google.com"
+        }
       }
     },
     "items": [
       {
         "__TYPE__": "GroupItemContent",
-        "value": []
+        "value": [
+          [
+            "paragraph",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Incididunt sit sunt tempor laborum aute Lorem consequat commodo magna sit in proident esse. Tempor laborum velit incididunt occaecat pariatur est amet consequat."
+                  }
+                }
+              ]
+            }
+          ]
+        ]
       }
     ]
   }

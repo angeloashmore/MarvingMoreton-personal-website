@@ -110,8 +110,23 @@
         "items": {}
       }
     },
-    "TextBoxLight": {},
-    "ImageAlone": {},
+    "TextBoxLight": {
+      "default": {
+        "primary": {
+          "paragraph": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "ImageAlone": {
+      "default": {
+        "primary": {}
+      }
+    },
     "ImageFeaturedLeft": {
       "default": {
         "items": {
@@ -132,8 +147,45 @@
         }
       }
     },
-    "ImageFeaturedRight": {},
-    "BlogPostsList": {},
+    "ImageFeaturedRight": {
+      "default": {
+        "primary": {},
+        "items": {
+          "paragraph": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "BlogPostsList": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {
+          "h3_title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "excerpt": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
     "PartnersSeo": {},
     "PartnersDev": {},
     "PartnersSliderDev": {},

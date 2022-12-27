@@ -760,16 +760,42 @@ interface BlogPostsListSliceDefaultPrimary {
      *
      */
     title: prismicT.TitleField;
+}
+/**
+ * Item in BlogPostsList → Items
+ *
+ */
+export interface BlogPostsListSliceDefaultItem {
     /**
-     * Description field in *BlogPostsList → Primary*
+     * image field in *BlogPostsList → Items*
      *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: A nice description of your feature
-     * - **API ID Path**: blog_posts_list.primary.description
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_posts_list.items[].image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<never>;
+    /**
+     * post_title field in *BlogPostsList → Items*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_posts_list.items[].h3_title
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    description: prismicT.RichTextField;
+    h3_title: prismicT.TitleField;
+    /**
+     * excerpt field in *BlogPostsList → Items*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: blog_posts_list.items[].excerpt
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    excerpt: prismicT.RichTextField;
 }
 /**
  * Default variation for BlogPostsList Slice
@@ -779,7 +805,7 @@ interface BlogPostsListSliceDefaultPrimary {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type BlogPostsListSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<BlogPostsListSliceDefaultPrimary>, never>;
+export type BlogPostsListSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<BlogPostsListSliceDefaultPrimary>, Simplify<BlogPostsListSliceDefaultItem>>;
 /**
  * Slice variation for *BlogPostsList*
  *
@@ -1116,25 +1142,15 @@ export type HeroStandardSlice = prismicT.SharedSlice<"hero_standard", HeroStanda
  */
 interface ImageAloneSliceDefaultPrimary {
     /**
-     * Title field in *ImageAlone → Primary*
+     * image field in *ImageAlone → Primary*
      *
-     * - **Field Type**: Title
-     * - **Placeholder**: This is where it all begins...
-     * - **API ID Path**: image_alone.primary.title
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    title: prismicT.TitleField;
-    /**
-     * Description field in *ImageAlone → Primary*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: A nice description of your feature
-     * - **API ID Path**: image_alone.primary.description
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_alone.primary.image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
      *
      */
-    description: prismicT.RichTextField;
+    image: prismicT.ImageField<never>;
 }
 /**
  * Default variation for ImageAlone Slice
@@ -1270,6 +1286,36 @@ export type ImageFeaturedLeftSlice = prismicT.SharedSlice<"image_featured_left",
  */
 interface ImageFeaturedRightSliceDefaultPrimary {
     /**
+     * illustration field in *ImageFeaturedRight → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_right.primary.illustration
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    illustration: prismicT.ImageField<never>;
+    /**
+     * image field in *ImageFeaturedRight → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_right.primary.image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<never>;
+    /**
+     * upper_title field in *ImageFeaturedRight → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_right.primary.upper_title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    upper_title: prismicT.KeyTextField;
+    /**
      * Title field in *ImageFeaturedRight → Primary*
      *
      * - **Field Type**: Title
@@ -1280,15 +1326,41 @@ interface ImageFeaturedRightSliceDefaultPrimary {
      */
     title: prismicT.TitleField;
     /**
-     * Description field in *ImageFeaturedRight → Primary*
+     * main_cta_anchor field in *ImageFeaturedRight → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_right.primary.main_cta_anchor
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    main_cta_anchor: prismicT.KeyTextField;
+    /**
+     * main_cta_link field in *ImageFeaturedRight → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_right.primary.main_cta_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    main_cta_link: prismicT.LinkField;
+}
+/**
+ * Item in ImageFeaturedRight → Items
+ *
+ */
+export interface ImageFeaturedRightSliceDefaultItem {
+    /**
+     * paragraph field in *ImageFeaturedRight → Items*
      *
      * - **Field Type**: Rich Text
-     * - **Placeholder**: A nice description of your feature
-     * - **API ID Path**: image_featured_right.primary.description
+     * - **Placeholder**: *None*
+     * - **API ID Path**: image_featured_right.items[].paragraph
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    description: prismicT.RichTextField;
+    paragraph: prismicT.RichTextField;
 }
 /**
  * Default variation for ImageFeaturedRight Slice
@@ -1298,7 +1370,7 @@ interface ImageFeaturedRightSliceDefaultPrimary {
  * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
  *
  */
-export type ImageFeaturedRightSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ImageFeaturedRightSliceDefaultPrimary>, never>;
+export type ImageFeaturedRightSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ImageFeaturedRightSliceDefaultPrimary>, Simplify<ImageFeaturedRightSliceDefaultItem>>;
 /**
  * Slice variation for *ImageFeaturedRight*
  *
@@ -1714,25 +1786,15 @@ export type TestimonialsSlice = prismicT.SharedSlice<"testimonials", Testimonial
  */
 interface TextBoxLightSliceDefaultPrimary {
     /**
-     * Title field in *TextBoxLight → Primary*
-     *
-     * - **Field Type**: Title
-     * - **Placeholder**: This is where it all begins...
-     * - **API ID Path**: text_box_light.primary.title
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    title: prismicT.TitleField;
-    /**
-     * Description field in *TextBoxLight → Primary*
+     * paragraph field in *TextBoxLight → Primary*
      *
      * - **Field Type**: Rich Text
-     * - **Placeholder**: A nice description of your feature
-     * - **API ID Path**: text_box_light.primary.description
+     * - **Placeholder**: *None*
+     * - **API ID Path**: text_box_light.primary.paragraph
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    description: prismicT.RichTextField;
+    paragraph: prismicT.RichTextField;
 }
 /**
  * Default variation for TextBoxLight Slice
@@ -1850,6 +1912,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { BlogHomepageDocumentData, BlogHomepageDocumentDataSlicesSlice, BlogHomepageDocument, BlogPostDocumentData, BlogPostDocumentDataSlicesSlice, BlogPostDocument, DevChildDocumentData, DevChildDocumentDataSlicesSlice, DevChildDocument, DevMotherDocumentData, DevMotherDocumentDataSlicesSlice, DevMotherDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, SeoChildDocumentData, SeoChildDocumentDataSlicesSlice, SeoChildDocument, SeoMotherDocumentData, SeoMotherDocumentDataSlicesSlice, SeoMotherDocument, AllDocumentTypes, BlogPostsListSliceDefaultPrimary, BlogPostsListSliceDefault, BlogPostsListSliceVariation, BlogPostsListSlice, CtaHorizontalSliceDefaultPrimary, CtaHorizontalSliceDefault, CtaHorizontalSliceVariation, CtaHorizontalSlice, FaqSliceDefaultPrimary, FaqSliceDefault, FaqSliceVariation, FaqSlice, HeroHomeSliceDefaultPrimary, HeroHomeSliceDefault, HeroHomeSliceVariation, HeroHomeSlice, HeroStandardSliceDefaultPrimary, HeroStandardSliceDefault, HeroStandardSliceVariation, HeroStandardSlice, ImageAloneSliceDefaultPrimary, ImageAloneSliceDefault, ImageAloneSliceVariation, ImageAloneSlice, ImageFeaturedLeftSliceDefaultPrimary, ImageFeaturedLeftSliceDefaultItem, ImageFeaturedLeftSliceDefault, ImageFeaturedLeftSliceVariation, ImageFeaturedLeftSlice, ImageFeaturedRightSliceDefaultPrimary, ImageFeaturedRightSliceDefault, ImageFeaturedRightSliceVariation, ImageFeaturedRightSlice, MyServicesSliceDefaultPrimary, MyServicesSliceDefaultItem, MyServicesSliceDefault, MyServicesSliceVariation, MyServicesSlice, PartnersDevSliceDefaultPrimary, PartnersDevSliceDefault, PartnersDevSliceVariation, PartnersDevSlice, PartnersLineSliceDefaultPrimary, PartnersLineSliceDefaultItem, PartnersLineSliceDefault, PartnersLineSliceVariation, PartnersLineSlice, PartnersSeoSliceDefaultPrimary, PartnersSeoSliceDefault, PartnersSeoSliceVariation, PartnersSeoSlice, PartnersSliderDevSliceDefaultPrimary, PartnersSliderDevSliceDefault, PartnersSliderDevSliceVariation, PartnersSliderDevSlice, PartnersSliderSeoSliceDefaultPrimary, PartnersSliderSeoSliceDefault, PartnersSliderSeoSliceVariation, PartnersSliderSeoSlice, TestimonialsSliceDefaultPrimary, TestimonialsSliceDefault, TestimonialsSliceVariation, TestimonialsSlice, TextBoxLightSliceDefaultPrimary, TextBoxLightSliceDefault, TextBoxLightSliceVariation, TextBoxLightSlice, TextContentSliceDefaultPrimary, TextContentSliceDefault, TextContentSliceVariation, TextContentSlice, VideoPlayerSliceDefaultPrimary, VideoPlayerSliceDefault, VideoPlayerSliceVariation, VideoPlayerSlice };
+        export type { BlogHomepageDocumentData, BlogHomepageDocumentDataSlicesSlice, BlogHomepageDocument, BlogPostDocumentData, BlogPostDocumentDataSlicesSlice, BlogPostDocument, DevChildDocumentData, DevChildDocumentDataSlicesSlice, DevChildDocument, DevMotherDocumentData, DevMotherDocumentDataSlicesSlice, DevMotherDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, SeoChildDocumentData, SeoChildDocumentDataSlicesSlice, SeoChildDocument, SeoMotherDocumentData, SeoMotherDocumentDataSlicesSlice, SeoMotherDocument, AllDocumentTypes, BlogPostsListSliceDefaultPrimary, BlogPostsListSliceDefaultItem, BlogPostsListSliceDefault, BlogPostsListSliceVariation, BlogPostsListSlice, CtaHorizontalSliceDefaultPrimary, CtaHorizontalSliceDefault, CtaHorizontalSliceVariation, CtaHorizontalSlice, FaqSliceDefaultPrimary, FaqSliceDefault, FaqSliceVariation, FaqSlice, HeroHomeSliceDefaultPrimary, HeroHomeSliceDefault, HeroHomeSliceVariation, HeroHomeSlice, HeroStandardSliceDefaultPrimary, HeroStandardSliceDefault, HeroStandardSliceVariation, HeroStandardSlice, ImageAloneSliceDefaultPrimary, ImageAloneSliceDefault, ImageAloneSliceVariation, ImageAloneSlice, ImageFeaturedLeftSliceDefaultPrimary, ImageFeaturedLeftSliceDefaultItem, ImageFeaturedLeftSliceDefault, ImageFeaturedLeftSliceVariation, ImageFeaturedLeftSlice, ImageFeaturedRightSliceDefaultPrimary, ImageFeaturedRightSliceDefaultItem, ImageFeaturedRightSliceDefault, ImageFeaturedRightSliceVariation, ImageFeaturedRightSlice, MyServicesSliceDefaultPrimary, MyServicesSliceDefaultItem, MyServicesSliceDefault, MyServicesSliceVariation, MyServicesSlice, PartnersDevSliceDefaultPrimary, PartnersDevSliceDefault, PartnersDevSliceVariation, PartnersDevSlice, PartnersLineSliceDefaultPrimary, PartnersLineSliceDefaultItem, PartnersLineSliceDefault, PartnersLineSliceVariation, PartnersLineSlice, PartnersSeoSliceDefaultPrimary, PartnersSeoSliceDefault, PartnersSeoSliceVariation, PartnersSeoSlice, PartnersSliderDevSliceDefaultPrimary, PartnersSliderDevSliceDefault, PartnersSliderDevSliceVariation, PartnersSliderDevSlice, PartnersSliderSeoSliceDefaultPrimary, PartnersSliderSeoSliceDefault, PartnersSliderSeoSliceVariation, PartnersSliderSeoSlice, TestimonialsSliceDefaultPrimary, TestimonialsSliceDefault, TestimonialsSliceVariation, TestimonialsSlice, TextBoxLightSliceDefaultPrimary, TextBoxLightSliceDefault, TextBoxLightSliceVariation, TextBoxLightSlice, TextContentSliceDefaultPrimary, TextContentSliceDefault, TextContentSliceVariation, TextContentSlice, VideoPlayerSliceDefaultPrimary, VideoPlayerSliceDefault, VideoPlayerSliceVariation, VideoPlayerSlice };
     }
 }

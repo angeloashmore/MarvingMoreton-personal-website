@@ -1,36 +1,63 @@
-import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
+import * as React from 'react';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { PrismicRichText, PrismicText, PrismicLink } from "@prismicio/react";
+import { PrismicNextImage } from "@prismicio/next";
 
+import classes from "./Faq.module.css"
 /**
  * @typedef {import("@prismicio/client").Content.FaqSlice} FaqSlice
  * @typedef {import("@prismicio/react").SliceComponentProps<FaqSlice>} FaqProps
  * @param { FaqProps }
  */
-const Faq = ({ slice }) => (
-  <section>
-    <span className="title">
-      {
-        slice.primary.title ?
-        <PrismicRichText field={slice.primary.title}/>
-        : <h2>Template slice, update me!</h2>
-      }
-    </span>
-    {
-      slice.primary.description ?
-      <PrismicRichText field={slice.primary.description}/>
-      : <p>start by editing this slice from inside Slice Machine!</p>
-    }
-    <style jsx>{`
-        section {
-          max-width: 600px;
-          margin: 4em auto;
-          text-align: center;
-        }
-        .title {
-          color: #8592e0;
-        }
-    `}</style>
-  </section>
-)
-
-export default Faq
+export default function Faq ({slice}) {
+  return (
+    <section className={classes["section-faq"]}>
+      <h2 className="heading-secondary">Frequently Asked Question</h2>
+      <div className={classes["questions-grid"]}>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography className={classes.question}>Accordion 1</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography className={classes.answer}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              malesuada lacus ex, sit amet blandit leo lobortis eget.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography className={classes.question}>Accordion 2</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography className={classes.answer}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              malesuada lacus ex, sit amet blandit leo lobortis eget.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        {/* <Accordion disabled>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel3a-content"
+            id="panel3a-header"
+          >
+            <Typography>Disabled Accordion</Typography>
+          </AccordionSummary>
+        </Accordion> */}
+      </div>
+    </section>
+  );
+}

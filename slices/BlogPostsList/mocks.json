@@ -7,20 +7,9 @@
         "__TYPE__": "StructuredTextContent",
         "value": [
           {
-            "type": "heading1",
+            "type": "heading2",
             "content": {
-              "text": "Gradually"
-            }
-          }
-        ]
-      },
-      "description": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Et sunt fugiat culpa consectetur commodo Lorem anim qui veniam incididunt mollit velit irure ea."
+              "text": "Pleasure"
             }
           }
         ]
@@ -29,7 +18,60 @@
     "items": [
       {
         "__TYPE__": "GroupItemContent",
-        "value": []
+        "value": [
+          [
+            "image",
+            {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
+                "width": 3456,
+                "height": 3456
+              },
+              "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
+              "width": 3456,
+              "height": 3456,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            }
+          ],
+          [
+            "h3_title",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "heading3",
+                  "content": {
+                    "text": "Including"
+                  }
+                }
+              ]
+            }
+          ],
+          [
+            "excerpt",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Nulla fugiat cupidatat aliqua tempor ipsum id voluptate."
+                  }
+                }
+              ]
+            }
+          ]
+        ]
       }
     ]
   }
