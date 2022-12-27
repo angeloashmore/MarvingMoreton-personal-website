@@ -22,14 +22,14 @@ import { components } from '../../slices'
 export default function BlogHome({ page, navigation, settings }) {
   return (
     <React.Fragment>
-      <BlogHero />
+      <SliceZone slices={page.data.slices} components={components} />
+      {/* <BlogHero /> */}
       <TextBoxLight />
       <ImageFeaturedRight />
       <BlogPostsList />
       {/* Pagination */}
       <Picturing />
       <CTAHorizontal />
-      <SliceZone slices={page.data.slices} components={components} />
 
 
     </React.Fragment>

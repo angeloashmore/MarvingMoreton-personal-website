@@ -104,7 +104,12 @@
       }
     },
     "Testimonials": {},
-    "HeroStandard": {},
+    "HeroStandard": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
     "TextBoxLight": {},
     "ImageAlone": {},
     "ImageFeaturedLeft": {

@@ -15,15 +15,54 @@
         ]
       },
       "description": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Eiusmod enim magna labore elit Lorem incididunt ea pariatur ad. Et quis tempor aliqua."
-            }
-          }
-        ]
+        "__TYPE__": "FieldContent",
+        "value": "drawn",
+        "type": "Text"
+      },
+      "cta_main_anchor": {
+        "__TYPE__": "FieldContent",
+        "value": "eager",
+        "type": "Text"
+      },
+      "cta_main_link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "http://twitter.com"
+        }
+      },
+      "cta_secondary_anchor": {
+        "__TYPE__": "FieldContent",
+        "value": "tool",
+        "type": "Text"
+      },
+      "cta_secondary_link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "http://google.com"
+        }
+      },
+      "image": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+          "width": 4160,
+          "height": 3120
+        },
+        "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+        "width": 4160,
+        "height": 3120,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
       }
     },
     "items": [

@@ -1027,15 +1027,65 @@ interface HeroStandardSliceDefaultPrimary {
      */
     title: prismicT.TitleField;
     /**
-     * Description field in *HeroStandard → Primary*
+     * description field in *HeroStandard → Primary*
      *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: A nice description of your feature
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
      * - **API ID Path**: hero_standard.primary.description
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
      *
      */
-    description: prismicT.RichTextField;
+    description: prismicT.KeyTextField;
+    /**
+     * cta_main_anchor field in *HeroStandard → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: hero_standard.primary.cta_main_anchor
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    cta_main_anchor: prismicT.KeyTextField;
+    /**
+     * cta_main_link field in *HeroStandard → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: hero_standard.primary.cta_main_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    cta_main_link: prismicT.LinkField;
+    /**
+     * cta_secondary_anchor field in *HeroStandard → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: hero_standard.primary.cta_secondary_anchor
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    cta_secondary_anchor: prismicT.KeyTextField;
+    /**
+     * cta_secondary_link field in *HeroStandard → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: hero_standard.primary.cta_secondary_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    cta_secondary_link: prismicT.LinkField;
+    /**
+     * image field in *HeroStandard → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: hero_standard.primary.image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<never>;
 }
 /**
  * Default variation for HeroStandard Slice
