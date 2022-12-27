@@ -5,6 +5,7 @@ import HeroHome from "../components/ui/Homepage/HeroHome";
 import PartnersBox from "../components/ui/Homepage/PartnersBox";
 import FeaturedAbout from "../components/ui/Homepage/FeaturedAbout";
 import MyServices from "../components/ui/Homepage/MyServices";
+import CTAHorizontal from "../components/ui/Shared/CTAHorizontal";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <PartnersBox />
         <FeaturedAbout />
         <MyServices />
+        <CTAHorizontal />
       </main>
     </div>
   );

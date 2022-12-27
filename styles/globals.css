@@ -22,6 +22,8 @@ WHITESPACE
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
 body {
   --primary-blue: #141a31;
   --primary-gold: #fab874;
@@ -41,12 +43,12 @@ html,
 body {
   /* padding: 0;
   margin: 0; */
-  font-family: "lato", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
   /* DJ - Body Regular */
-  font-family: "lato";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;
@@ -178,10 +180,9 @@ strong {
 .btn-dark:visited {
   display: inline-block;
 
-  font-family: "Lato";
   font-style: normal;
-  font-weight: 700;
-  font-size: 2.6rem;
+  font-weight: 800;
+  font-size: 2.8rem;
   line-height: 3.1rem;
   text-decoration: none;
   padding: 1.6rem 3.2rem;
