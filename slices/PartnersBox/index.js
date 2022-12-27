@@ -1,7 +1,7 @@
 import React from 'react'
 import { PrismicRichText } from '@prismicio/react'
 import Image from "next/image";
-import classes from "../../components/ui/Shared/PartnersLine.module.css";
+import classes from "../../components/ui/Shared/PartnersBox.module.css";
 import { PrismicNextImage } from "@prismicio/next";
 /**
  * @typedef {import("@prismicio/client").Content.PartnersLineSlice} PartnersLineSlice
@@ -9,7 +9,8 @@ import { PrismicNextImage } from "@prismicio/next";
  * @param { PartnersLineProps }
  */
 
-const PartnersLine = ({ slice }) => (
+// COMPONENT NOT CLEAN IMG WISE
+const PartnersBox = ({ slice }) => (
   <section className={classes["section--partners"]}>
     <div className="container">
 
@@ -35,4 +36,4 @@ const PartnersLine = ({ slice }) => (
 </section>
 )
 
-export default PartnersLine
+export default PartnersBox

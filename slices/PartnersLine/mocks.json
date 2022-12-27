@@ -9,7 +9,7 @@
           {
             "type": "heading2",
             "content": {
-              "text": "Giving"
+              "text": "Generally"
             }
           }
         ]
@@ -25,13 +25,13 @@
               "__TYPE__": "ImageContent",
               "origin": {
                 "id": "main",
-                "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
-                "width": 4480,
-                "height": 4480
+                "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+                "width": 4076,
+                "height": 2712
               },
-              "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
-              "width": 4480,
-              "height": 4480,
+              "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+              "width": 4076,
+              "height": 2712,
               "edit": {
                 "zoom": 1,
                 "crop": {
@@ -40,27 +40,7 @@
                 },
                 "background": "transparent"
               },
-              "thumbnails": {
-                "logo": {
-                  "origin": {
-                    "id": "logo",
-                    "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
-                    "width": 4172,
-                    "height": 4000
-                  },
-                  "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?rect=0%2C1425%2C4172%2C1150&w=185&h=51",
-                  "width": 185,
-                  "height": 51,
-                  "edit": {
-                    "zoom": 1,
-                    "crop": {
-                      "x": 0,
-                      "y": 1425
-                    },
-                    "background": "transparent"
-                  }
-                }
-              }
+              "thumbnails": {}
             }
           ]
         ]

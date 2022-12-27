@@ -71,6 +71,9 @@
             },
             "my_services": {
               "type": "SharedSlice"
+            },
+            "partners_dev": {
+              "type": "SharedSlice"
             }
           }
         }

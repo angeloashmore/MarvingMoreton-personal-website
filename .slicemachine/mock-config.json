@@ -74,7 +74,6 @@
     },
     "PartnersLine": {
       "default": {
-        "items": {},
         "primary": {
           "title": {
             "config": {
@@ -218,6 +217,18 @@
           "description": {
             "config": {
               "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "InternalChilds": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
               "blocks": 1
             }
           }

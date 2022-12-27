@@ -1,15 +1,15 @@
 {
-  "id": "partners_dev",
+  "id": "internal_childs",
   "type": "SharedSlice",
-  "name": "PartnersLine",
-  "description": "PartnersDev",
+  "name": "ChildsList",
+  "description": "InternalChilds",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "PartnersDev",
+      "description": "InternalChilds",
       "primary": {
         "title": {
           "type": "StructuredText",
@@ -21,16 +21,7 @@
           }
         }
       },
-      "items": {
-        "logo": {
-          "type": "Image",
-          "config": {
-            "label": "logo",
-            "constraint": {},
-            "thumbnails": []
-          }
-        }
-      },
+      "items": {},
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]

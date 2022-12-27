@@ -1,5 +1,8 @@
 import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
+import { PrismicRichText, PrismicText, PrismicLink } from "@prismicio/react";
+import { PrismicNextImage } from "@prismicio/next";
+import { createClient } from "../../prismicio";
+import classes from "./Testimonials.module.css";
 
 /**
  * @typedef {import("@prismicio/client").Content.TestimonialsSlice} TestimonialsSlice
@@ -7,29 +10,21 @@ import { PrismicRichText } from '@prismicio/react'
  * @param { TestimonialsProps }
  */
 const Testimonials = ({ slice }) => (
-  <section>
-    <span className="title">
-      {
-        slice.primary.title ?
-        <PrismicRichText field={slice.primary.title}/>
-        : <h2>Template slice, update me!</h2>
-      }
-    </span>
-    {
-      slice.primary.description ?
-      <PrismicRichText field={slice.primary.description}/>
-      : <p>start by editing this slice from inside Slice Machine!</p>
-    }
-    <style jsx>{`
-        section {
-          max-width: 600px;
-          margin: 4em auto;
-          text-align: center;
-        }
-        .title {
-          color: #8592e0;
-        }
-    `}</style>
+  <section className={classes["testimonials-section"]}>
+    <div className={classes["testimonials-grid"]}>
+      <div className={classes["background-box"]}>
+        <div className={classes["intermediary-box"]}>
+          <span>"</span>
+          <h3>what they say about WOC</h3>
+          <span>More than 3000 users have been helped by World Online Course.</span>
+          <div className={classes["white-box"]}>
+          <span>What they say</span>
+          <p>“Studying at WOC is fun, the curriculum is complete, the instructors are competent, and the assignments given are also relevant to the current scope of work.”</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 )
 

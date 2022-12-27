@@ -1,0 +1,37 @@
+
+.childs-section {
+  padding: 9.6rem 12.8rem;
+
+  max-width: 140rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.childs-grid{
+  max-width: 130rem;
+  margin: 0 auto;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+}
+
+.childs-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2.6rem;
+  flex-wrap:wrap;
+  max-width: 80%;
+}
+
+.child-card{
+  background: #1F2235;
+  box-shadow: 0px 0px 8px rgba(179, 181, 191, 0.42);
+  border-radius: 8px;
+  /* width:30%; */
+  padding: 6.2rem 3.2rem;;
+  max-width: 22rem;
+  max-height: 16rem;
+
+  line-height: 2.8rem;
+}

@@ -1,36 +1,39 @@
 import React from 'react'
 import { PrismicRichText } from '@prismicio/react'
-
+import Image from "next/image";
+import classes from "../../components/ui/Shared/PartnersBox.module.css";
+import { PrismicNextImage } from "@prismicio/next";
 /**
- * @typedef {import("@prismicio/client").Content.PartnersSeoSlice} PartnersSeoSlice
- * @typedef {import("@prismicio/react").SliceComponentProps<PartnersSeoSlice>} PartnersSeoProps
- * @param { PartnersSeoProps }
+ * @typedef {import("@prismicio/client").Content.PartnersLineSlice} PartnersLineSlice
+ * @typedef {import("@prismicio/react").SliceComponentProps<PartnersLineSlice>} PartnersLineProps
+ * @param { PartnersLineProps }
  */
-const PartnersSeo = ({ slice }) => (
-  <section>
-    <span className="title">
-      {
-        slice.primary.title ?
-        <PrismicRichText field={slice.primary.title}/>
-        : <h2>Template slice, update me!</h2>
-      }
-    </span>
-    {
-      slice.primary.description ?
-      <PrismicRichText field={slice.primary.description}/>
-      : <p>start by editing this slice from inside Slice Machine!</p>
-    }
-    <style jsx>{`
-        section {
-          max-width: 600px;
-          margin: 4em auto;
-          text-align: center;
-        }
-        .title {
-          color: #8592e0;
-        }
-    `}</style>
-  </section>
+
+// COMPONENT NOT CLEAN IMG WISE
+const PartnersLine = ({ slice }) => (
+  <section className={classes["section--partners"]}>
+    <div className="container">
+
+      <PrismicRichText
+              field={slice.primary.title}
+              components={{
+                heading2: ({ children }) => (
+                  <h2 className="heading-secondary">{children}</h2>
+                ),
+              }}
+        />
+
+      <div className={classes["partners-logos-box"]}>
+
+        {slice?.items?.map((item, i) =>
+        <React.Fragment key={i}>
+          <PrismicNextImage field={item.logo} alt={item.logo.alt}  width={185} height={52}/>
+        </React.Fragment>)}
+
+      </div>
+
+    </div>
+</section>
 )
 
-export default PartnersSeo
+export default PartnersLine
