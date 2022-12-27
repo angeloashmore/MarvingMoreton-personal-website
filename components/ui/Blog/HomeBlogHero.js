@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import classes from "./HomeBlogHero.module.css";
+import classes from "./homeBlogHero.module.css";
 import photo from "../../../public/photos/denver-random.jpg";
 
 export default function homeBlogHero() {
@@ -17,6 +17,7 @@ export default function homeBlogHero() {
             </span>
             <div className={classes["btn-box"]}>
               <a className="btn-orange">Découvrir</a>
+              <a className="btn-white">Random</a>
             </div>
           </div>
           <div className={classes["image-box"]}>

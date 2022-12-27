@@ -9,7 +9,7 @@ export default function BlogPostsList() {
       <h2 className="heading-secondary">Our blog posts</h2>
 
       <div className={classes["posts-grid"]}>
-        <div className={classes["post-card"]}>ƒﬁ</div>
+        <div className={classes["post-card"]}></div>
       </div>
     </div>
   );
