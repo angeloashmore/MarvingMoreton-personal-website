@@ -68,6 +68,9 @@
             },
             "text_content": {
               "type": "SharedSlice"
+            },
+            "my_services": {
+              "type": "SharedSlice"
             }
           }
         }

@@ -31,7 +31,7 @@ const ImageFeaturedLeft = ({ slice }) => (
         <div className={classes["paragraphs-box"]}>
           {slice?.items?.map((item, i) =>
                 <React.Fragment key={i}>
-                <PrismicRichText field={item.paragraph} />
+                  <PrismicRichText field={item.paragraph} />
                 </React.Fragment>
           )}
         </div>

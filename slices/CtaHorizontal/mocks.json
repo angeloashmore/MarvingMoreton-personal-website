@@ -9,22 +9,10 @@
           {
             "type": "heading3",
             "content": {
-              "text": "Daily"
+              "text": "Diagram"
             }
           }
         ]
-      },
-      "cta_anchor": {
-        "__TYPE__": "FieldContent",
-        "value": "require",
-        "type": "Text"
-      },
-      "cta_link": {
-        "__TYPE__": "LinkContent",
-        "value": {
-          "__TYPE__": "ExternalLink",
-          "url": "https://prismic.io"
-        }
       },
       "desc": {
         "__TYPE__": "StructuredTextContent",
@@ -32,10 +20,22 @@
           {
             "type": "paragraph",
             "content": {
-              "text": "Commodo in labore proident proident eiusmod est deserunt et eiusmod proident aliquip mollit ullamco cillum."
+              "text": "Mollit sunt officia occaecat proident velit Lorem elit duis aliqua tempor deserunt cillum. Eiusmod sunt magna sit esse qui excepteur consectetur ut sint non consectetur laboris velit."
             }
           }
         ]
+      },
+      "cta_anchor": {
+        "__TYPE__": "FieldContent",
+        "value": "post",
+        "type": "Text"
+      },
+      "cta_link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "https://slicemachine.dev"
+        }
       }
     },
     "items": [

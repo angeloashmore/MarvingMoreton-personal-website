@@ -12,8 +12,7 @@
   /* padding: 4.8rem 6.4rem; */
   display: flex;
   justify-content: center;
-
-
+  max-width: 140rem;
 }
 
 .cta-banner {

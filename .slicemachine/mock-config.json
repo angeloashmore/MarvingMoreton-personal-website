@@ -136,9 +136,29 @@
     "VideoPlayer": {},
     "TextContent": {
       "default": {
-        "primary": {},
+        "primary": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {}
+      }
+    },
+    "MyServices": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
         "items": {
-          "content_box": {
+          "description": {
             "config": {
               "patternType": "PARAGRAPH",
               "blocks": 1

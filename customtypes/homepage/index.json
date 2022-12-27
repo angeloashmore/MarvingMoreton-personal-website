@@ -66,6 +66,9 @@
             },
             "faq": {
               "type": "SharedSlice"
+            },
+            "my_services": {
+              "type": "SharedSlice"
             }
           }
         }

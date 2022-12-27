@@ -228,3 +228,67 @@ strong {
 .hidden {
   display: none;
 }
+
+/* PRISMIC COLLAB */
+
+.block-img {
+  width: calc(100% + 100px);
+  margin: 50px 0;
+  margin-left: -50px;
+  margin-bottom: 6rem !important;
+  background: #1F2235;
+  box-shadow: 0px 0px 24px rgba(179, 181, 191, 0.42);
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 0 0px #d3ebff;
+  height: 550px;
+}
+
+.block-img img {
+  max-width: 100%;
+  max-height: 55rem;
+  /* height: auto; */
+  height: 100%;
+  width: auto;
+  border-radius: 0.4rem;
+  padding: 3rem 0;
+}
+
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+  .block-img {
+    width: 100%;
+    margin: 0;
+    margin-left: 0;
+    padding: 5rem;
+
+  }
+
+  .block-img > img {
+    padding: 4rem;
+    border-radius: 1.2rem;
+  }
+}
+
+
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 28em) {
+  .block-img {
+    width: 100%;
+    margin: 0;
+    margin-left: 0;
+    padding: 2rem;
+  }
+
+  .block-img > img {
+    padding: 2rem;
+    border-radius: 1.2rem;
+  }
+}

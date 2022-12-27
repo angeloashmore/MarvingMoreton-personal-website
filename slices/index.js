@@ -8,6 +8,7 @@ import HeroStandard from './HeroStandard';
 import ImageAlone from './ImageAlone';
 import ImageFeaturedLeft from './ImageFeaturedLeft';
 import ImageFeaturedRight from './ImageFeaturedRight';
+import MyServices from './MyServices';
 import PartnersDev from './PartnersDev';
 import PartnersLine from './PartnersLine';
 import PartnersSeo from './PartnersSeo';
@@ -27,6 +28,7 @@ export {
 	ImageAlone,
 	ImageFeaturedLeft,
 	ImageFeaturedRight,
+	MyServices,
 	PartnersDev,
 	PartnersLine,
 	PartnersSeo,
@@ -47,6 +49,7 @@ export const components = {
 	image_alone: ImageAlone,
 	image_featured_left: ImageFeaturedLeft,
 	image_featured_right: ImageFeaturedRight,
+	my_services: MyServices,
 	partners_dev: PartnersDev,
 	partners_line: PartnersLine,
 	partners_seo: PartnersSeo,

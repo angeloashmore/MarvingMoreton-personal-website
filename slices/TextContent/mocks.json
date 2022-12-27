@@ -2,26 +2,23 @@
   {
     "__TYPE__": "SharedSliceContent",
     "variation": "default",
-    "primary": {},
+    "primary": {
+      "content": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Non irure eu elit nulla qui sint aute deserunt non amet deserunt dolore culpa esse. In consectetur anim sunt do elit officia irure. Voluptate anim magna amet ex id irure Lorem elit magna sint non."
+            }
+          }
+        ]
+      }
+    },
     "items": [
       {
         "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "content_box",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Non quis dolore in ipsum. Enim nulla anim ut dolor mollit."
-                  }
-                }
-              ]
-            }
-          ]
-        ]
+        "value": []
       }
     ]
   }

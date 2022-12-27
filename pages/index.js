@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import HeroHome from "../components/ui/Homepage/HeroHome";
 import PartnersBox from "../components/ui/Shared/PartnersBox";
 import FeaturedAbout from "../components/ui/Homepage/FeaturedAbout";
-import MyServices from "../components/ui/Homepage/MyServices";
+import MyServices from "../components/ui/Shared/MyServices";
 import CTAHorizontal from "../components/ui/Shared/CTAHorizontal"
 import { createClient } from "../prismicio";
 import { components } from "../slices";
