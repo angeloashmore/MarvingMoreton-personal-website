@@ -11,34 +11,7 @@ export default function FeaturedAbout() {
     <section className={classes["section--about"]}>
       <div className="container">
         <div className={classes["flex-box"]}>
-          <div className={classes["image-side"]}>
-            <Image
-              className={classes["illustration"]}
-              src={illustration}
-              // width={743}
-              // height={800}
-              // src="/marving-hero-image.png"
 
-              alt="Marving Moreton"
-
-              // blurDataURL="data:..." automatically provided
-              // placeholder="blur" // Optional blur-up while loading
-            />
-            <div className={classes["image-box"]}>
-              <Image
-                className={classes["hero-image"]}
-                src={photoGrouped}
-                // width={743}
-                // height={800}
-                // src="/marving-hero-image.png"
-
-                alt="Marving Moreton"
-
-                // blurDataURL="data:..." automatically provided
-                // placeholder="blur" // Optional blur-up while loading
-              />
-            </div>
-          </div>
 
           <div className={classes["text-side"]}>
             <span className={classes["upper-title"]}>Welcome to the blog</span>
@@ -69,6 +42,35 @@ export default function FeaturedAbout() {
               >
                 Hire Me
               </Link>
+            </div>
+          </div>
+
+          <div className={classes["image-side"]}>
+            <Image
+              className={classes["illustration"]}
+              src={illustration}
+              // width={743}
+              // height={800}
+              // src="/marving-hero-image.png"
+
+              alt="Marving Moreton"
+
+              // blurDataURL="data:..." automatically provided
+              // placeholder="blur" // Optional blur-up while loading
+            />
+            <div className={classes["image-box"]}>
+              <Image
+                className={classes["hero-image"]}
+                src={photoGrouped}
+                // width={743}
+                // height={800}
+                // src="/marving-hero-image.png"
+
+                alt="Marving Moreton"
+
+                // blurDataURL="data:..." automatically provided
+                // placeholder="blur" // Optional blur-up while loading
+              />
             </div>
           </div>
         </div>

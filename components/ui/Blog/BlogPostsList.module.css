@@ -1,0 +1,45 @@
+
+
+.posts-section{
+  padding: 9.6rem 0;
+  margin: 0 auto;
+}
+.posts-grid {
+display: flex;
+flex-wrap:wrap;
+gap: 2.6rem;
+justify-content: center;
+
+margin: 0 auto;
+max-width: 130rem;
+}
+.post-card {
+  background: #1f2235;
+border: 1px solid rgba(226, 223, 223, 0.35);
+border-radius: 8px;
+width: 50rem;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+flex-basis: 30%;
+}
+
+.post-card > h3 {
+  margin-top: 3.2rem;
+  padding: 0 1.6rem;
+  width: 95%;
+}
+
+.post-card > p {
+  width: 90%;
+  margin-top: 1.2rem;
+  padding: 0 1.6rem 6rem 1.6rem;
+  }
+
+.illustration {
+border: 1px solid rgba(226, 223, 223, 0.35);
+border-radius: 8px 4px 8px 4px;
+width:100%;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
