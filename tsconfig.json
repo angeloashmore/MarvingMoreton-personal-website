@@ -21,6 +21,6 @@
     "**/*.tsx",
     "components/layout/FooterCta.js",
     "components/layout/Layout.jsx"
-  ],
+, "pages/index.js"  ],
   "exclude": ["node_modules"]
 }

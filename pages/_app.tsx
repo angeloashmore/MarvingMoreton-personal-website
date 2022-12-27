@@ -5,6 +5,11 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import Layout from "../components/layout/Layout";
+import Link from "next/link";
+import { PrismicProvider } from "@prismicio/react";
+import { PrismicPreview } from "@prismicio/next";
+import { repositoryName } from "../prismicio";
+
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
@@ -21,19 +26,26 @@ export default function App({ Component, pageProps }: AppProps) {
   const canonicalUrl = `https://marvingmoreton.com` + router.asPath;
 
   return (
-    <Layout>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/public/marving-moreton-favicon.png"
-        />
-        <link rel="canonical" href={canonicalUrl} />
-      </Head>
-      <main className={inter.className}>
-        <Component {...pageProps} />
-      </main>
-    </Layout>
+    <PrismicProvider internalLinkComponent={(props) => <Link {...props} />}>
+      <PrismicPreview repositoryName={repositoryName}>
+        <Layout>
+          <Head>
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
+            <link
+              rel="icon"
+              type="image/png"
+              href="/public/marving-moreton-favicon.png"
+            />
+            <link rel="canonical" href={canonicalUrl} />
+          </Head>
+          <main className={inter.className}>
+            <Component {...pageProps} />
+          </main>
+        </Layout>
+      </PrismicPreview>
+    </PrismicProvider>
   );
 }
