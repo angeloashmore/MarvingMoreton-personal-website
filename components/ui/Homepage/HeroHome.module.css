@@ -15,7 +15,7 @@
   padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
+  gap: 0rem;
   align-items: center;
   /* margin-bottom: 5rem; */
 }
@@ -33,7 +33,7 @@
 .emoji {
   font-size: 3.8rem;
 }
-.hero-title {
+.hero-title > h1 {
   font-size: 3.8rem;
   /* line-height: 1.05; */
   margin-bottom: 2.4rem;

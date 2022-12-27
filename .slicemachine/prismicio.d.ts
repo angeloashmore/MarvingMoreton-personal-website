@@ -411,17 +411,6 @@ interface HomepageDocumentData {
      */
     title: prismicT.TitleField;
     /**
-     * image_featured field in *Homepage*
-     *
-     * - **Field Type**: Image
-     * - **Placeholder**: *None*
-     * - **API ID Path**: homepage.image_featured
-     * - **Tab**: Main
-     * - **Documentation**: https://prismic.io/docs/core-concepts/image
-     *
-     */
-    image_featured: prismicT.ImageField<never>;
-    /**
      * Slice Zone field in *Homepage*
      *
      * - **Field Type**: Slice Zone
@@ -919,15 +908,65 @@ interface HeroHomeSliceDefaultPrimary {
      */
     title: prismicT.TitleField;
     /**
-     * Description field in *HeroHome → Primary*
+     * upper_title_content field in *HeroHome → Primary*
      *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: A nice description of your feature
-     * - **API ID Path**: hero_home.primary.description
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: hero_home.primary.upper_title_content
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
      *
      */
-    description: prismicT.RichTextField;
+    upper_title_content: prismicT.KeyTextField;
+    /**
+     * emoji field in *HeroHome → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: hero_home.primary.emoji
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    emoji: prismicT.KeyTextField;
+    /**
+     * description field in *HeroHome → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: hero_home.primary.description
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    description: prismicT.KeyTextField;
+    /**
+     * cta_main_anchor field in *HeroHome → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: hero_home.primary.cta_main_anchor
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    cta_main_anchor: prismicT.KeyTextField;
+    /**
+     * cta_main_link field in *HeroHome → Primary*
+     *
+     * - **Field Type**: Link
+     * - **Placeholder**: *None*
+     * - **API ID Path**: hero_home.primary.cta_main_link
+     * - **Documentation**: https://prismic.io/docs/core-concepts/link-content-relationship
+     *
+     */
+    cta_main_link: prismicT.LinkField;
+    /**
+     * image field in *HeroHome → Primary*
+     *
+     * - **Field Type**: Image
+     * - **Placeholder**: *None*
+     * - **API ID Path**: hero_home.primary.image
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
+     *
+     */
+    image: prismicT.ImageField<never>;
 }
 /**
  * Default variation for HeroHome Slice

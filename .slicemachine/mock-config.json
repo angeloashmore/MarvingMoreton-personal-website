@@ -67,7 +67,11 @@
   },
   "slices": {
     "Faq": {},
-    "HeroHome": {},
+    "HeroHome": {
+      "default": {
+        "primary": {}
+      }
+    },
     "PartnersLine": {
       "default": {
         "items": {},

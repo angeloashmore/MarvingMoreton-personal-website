@@ -27,7 +27,7 @@ const PartnersLine = ({ slice }) => (
 
         {slice?.items?.map((item, i) =>
         <React.Fragment key={i}>
-          <Image src={item.logo.url} alt={item.logo.alt}  width={184.61} height={51.18}/>
+          <PrismicNextImage field={item.logo} alt={item.logo.alt}  width={185} height={52}/>
         </React.Fragment>)}
 
       </div>

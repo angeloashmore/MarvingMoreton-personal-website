@@ -1,5 +1,9 @@
 import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
+import { PrismicRichText, PrismicText, PrismicLink } from "@prismicio/react";
+import { PrismicNextImage } from "@prismicio/next";
+import classes from "../../components/ui/Homepage/HeroHome.module.css";
+import Link from "next/link";
+
 
 /**
  * @typedef {import("@prismicio/client").Content.HeroHomeSlice} HeroHomeSlice
@@ -7,30 +11,46 @@ import { PrismicRichText } from '@prismicio/react'
  * @param { HeroHomeProps }
  */
 const HeroHome = ({ slice }) => (
-  <section>
-    <span className="title">
-      {
-        slice.primary.title ?
-        <PrismicRichText field={slice.primary.title}/>
-        : <h2>Template slice, update me!</h2>
-      }
-    </span>
-    {
-      slice.primary.description ?
-      <PrismicRichText field={slice.primary.description}/>
-      : <p>start by editing this slice from inside Slice Machine!</p>
-    }
-    <style jsx>{`
-        section {
-          max-width: 600px;
-          margin: 4em auto;
-          text-align: center;
-        }
-        .title {
-          color: #8592e0;
-        }
-    `}</style>
-  </section>
+  <section className={classes["section--hero"]}>
+      <div className={classes["hero-box"]}>
+        <div className={classes["hero-text-box"]}>
+
+          <div className={classes["hero-subtitle"]}>
+            { slice.primary.upper_title_content } <span className={classes.emoji}>{ slice.primary.emoji }</span>
+          </div>
+
+          <div className={classes["hero-title"]}>
+
+            <PrismicRichText
+              field={slice.primary.title}
+              components={{
+                heading2: ({ children }) => (
+                  <h2 className={classes["hero-title"]}>{children}</h2>
+                ),
+              }}
+        />
+
+
+          </div>
+
+          <div className={classes["hero-description"]}>
+            { slice.primary.description }
+          </div>
+
+          <div className={`${classes["hero-cta"]} ${"btn-orange"}`}>
+            <PrismicLink target="_blank" rel="noreferrer" field={slice.primary.cta_main_link}> { slice.primary.cta_main_anchor } </PrismicLink>
+            {/* <Link href="mailto:marving.moreton@gmail.com" target="_blank" rel="noreferrer" >Hire Me</Link> */}
+          </div>
+
+        </div>
+
+        <div>
+          <PrismicNextImage field={slice.primary.image} alt={slice.primary.image.alt} className={classes["hero-image"]} />
+
+        </div>
+      </div>
+
+    </section>
 )
 
 export default HeroHome

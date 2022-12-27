@@ -9,21 +9,58 @@
           {
             "type": "heading1",
             "content": {
-              "text": "Natural"
+              "text": "Element"
             }
           }
         ]
       },
+      "upper_title_content": {
+        "__TYPE__": "FieldContent",
+        "value": "stone",
+        "type": "Text"
+      },
+      "emoji": {
+        "__TYPE__": "FieldContent",
+        "value": "gradually",
+        "type": "Text"
+      },
       "description": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Ipsum officia ea exercitation officia. Minim esse et quis ipsum ea laboris voluptate in. Esse occaecat occaecat velit exercitation non consectetur."
-            }
-          }
-        ]
+        "__TYPE__": "FieldContent",
+        "value": "kids",
+        "type": "Text"
+      },
+      "cta_main_anchor": {
+        "__TYPE__": "FieldContent",
+        "value": "only",
+        "type": "Text"
+      },
+      "cta_main_link": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      "image": {
+        "__TYPE__": "ImageContent",
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+          "width": 5616,
+          "height": 3744
+        },
+        "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
+        "width": 5616,
+        "height": 3744,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "thumbnails": {}
       }
     },
     "items": [

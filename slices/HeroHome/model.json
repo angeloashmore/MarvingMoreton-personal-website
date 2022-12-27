@@ -19,17 +19,53 @@
             "placeholder": "This is where it all begins..."
           }
         },
-        "description": {
-          "type": "StructuredText",
+        "upper_title_content": {
+          "type": "Text",
           "config": {
-            "single": "paragraph",
-            "label": "Description",
-            "placeholder": "A nice description of your feature"
+            "label": "upper_title_content",
+            "placeholder": ""
+          }
+        },
+        "emoji": {
+          "type": "Text",
+          "config": {
+            "label": "emoji",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "description",
+            "placeholder": ""
+          }
+        },
+        "cta_main_anchor": {
+          "type": "Text",
+          "config": {
+            "label": "cta_main_anchor",
+            "placeholder": ""
+          }
+        },
+        "cta_main_link": {
+          "type": "Link",
+          "config": {
+            "label": "cta_main_link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
           }
         }
       },
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
-      "items": {}
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]
 }

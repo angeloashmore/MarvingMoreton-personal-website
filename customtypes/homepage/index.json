@@ -14,14 +14,6 @@
           "single": "heading1"
         }
       },
-      "image_featured": {
-        "type": "Image",
-        "config": {
-          "label": "image_featured",
-          "constraint": {},
-          "thumbnails": []
-        }
-      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
