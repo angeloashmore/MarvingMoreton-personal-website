@@ -10,14 +10,7 @@
       }
     },
     "blog_homepage": {},
-    "blog_post": {
-      "title": {
-        "config": {
-          "patternType": "HEADING",
-          "blocks": 1
-        }
-      }
-    },
+    "blog_post": {},
     "dev_mother": {
       "title": {
         "config": {

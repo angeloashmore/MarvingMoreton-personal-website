@@ -84,14 +84,14 @@ interface BlogPostDocumentData {
     /**
      * title field in *Blog_Post*
      *
-     * - **Field Type**: Title
+     * - **Field Type**: Text
      * - **Placeholder**: *None*
      * - **API ID Path**: blog_post.title
      * - **Tab**: Main
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
      *
      */
-    title: prismicT.TitleField;
+    title: prismicT.KeyTextField;
     /**
      * image_featured field in *Blog_Post*
      *
