@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import classes from "./MainHero.module.css";
+import classes from "./HeroStandard.module.css";
 import photo from "../../../public/photos/denver-random.jpg";
 
 export default function mainHero() {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { PrismicRichText, PrismicText, PrismicLink } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
-import classes from "../../components/ui/Shared/MainHero.module.css";
+import classes from "../../components/ui/Shared/HeroStandard.module.css";
 import Link from "next/link";
 
 /**
