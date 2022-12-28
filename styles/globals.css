@@ -83,7 +83,7 @@ h1 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  font-size: 60px;
+  font-size: 6rem;
   line-height: 60px;
 
   color: #ffffff;
@@ -152,9 +152,9 @@ strong {
 .btn-orange:visited {
   display: inline-block;
   text-decoration: none !important;
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: 900;
-  padding: 1.6rem 3.2rem;
+  padding: 2.2rem 3.2rem;
   border-radius: 12px;
   color: #141A31;
   background-color: #fab874;
@@ -260,6 +260,50 @@ strong {
 }
 
 
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+  html {
+    /* 9/16 = 56% */
+    font-size: 56%;
+  }
+
+  h1 {
+    font-size: 6.4rem;
+  }
+
+  h2,
+  .secondary-heading {
+    font-size: 3.6rem;
+  }
+
+  h3,
+  .upper-title {
+    font-size: 2.6rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  h5 {
+    font-size: 1.8rem;
+  }
+
+  p,
+  span,
+  a {
+    font-size: 1.6rem;
+  }
+
+  .btn, .btn-dark, .btn-orange, .btn-white {
+    font-size: 2.6rem !important;
+  }
+}
+
 /**************************/
 /* BELOW 1024px (Small screens + laptops) */
 /**************************/
@@ -278,6 +322,38 @@ strong {
   }
 }
 
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2,
+  .secondary-heading {
+    font-size: 2.8rem;
+  }
+
+  h3,
+  .upper-title {
+    font-size: 2.2rem !important;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  .btn,.btn-dark, .btn-orange, .btn-white{
+    font-size: 2.2rem !important;
+    padding: 2rem 1.6rem;
+  }
+}
 
 /**************************/
 /* BELOW 480px (Mobile devices) */
@@ -294,5 +370,10 @@ strong {
   .block-img > img {
     padding: 2rem;
     border-radius: 1.2rem;
+  }
+
+  .btn,.btn-dark, .btn-orange, .btn-white{
+    font-size: 2rem !important;
+    padding: 1.8rem 1.4rem;
   }
 }

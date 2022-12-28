@@ -38,10 +38,10 @@ const CtaHorizontal = ({ slice }) => (
             <PrismicRichText field={slice.primary.title} />
             <PrismicRichText field={slice.primary.desc} />
           </div>
-          <div className={classes["cta-text-box"]}>
+          <div className={classes["btn-local-box"]}>
             <PrismicLink
                 field={slice.primary.cta_link}
-                className="btn-dark btn"
+                className="btn"
                 href="mailto:marving.moreton@gmail.com"
                 target="_blank">
                     { slice.primary.cta_anchor }

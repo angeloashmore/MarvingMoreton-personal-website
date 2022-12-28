@@ -37,8 +37,8 @@ const HeroHome = ({ slice }) => (
             { slice.primary.description }
           </div>
 
-          <div className={`${classes["hero-cta"]} ${"btn-orange"}`}>
-            <PrismicLink target="_blank" rel="noreferrer" field={slice.primary.cta_main_link}> { slice.primary.cta_main_anchor } </PrismicLink>
+          <div className="btn-orange">
+            <PrismicLink className="btn" target="_blank" rel="noreferrer" field={slice.primary.cta_main_link}> { slice.primary.cta_main_anchor } </PrismicLink>
             {/* <Link href="mailto:marving.moreton@gmail.com" target="_blank" rel="noreferrer" >Hire Me</Link> */}
           </div>
 

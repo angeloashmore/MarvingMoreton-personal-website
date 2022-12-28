@@ -39,7 +39,7 @@
 .hero-title > h1 {
   font-size: 3.8rem;
   /* line-height: 1.05; */
-  margin-bottom: 2.4rem;
+  margin-bottom: 1.6rem;
   font-family: "Source Sans Pro";
   font-weight: 800;
   line-height: 1.1;
@@ -61,4 +61,97 @@
   width: auto;
   max-width: 100%;
   height:100%;
+}
+
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+  .hero-box{
+    padding: 0 9.6rem;
+    gap: 1.2rem;
+  }
+
+  .hero-subtitle{
+    font-size: 2.6rem;
+  }
+
+  .hero-description {
+    font-size: 2.4rem;
+  }
+
+
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+
+  .section--hero {
+    padding: 3.2rem 2rem 0rem 2rem;
+    max-width: 120rem;
+
+  }
+  .hero-box {
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+    gap: 3.2rem;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+}
+
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+  .hero-title > h1 {
+    font-size: 3.4rem;
+  }
+  .hero-subtitle {
+    font-size: 2.2rem;
+  }
+
+  .hero-description {
+    font-size: 2.2rem;
+  }
+
+}
+
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 47em) {
+
+  .hero-box {
+    padding: 0 4.8rem;
+  }
+}
+
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 35em) {
+
+  .hero-subtitle,
+  .hero-description {
+    font-size: 2rem;
+  }
+
+  .hero-box {
+    padding: 0 3.2rem;
+    padding: 1rem;
+  }
+
+  .section--hero {
+    padding: 2.8rem 2rem 0rem 2rem;
+  }
 }

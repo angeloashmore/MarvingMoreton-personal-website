@@ -29,11 +29,24 @@
   padding: 2.4rem;
 }
 
-.cta-text-box {
+.btn-local-box {
+  display: inline-block;
+
+  font-style: bold;
+  font-weight: 900;
+  font-size: 2.8rem;
+  line-height: 3.1rem;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  color: #ffff;
+  background-color: #141a31;
+  border: none;
+  transition: all 0.3s;
+
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
 }
 
-.cta-text-box H3 {
+.btn-local-box H3 {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 900;
@@ -41,7 +54,7 @@
   line-height: 2;
   padding-bottom: 1.6rem;
 }
-.cta-text-box p {
+.btn-local-box p {
   font-family: "Source Sans Pro";
   color: black;
   font-style: normal;
