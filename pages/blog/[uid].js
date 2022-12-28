@@ -19,6 +19,8 @@ export default function Page({
   ogImage,
   title,
 }) {
+
+  console.log(title)
   // Structured data from Prismic (printed in one line?)
   // /** @type {import('schema-dts').Article} */
   const schema = {
@@ -116,8 +118,8 @@ export default function Page({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         /> */}
       </Head>
-      <PostHeader title={page.data.title[0].text} />
-      <SliceZone slices={page.data.slices} components={components} />
+      <PostHeader title={title} />
+      <SliceZone slices={page.data.slices} components={components} blogPosts={blogPosts}/>
       {/* <ul>
         {blogPosts.map((blogPost) => (
           <li key={blogPost.id}>{blogPost.data.title}</li>
@@ -136,13 +138,13 @@ export async function getStaticProps({ params, previewData }) {
 
   // console.log("Page: ");
   // console.log(page);
-  console.log(page.data.title[0].text)
+  // console.log(page.data.title)
   return {
     props: {
       metaTitle: page.data.meta_title,
       metaDescription: page.data.meta_description,
       ogImage: page.data.og_image.url,
-      // title: page.data.title,
+      title: page.data.title,
       datePublished: page.data.publication_date,
       page: page,
       blogPosts: blogPosts,

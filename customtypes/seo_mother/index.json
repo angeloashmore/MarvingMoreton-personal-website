@@ -87,6 +87,12 @@
             },
             "internal_childs": {
               "type": "SharedSlice"
+            },
+            "my_services": {
+              "type": "SharedSlice"
+            },
+            "expertises": {
+              "type": "SharedSlice"
             }
           }
         }

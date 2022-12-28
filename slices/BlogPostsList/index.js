@@ -14,29 +14,34 @@ import { createClient } from "../../prismicio";
  * @typedef {import("@prismicio/react").SliceComponentProps<BlogPostsListSlice>} BlogPostsListProps
  * @param { BlogPostsListProps }
  */
-const BlogPostsList = ({ slice, blogPosts}) => (
-  <div className={classes["posts-section"]}>
-      <h2 className="heading-secondary">Our blog posts</h2>
+const BlogPostsList = ({ slice}, props) => {
+const {blogPosts} = props;
+  console.log(blogPosts)
 
-      <div className={classes["posts-grid"]}>
-      {/* Mapping over */}
-      {(blogPosts.length > 1) && blogPosts.map((blogPost) => (
-        <div className={classes["post-card"]} key={blogPost.id}>
-          <PrismicLink document={blogPost}>
-            <PrismicNextImage
-                  className={classes["illustration"]}
-                  field={blogPost.data.image_featured}
-                  width={400}
-                  height={400}
-                />
-              <h3>{blogPost.data.title}</h3>
-              <p>{blogPost.data.excerpt}</p>
-            </PrismicLink>
+  return (
+    <div className={classes["posts-section"]}>
+        <h2 className="heading-secondary">Our blog posts</h2>
+
+        <div className={classes["posts-grid"]}>
+        {/* Mapping over */}
+        {blogPosts && blogPosts.map((blogPost) => (
+          <div className={classes["post-card"]} key={blogPost.id}>
+            <PrismicLink document={blogPost}>
+              <PrismicNextImage
+                    className={classes["illustration"]}
+                    field={blogPost.data.image_featured}
+                    width={400}
+                    height={400}
+                  />
+                <h3>{blogPost.data.title}</h3>
+                {/* <p>{blogPost.data.excerpt}</p> */}
+              </PrismicLink>
+          </div>
+        ))}
         </div>
-      ))}
       </div>
-    </div>
-)
+  )
+}
 
 export default BlogPostsList
 
@@ -45,6 +50,8 @@ export async function getStaticProps({ previewData }) {
 
 
   const blogPosts = await client.getAllByType("blog_post");
+
+  console.log(blogPosts)
   return {
     props: {
       blogPosts,

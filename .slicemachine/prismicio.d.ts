@@ -711,7 +711,7 @@ interface SeoMotherDocumentData {
  * Slice for *Seo_Mother → Slice Zone*
  *
  */
-type SeoMotherDocumentDataSlicesSlice = BlogPostsListSlice | CtaHorizontalSlice | ImageAloneSlice | FaqSlice | HeroStandardSlice | HeroHomeSlice | ImageFeaturedLeftSlice | ImageFeaturedRightSlice | PartnersDevSlice | PartnersSliderDevSlice | PartnersSeoSlice | PartnersLineSlice | PartnersSliderSeoSlice | TestimonialsSlice | TextBoxLightSlice | VideoPlayerSlice | TextContentSlice | InternalChildsSlice;
+type SeoMotherDocumentDataSlicesSlice = BlogPostsListSlice | CtaHorizontalSlice | ImageAloneSlice | FaqSlice | HeroStandardSlice | HeroHomeSlice | ImageFeaturedLeftSlice | ImageFeaturedRightSlice | PartnersDevSlice | PartnersSliderDevSlice | PartnersSeoSlice | PartnersLineSlice | PartnersSliderSeoSlice | TestimonialsSlice | TextBoxLightSlice | VideoPlayerSlice | TextContentSlice | InternalChildsSlice | MyServicesSlice | ExpertisesSlice;
 /**
  * Seo_Mother document from Prismic
  *
@@ -723,6 +723,45 @@ type SeoMotherDocumentDataSlicesSlice = BlogPostsListSlice | CtaHorizontalSlice 
  */
 export type SeoMotherDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<SeoMotherDocumentData>, "seo_mother", Lang>;
 export type AllDocumentTypes = BlogHomepageDocument | BlogPostDocument | DevChildDocument | DevMotherDocument | HomepageDocument | PageDocument | SeoChildDocument | SeoMotherDocument;
+/**
+ * Primary content in ArchiveOld → Primary
+ *
+ */
+interface PartnersSliderDevSliceDefaultPrimary {
+    /**
+     * Title field in *ArchiveOld → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: partners_slider_dev.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+}
+/**
+ * Default variation for ArchiveOld Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `PartnersSliderDev`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type PartnersSliderDevSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<PartnersSliderDevSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *ArchiveOld*
+ *
+ */
+type PartnersSliderDevSliceVariation = PartnersSliderDevSliceDefault;
+/**
+ * ArchiveOld Shared Slice
+ *
+ * - **API ID**: `partners_slider_dev`
+ * - **Description**: `PartnersSliderDev`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type PartnersSliderDevSlice = prismicT.SharedSlice<"partners_slider_dev", PartnersSliderDevSliceVariation>;
 /**
  * Primary content in BlogPostsList → Primary
  *
@@ -906,6 +945,45 @@ type CtaHorizontalSliceVariation = CtaHorizontalSliceDefault;
  *
  */
 export type CtaHorizontalSlice = prismicT.SharedSlice<"cta_horizontal", CtaHorizontalSliceVariation>;
+/**
+ * Primary content in Expertises → Primary
+ *
+ */
+interface ExpertisesSliceDefaultPrimary {
+    /**
+     * Title field in *Expertises → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: This is where it all begins...
+     * - **API ID Path**: expertises.primary.title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    title: prismicT.TitleField;
+}
+/**
+ * Default variation for Expertises Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: `Expertises`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ExpertisesSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<ExpertisesSliceDefaultPrimary>, never>;
+/**
+ * Slice variation for *Expertises*
+ *
+ */
+type ExpertisesSliceVariation = ExpertisesSliceDefault;
+/**
+ * Expertises Shared Slice
+ *
+ * - **API ID**: `expertises`
+ * - **Description**: `Expertises`
+ * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
+ *
+ */
+export type ExpertisesSlice = prismicT.SharedSlice<"expertises", ExpertisesSliceVariation>;
 /**
  * Primary content in Faq → Primary
  *
@@ -1657,55 +1735,6 @@ type PartnersSeoSliceVariation = PartnersSeoSliceDefault;
  */
 export type PartnersSeoSlice = prismicT.SharedSlice<"partners_seo", PartnersSeoSliceVariation>;
 /**
- * Primary content in PartnersSliderDev → Primary
- *
- */
-interface PartnersSliderDevSliceDefaultPrimary {
-    /**
-     * Title field in *PartnersSliderDev → Primary*
-     *
-     * - **Field Type**: Title
-     * - **Placeholder**: This is where it all begins...
-     * - **API ID Path**: partners_slider_dev.primary.title
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    title: prismicT.TitleField;
-    /**
-     * Description field in *PartnersSliderDev → Primary*
-     *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: A nice description of your feature
-     * - **API ID Path**: partners_slider_dev.primary.description
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    description: prismicT.RichTextField;
-}
-/**
- * Default variation for PartnersSliderDev Slice
- *
- * - **API ID**: `default`
- * - **Description**: `PartnersSliderDev`
- * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
- *
- */
-export type PartnersSliderDevSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<PartnersSliderDevSliceDefaultPrimary>, never>;
-/**
- * Slice variation for *PartnersSliderDev*
- *
- */
-type PartnersSliderDevSliceVariation = PartnersSliderDevSliceDefault;
-/**
- * PartnersSliderDev Shared Slice
- *
- * - **API ID**: `partners_slider_dev`
- * - **Description**: `PartnersSliderDev`
- * - **Documentation**: https://prismic.io/docs/core-concepts/reusing-slices
- *
- */
-export type PartnersSliderDevSlice = prismicT.SharedSlice<"partners_slider_dev", PartnersSliderDevSliceVariation>;
-/**
  * Primary content in PartnersSliderSeo → Primary
  *
  */
@@ -1935,6 +1964,6 @@ declare module "@prismicio/client" {
         (repositoryNameOrEndpoint: string, options?: prismic.ClientConfig): prismic.Client<AllDocumentTypes>;
     }
     namespace Content {
-        export type { BlogHomepageDocumentData, BlogHomepageDocumentDataSlicesSlice, BlogHomepageDocument, BlogPostDocumentData, BlogPostDocumentDataSlicesSlice, BlogPostDocument, DevChildDocumentData, DevChildDocumentDataSlicesSlice, DevChildDocument, DevMotherDocumentData, DevMotherDocumentDataSlicesSlice, DevMotherDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, SeoChildDocumentData, SeoChildDocumentDataSlicesSlice, SeoChildDocument, SeoMotherDocumentData, SeoMotherDocumentDataSlicesSlice, SeoMotherDocument, AllDocumentTypes, BlogPostsListSliceDefaultPrimary, BlogPostsListSliceDefaultItem, BlogPostsListSliceDefault, BlogPostsListSliceVariation, BlogPostsListSlice, InternalChildsSliceDefaultPrimary, InternalChildsSliceDefault, InternalChildsSliceVariation, InternalChildsSlice, CtaHorizontalSliceDefaultPrimary, CtaHorizontalSliceDefault, CtaHorizontalSliceVariation, CtaHorizontalSlice, FaqSliceDefaultPrimary, FaqSliceDefault, FaqSliceVariation, FaqSlice, HeroHomeSliceDefaultPrimary, HeroHomeSliceDefault, HeroHomeSliceVariation, HeroHomeSlice, HeroStandardSliceDefaultPrimary, HeroStandardSliceDefault, HeroStandardSliceVariation, HeroStandardSlice, ImageAloneSliceDefaultPrimary, ImageAloneSliceDefault, ImageAloneSliceVariation, ImageAloneSlice, ImageFeaturedLeftSliceDefaultPrimary, ImageFeaturedLeftSliceDefaultItem, ImageFeaturedLeftSliceDefault, ImageFeaturedLeftSliceVariation, ImageFeaturedLeftSlice, ImageFeaturedRightSliceDefaultPrimary, ImageFeaturedRightSliceDefaultItem, ImageFeaturedRightSliceDefault, ImageFeaturedRightSliceVariation, ImageFeaturedRightSlice, MyServicesSliceDefaultPrimary, MyServicesSliceDefaultItem, MyServicesSliceDefault, MyServicesSliceVariation, MyServicesSlice, PartnersLineSliceDefaultPrimary, PartnersLineSliceDefaultItem, PartnersLineSliceDefault, PartnersLineSliceVariation, PartnersLineSlice, PartnersDevSliceDefaultPrimary, PartnersDevSliceDefaultItem, PartnersDevSliceDefault, PartnersDevSliceVariation, PartnersDevSlice, PartnersSeoSliceDefaultPrimary, PartnersSeoSliceDefault, PartnersSeoSliceVariation, PartnersSeoSlice, PartnersSliderDevSliceDefaultPrimary, PartnersSliderDevSliceDefault, PartnersSliderDevSliceVariation, PartnersSliderDevSlice, PartnersSliderSeoSliceDefaultPrimary, PartnersSliderSeoSliceDefault, PartnersSliderSeoSliceVariation, PartnersSliderSeoSlice, TestimonialsSliceDefaultPrimary, TestimonialsSliceDefault, TestimonialsSliceVariation, TestimonialsSlice, TextBoxLightSliceDefaultPrimary, TextBoxLightSliceDefault, TextBoxLightSliceVariation, TextBoxLightSlice, TextContentSliceDefaultPrimary, TextContentSliceDefault, TextContentSliceVariation, TextContentSlice, VideoPlayerSliceDefaultPrimary, VideoPlayerSliceDefault, VideoPlayerSliceVariation, VideoPlayerSlice };
+        export type { BlogHomepageDocumentData, BlogHomepageDocumentDataSlicesSlice, BlogHomepageDocument, BlogPostDocumentData, BlogPostDocumentDataSlicesSlice, BlogPostDocument, DevChildDocumentData, DevChildDocumentDataSlicesSlice, DevChildDocument, DevMotherDocumentData, DevMotherDocumentDataSlicesSlice, DevMotherDocument, HomepageDocumentData, HomepageDocumentDataSlicesSlice, HomepageDocument, PageDocumentData, PageDocumentDataSlicesSlice, PageDocument, SeoChildDocumentData, SeoChildDocumentDataSlicesSlice, SeoChildDocument, SeoMotherDocumentData, SeoMotherDocumentDataSlicesSlice, SeoMotherDocument, AllDocumentTypes, PartnersSliderDevSliceDefaultPrimary, PartnersSliderDevSliceDefault, PartnersSliderDevSliceVariation, PartnersSliderDevSlice, BlogPostsListSliceDefaultPrimary, BlogPostsListSliceDefaultItem, BlogPostsListSliceDefault, BlogPostsListSliceVariation, BlogPostsListSlice, InternalChildsSliceDefaultPrimary, InternalChildsSliceDefault, InternalChildsSliceVariation, InternalChildsSlice, CtaHorizontalSliceDefaultPrimary, CtaHorizontalSliceDefault, CtaHorizontalSliceVariation, CtaHorizontalSlice, ExpertisesSliceDefaultPrimary, ExpertisesSliceDefault, ExpertisesSliceVariation, ExpertisesSlice, FaqSliceDefaultPrimary, FaqSliceDefault, FaqSliceVariation, FaqSlice, HeroHomeSliceDefaultPrimary, HeroHomeSliceDefault, HeroHomeSliceVariation, HeroHomeSlice, HeroStandardSliceDefaultPrimary, HeroStandardSliceDefault, HeroStandardSliceVariation, HeroStandardSlice, ImageAloneSliceDefaultPrimary, ImageAloneSliceDefault, ImageAloneSliceVariation, ImageAloneSlice, ImageFeaturedLeftSliceDefaultPrimary, ImageFeaturedLeftSliceDefaultItem, ImageFeaturedLeftSliceDefault, ImageFeaturedLeftSliceVariation, ImageFeaturedLeftSlice, ImageFeaturedRightSliceDefaultPrimary, ImageFeaturedRightSliceDefaultItem, ImageFeaturedRightSliceDefault, ImageFeaturedRightSliceVariation, ImageFeaturedRightSlice, MyServicesSliceDefaultPrimary, MyServicesSliceDefaultItem, MyServicesSliceDefault, MyServicesSliceVariation, MyServicesSlice, PartnersLineSliceDefaultPrimary, PartnersLineSliceDefaultItem, PartnersLineSliceDefault, PartnersLineSliceVariation, PartnersLineSlice, PartnersDevSliceDefaultPrimary, PartnersDevSliceDefaultItem, PartnersDevSliceDefault, PartnersDevSliceVariation, PartnersDevSlice, PartnersSeoSliceDefaultPrimary, PartnersSeoSliceDefault, PartnersSeoSliceVariation, PartnersSeoSlice, PartnersSliderSeoSliceDefaultPrimary, PartnersSliderSeoSliceDefault, PartnersSliderSeoSliceVariation, PartnersSliderSeoSlice, TestimonialsSliceDefaultPrimary, TestimonialsSliceDefault, TestimonialsSliceVariation, TestimonialsSlice, TextBoxLightSliceDefaultPrimary, TextBoxLightSliceDefault, TextBoxLightSliceVariation, TextBoxLightSlice, TextContentSliceDefaultPrimary, TextContentSliceDefault, TextContentSliceVariation, TextContentSlice, VideoPlayerSliceDefaultPrimary, VideoPlayerSliceDefault, VideoPlayerSliceVariation, VideoPlayerSlice };
     }
 }
