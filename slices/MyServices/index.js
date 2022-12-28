@@ -29,7 +29,7 @@ const MyServices = ({ slice }) => (
                   <div className={classes["service-icon-box"]}>
 
 
-                    <PrismicNextImage field={item.emoji_image} alt={item.emoji_image.alt}
+                    <PrismicNextImage field={item.emoji_image}
                     className={classes["service-icon"]} width={64}
                     height={64}
                     />

@@ -1,7 +1,7 @@
 .section--hero {
   /* min-height: calc(300px + 15vw); */
 
-  padding: 4.9rem 0 0rem 0;
+  padding: 4.9rem 2rem 0rem 2rem;
   max-width: 120rem;
   margin: 0 auto;
   /* margin-top: 5rem; */
@@ -23,6 +23,7 @@
 .hero-text-box {
   overflow-x: hidden;
   padding-top: 1rem;
+  width: 100%;
 }
 
 .hero-subtitle {
@@ -52,6 +53,12 @@
   line-height: 1.2;
 }
 
+.image-box{
+  text-align: right;
+}
+
 .hero-image {
-  width: 115%;
+  width: auto;
+  max-width: 100%;
+  height:100%;
 }

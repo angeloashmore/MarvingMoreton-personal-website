@@ -44,8 +44,8 @@ const HeroHome = ({ slice }) => (
 
         </div>
 
-        <div>
-          <PrismicNextImage field={slice.primary.image} alt={slice.primary.image.alt} className={classes["hero-image"]} />
+        <div className={classes["image-box"]} >
+          <PrismicNextImage field={slice.primary.image} className={classes["hero-image"]} priority/>
 
         </div>
       </div>

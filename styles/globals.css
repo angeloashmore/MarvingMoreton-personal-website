@@ -156,7 +156,7 @@ strong {
   font-weight: 900;
   padding: 1.6rem 3.2rem;
   border-radius: 12px;
-  color: #ffffff;
+  color: #141A31;
   background-color: #fab874;
   box-shadow: 0px 4px 4px rgba(250, 184, 116, 0.15);
   border: none;
@@ -172,7 +172,11 @@ strong {
 }
 
 .btn-orange:hover {
-  color: #ffffff;
+  color: #141A31;
+}
+
+.btn-orange:hover > a:hover {
+  color: #141A31;
 }
 
 .btn-dark,

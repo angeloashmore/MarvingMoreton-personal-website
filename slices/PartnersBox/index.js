@@ -27,7 +27,7 @@ const PartnersBox = ({ slice }) => (
 
         {slice?.items?.map((item, i) =>
         <React.Fragment key={i}>
-          <PrismicNextImage field={item.logo} alt={item.logo.alt}  width={185} height={52}/>
+          <PrismicNextImage field={item.logo} width={185} height={52}/>
         </React.Fragment>)}
 
       </div>

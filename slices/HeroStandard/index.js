@@ -36,7 +36,7 @@ const HeroStandard = ({ slice }) => (
           </div>
           <div className={classes["image-box"]}>
           <PrismicNextImage field={slice.primary.image}
-          alt={slice.primary.image.alt} className={classes["hero-image"]}
+          className={classes["hero-image"]}
           width={500}
           height={500}
 

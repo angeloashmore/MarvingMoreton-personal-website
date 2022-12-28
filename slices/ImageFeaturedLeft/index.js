@@ -18,10 +18,10 @@ const ImageFeaturedLeft = ({ slice }) => (
   <div className="container">
     <div className={classes["flex-box"]}>
       <div className={classes["image-side"]}>
-        <PrismicNextImage field={slice.primary.illustration} alt={slice.primary.illustration.alt} width={281} height={140} className={classes["illustration"]}/>
+        <PrismicNextImage field={slice.primary.illustration} width={281} height={140} className={classes["illustration"]}/>
 
         <div className={classes["image-box"]}>
-          <PrismicNextImage field={slice.primary.image} alt={slice.primary.image.alt} className={classes["hero-image"]} width={539} height={600} />
+          <PrismicNextImage field={slice.primary.image} className={classes["hero-image"]} width={539} height={600} />
         </div>
       </div>
 
