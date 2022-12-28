@@ -6,7 +6,7 @@ import illustration from "../../../public/illustrations/random-illustration-blac
 
 export default function BlogPostsList() {
   return (
-    <div className={classes["posts-section"]}>
+    <div className={classes["posts-section"]} id="blog-posts">
       <h2 className="heading-secondary">Our blog posts</h2>
 
       <div className={classes["posts-grid"]}>

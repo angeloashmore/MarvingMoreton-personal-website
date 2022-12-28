@@ -114,10 +114,11 @@
         }
       },
       "og_image": {
-        "type": "Text",
+        "type": "Image",
         "config": {
-          "label": "OG_image",
-          "placeholder": ""
+          "label": "og_image",
+          "constraint": {},
+          "thumbnails": []
         }
       }
     }

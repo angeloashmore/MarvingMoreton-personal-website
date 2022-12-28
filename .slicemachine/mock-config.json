@@ -1,13 +1,6 @@
 {
   "_cts": {
-    "homepage": {
-      "title": {
-        "config": {
-          "patternType": "HEADING",
-          "blocks": 1
-        }
-      }
-    },
+    "homepage": {},
     "page": {
       "title": {
         "config": {
@@ -16,14 +9,7 @@
         }
       }
     },
-    "blog_homepage": {
-      "title": {
-        "config": {
-          "patternType": "HEADING",
-          "blocks": 1
-        }
-      }
-    },
+    "blog_homepage": {},
     "blog_post": {
       "title": {
         "config": {

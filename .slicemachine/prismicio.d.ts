@@ -9,17 +9,6 @@ type Simplify<T> = {
 /** Content for Blog_Homepage documents */
 interface BlogHomepageDocumentData {
     /**
-     * title field in *Blog_Homepage*
-     *
-     * - **Field Type**: Title
-     * - **Placeholder**: *None*
-     * - **API ID Path**: blog_homepage.title
-     * - **Tab**: Main
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    title: prismicT.TitleField;
-    /**
      * image_featured field in *Blog_Homepage*
      *
      * - **Field Type**: Image
@@ -181,16 +170,16 @@ interface BlogPostDocumentData {
      */
     meta_description: prismicT.KeyTextField;
     /**
-     * OG_image field in *Blog_Post*
+     * og_image field in *Blog_Post*
      *
-     * - **Field Type**: Text
+     * - **Field Type**: Image
      * - **Placeholder**: *None*
      * - **API ID Path**: blog_post.og_image
      * - **Tab**: SEO
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/image
      *
      */
-    og_image: prismicT.KeyTextField;
+    og_image: prismicT.ImageField<never>;
 }
 /**
  * Slice for *Blog_Post → Slice Zone*
@@ -399,17 +388,6 @@ type DevMotherDocumentDataSlicesSlice = BlogPostsListSlice | CtaHorizontalSlice 
 export type DevMotherDocument<Lang extends string = string> = prismicT.PrismicDocumentWithoutUID<Simplify<DevMotherDocumentData>, "dev_mother", Lang>;
 /** Content for Homepage documents */
 interface HomepageDocumentData {
-    /**
-     * title field in *Homepage*
-     *
-     * - **Field Type**: Title
-     * - **Placeholder**: *None*
-     * - **API ID Path**: homepage.title
-     * - **Tab**: Main
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
-     *
-     */
-    title: prismicT.TitleField;
     /**
      * Slice Zone field in *Homepage*
      *
