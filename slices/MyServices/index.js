@@ -35,7 +35,7 @@ const MyServices = ({ slice }) => (
                     />
 
                   </div>
-                  <span >{ item.specialty }</span>
+                  <h3>{ item.specialty }</h3>
                   <PrismicRichText field={item.description} />
                   <PrismicLink  field={item.cta_link} className={classes["service-link"]}>{ item.cta_anchor }</PrismicLink>
 

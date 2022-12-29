@@ -22,8 +22,7 @@ WHITESPACE
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 body {
   --primary-blue: #141a31;
   --primary-gold: #fab874;
@@ -43,12 +42,12 @@ html,
 body {
   /* padding: 0;
   margin: 0; */
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 body {
   /* DJ - Body Regular */
-  font-family: "Inter";
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;
@@ -80,7 +79,7 @@ ul {
 }
 
 h1 {
-  font-family: "Inter";
+  font-family: "Lato";
   font-style: normal;
   font-weight: 900;
   font-size: 6rem;
@@ -91,7 +90,7 @@ h1 {
 
 h2 {
   font-size: 40px;
-  line-height: 5.4rem;
+  line-height: 4.4rem;
 }
 
 h3 {
@@ -108,8 +107,9 @@ h5 {
 
 p,
 span {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #e2dfdf;
+  font-family: "Lato", sans-serif;
 }
 
 hr {
@@ -293,11 +293,7 @@ strong {
     font-size: 1.8rem;
   }
 
-  p,
-  span,
-  a {
-    font-size: 1.6rem;
-  }
+
 
   .btn, .btn-dark, .btn-orange, .btn-white {
     font-size: 2.6rem !important;
@@ -353,6 +349,13 @@ strong {
     font-size: 2.2rem !important;
     padding: 2rem 1.6rem;
   }
+
+  p,
+  span,
+  a {
+    font-size: 1.8rem;
+  }
+
 }
 
 /**************************/

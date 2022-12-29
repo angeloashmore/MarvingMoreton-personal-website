@@ -1,16 +1,18 @@
 .section-services {
-  padding: 9.6rem 12.8rem;
-  max-width: 140rem;
-  margin: 0 auto;
+  padding: 9.6rem;
+
 }
 
 .services-box {
   max-width: 140rem;
   margin: 0 auto;
   display: flex;
-  gap: 6.4rem;
-
+  gap: 4.2rem;
+  /* flex: 1 1 0; */
   justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+
 }
 
 .service-card {
@@ -23,10 +25,11 @@
   height: 33.1rem;
   left: 24.3rem;
   top: 26.2rem; */
-  min-height: 40rem;
+  /* min-height: 40rem; */
+  width: 30%;
   background: #1f2235;
   border-radius: 8px;
-  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  padding: 3.2rem 3.8rem;
 }
 /* .service-card img {
   width: 4.8rem;
@@ -35,20 +38,16 @@
   top: 268.5rem;
 } */
 
-.service-card span {
+.service-card H3 {
   text-align: center;
-  font-family: "lato";
-  font-weight: 900;
-  font-size: 2rem;
+  font-weight: 800;
+  font-size: 2.2rem;
   margin-bottom: 1.2rem;
-  white-space: nowrap;
 }
 
 .service-card p {
-  font-family: "lato";
   text-align: center;
   font-weight: 400;
-  font-size: 1.6rem;
   margin-top: 2rem;
 }
 
@@ -61,7 +60,6 @@
   height: 9rem;
   left: 34.7rem;
   top: 266.5rem; */
-
   width: 12rem;
   height: 12rem;
   /* height: 11.9rem; */
@@ -74,4 +72,86 @@
 .service-link {
   color: #fab874;
   margin-top: 4.8rem;
+}
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+  .services-box {
+    margin-top: 6.4rem;
+    width: 40%;
+    gap: 9.6rem;
+  }
+
+  .services-box > .service-card {
+  flex: 0 1 100%;
+  }
+
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+  .services-box {
+    width: 45%;
+  }
+}
+
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+  .services-box {
+    width: 50%;
+  }
+}
+
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 47em) {
+  .services-box {
+    width: 80%;
+  }
+}
+
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 35em) {
+
+  .section-services{
+    padding: 6.4rem;
+  }
+  .services-box {
+    width: 100%;
+  }
+}
+
+
+/**************************/
+/* BELOW 300px (Mobile devices) */
+/**************************/
+
+@media (max-width: 29em) {
+
+  .section-services{
+    padding: 4.2rem;
+  }
+  .services-box {
+    width: 100%;
+  }
+
+  .service-card {
+    padding: 2.2rem;
+  }
+  .service-icon-box {
+    width: auto;
+    height: auto;
+  }
 }

@@ -13,9 +13,8 @@ export default function MyServices() {
             <div className={classes["service-icon-box"]}>
               <Image
                 className={classes["service-icon"]}
-                src="/emojis/front-dev.svg"
-                width={64}
-                height={64}
+                src="/emojis/50/front-dev.svg"
+
                 alt="Full Stack Developer"
               />
             </div>
@@ -34,9 +33,8 @@ export default function MyServices() {
             <div className={classes["service-icon-box"]}>
               <Image
                 className={classes["service-icon"]}
-                src="/emojis/seo.svg"
-                width={64}
-                height={64}
+                src="/emojis/50/seo.svg"
+
                 alt="Search Engine Optimization Consultant"
               />
             </div>
@@ -55,9 +53,8 @@ export default function MyServices() {
             <div className={classes["service-icon-box"]}>
               <Image
                 className={classes["service-icon"]}
-                src="/emojis/marketing-analytics.svg"
-                width={64}
-                height={64}
+                src="/emojis/50/marketing-analytics.svg"
+
                 alt="Marketing 360: Analytics, SEA.."
               />
             </div>
