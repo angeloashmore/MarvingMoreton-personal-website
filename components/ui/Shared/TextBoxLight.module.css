@@ -1,16 +1,72 @@
 .section-text-box-light {
-  padding: 6.4rem 0 9.6rem 0;
-  margin: 0 auto;
+    padding: 6.4rem 0 9.6rem 0;
+    margin: 0 auto;
 }
 
 .text-light-container {
-  margin: 0 16rem;
-  text-align: center;
-  background: #1f2235;
-  border-radius: 8px;
-  padding: 10rem;
-  box-shadow: 0px 0px 24px rgba(179, 181, 191, 0.42);
+    margin: 0 16rem;
+    text-align: center;
+    background: #1f2235;
+    border-radius: 8px;
+    padding: 10rem;
+    box-shadow: 0px 0px 24px rgba(179, 181, 191, 0.42);
 }
 .text-box {
-  text-align: center;
+    text-align: center;
+}
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+    .text-light-container {
+        margin: 0 10rem;
+        padding: 8rem;
+    }
+}
+
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+}
+
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 47em) {
+    .text-light-container {
+        margin: 0 6rem;
+        padding: 6rem;
+    }
+}
+
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 30em) {
+    .text-light-container {
+        margin: 0 5rem;
+        padding: 4rem;
+    }
+}
+
+/**************************/
+/* BELOW 300px (Mobile devices) */
+/**************************/
+
+@media (max-width: 26em) {
+    .text-light-container {
+        margin: 0 3.8rem;
+        padding: 3rem;
+    }
 }
