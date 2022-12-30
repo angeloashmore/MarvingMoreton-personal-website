@@ -107,8 +107,8 @@ h5 {
 
 p,
 span {
-    font-size: 2rem;
-    color: #e2dfdf;
+    font-size: 1.8rem;
+    color: #ffffff;
     font-family: 'Lato', sans-serif;
 }
 
@@ -255,7 +255,7 @@ strong {
     /* height: auto; */
     height: 100%;
     width: auto;
-    border-radius: 0.4rem;
+    border-radius: 1.2rem !important;
     padding: 3rem 0;
 }
 

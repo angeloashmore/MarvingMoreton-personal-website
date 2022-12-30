@@ -15,6 +15,22 @@
     text-align: center;
 }
 
+.text-box ol,
+.text-box ul {
+    text-align: left;
+}
+
+.text-box li {
+    margin-bottom: 1rem;
+}
+
+.text-box > H2,
+.text-box > H3,
+.text-box > H4,
+.text-box > H5 {
+    padding-bottom: 3.8rem;
+}
+
 /**** MEDIA QUERIES ****/
 
 /**************************/

@@ -16,7 +16,6 @@ import { createClient } from '../../prismicio';
  */
 const BlogPostsList = ({ slice }, blogPosts) => {
     // const {blogPosts} = props;
-    console.log(blogPosts);
     // console.log(slice)
 
     return <div></div>;
