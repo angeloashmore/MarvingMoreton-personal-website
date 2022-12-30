@@ -120,7 +120,41 @@ hr {
 strong {
     white-space: break;
 }
+/* HEADER MAINNAV */
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #ffff; */
+    background: #1f2235;
+    /* adding height bcoz we want header to be sticky later */
+    height: 8.8rem;
+    padding: 0 6rem;
+    z-index: 9999;
+    /* overflow-x: hidden; */
+}
+/* STICKY HEADER */
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.5s ease;
+    animation: smoothScroll 1s forwards;
+    z-index: 9999;
+    backdrop-filter: blur(3.8rem);
+}
+
+@keyframes smoothScroll {
+    0% {
+        transform: translateY(-142px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
 /* ************************ */
 /* GENERAL REUSABLE COMPONENTS */
 /* ************************ */
