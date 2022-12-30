@@ -1,35 +1,83 @@
 .section-faq {
-  display: flex;
-  padding: 9.6rem 0;
+    display: flex;
+    padding: 9.6rem 0;
 
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-
 
 .questions-grid {
-  margin: 0 auto;
-  max-width: 130rem;
+    margin: 0 auto;
+    max-width: 130rem;
 }
 
-.question, .answer {
-  color: #141A31 !important;
-  font-family: "Inter";
-  font-style: normal;
-  line-height: 120%;
+.question,
+.answer {
+    color: #141a31 !important;
+    font-family: 'Inter';
+    font-style: normal;
+    line-height: 120%;
 }
 
 .question {
-font-size: 1.8rem;
-font-weight: 600;
-padding-left: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-left: 2rem;
 }
 
 .answer {
-  font-weight: 400;
-  font-size: 1.6rem;
-  width: 90%;
-  padding: 0 2rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    width: 90%;
+    padding: 0 2rem;
+}
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+    .questions-grid {
+        max-width: 100rem;
+        padding: 0 4rem;
+        width: 90%;
+    }
+}
+
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+}
+
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 47em) {
+    .answer {
+        width: 100%;
+        padding: 0 1.4rem;
+    }
+
+    .section-faq > h2 {
+        padding: 0 2.2rem;
+    }
+}
+
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 26em) {
+    .questions-grid {
+        width: 100%;
+    }
 }
