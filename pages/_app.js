@@ -30,23 +30,23 @@ export default function App({ Component, pageProps }) {
             )}
         >
             <PrismicPreview repositoryName={repositoryName}>
-                <Layout>
-                    <Head>
-                        <meta
-                            name="viewport"
-                            content="width=device-width, initial-scale=1"
-                        />
-                        <link
-                            rel="icon"
-                            type="image/png"
-                            href="https://images.prismic.io/marving-moreton/672d8c7d-8a32-4bb8-a642-0267f05c2a99_marving-moreton-favicon.png?auto=compress,format"
-                        />
-                        <link rel="canonical" href={canonicalUrl} />
-                    </Head>
-                    <main className={lato.className}>
-                        <Component {...pageProps} />
-                    </main>
-                </Layout>
+                {/* <Layout> */}
+                <Head>
+                    <meta
+                        name="viewport"
+                        content="width=device-width, initial-scale=1"
+                    />
+                    <link
+                        rel="icon"
+                        type="image/png"
+                        href="https://images.prismic.io/marving-moreton/672d8c7d-8a32-4bb8-a642-0267f05c2a99_marving-moreton-favicon.png?auto=compress,format"
+                    />
+                    <link rel="canonical" href={canonicalUrl} />
+                </Head>
+                <main className={lato.className}>
+                    <Component {...pageProps} />
+                </main>
+                {/* </Layout> */}
             </PrismicPreview>
         </PrismicProvider>
     );

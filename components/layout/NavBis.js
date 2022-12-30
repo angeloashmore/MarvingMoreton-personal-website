@@ -8,8 +8,9 @@ import { useRouter } from 'next/router';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
+import { LanguageSwitcher } from '../ui/Shared/LanguageSwitcher';
 
-function MainNavigation() {
+function MainNavigation({ altLangs }) {
     const router = useRouter();
     const currentRoute = router.pathname;
 
@@ -199,6 +200,7 @@ function MainNavigation() {
                                         </a>
                                     </Link>
                                 </li>
+                                <LanguageSwitcher altLangs={altLangs} />
                             </ul>
                         </nav>
                     </div>

@@ -21,6 +21,7 @@ module.exports = async () => {
             // This is the default locale you want to be used when visiting
             // a non-locale prefixed path e.g. `/hello`
             defaultLocale: locales[0]
+            // defaultLocale: 'en-US'
         },
         images: {
             loader: 'imgix',

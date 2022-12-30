@@ -3,9 +3,14 @@ import * as prismicH from '@prismicio/helpers';
 
 import { createClient } from '../prismicio';
 import { components } from '../slices';
+import Layout from '../components/layout/Layout';
 
 const Page = ({ page, navigation, settings }) => {
-    return <SliceZone slices={page.data.slices} components={components} />;
+    return (
+        <Layout alternateLanguages={page.alternate_languages}>
+            <SliceZone slices={page.data.slices} components={components} />
+        </Layout>
+    );
 };
 
 export default Page;

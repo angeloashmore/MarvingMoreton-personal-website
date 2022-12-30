@@ -4,6 +4,8 @@ import { createClient } from '../prismicio';
 import { components } from '../slices';
 import { SliceZone } from '@prismicio/react';
 import { useRouter } from 'next/router';
+import Layout from '../components/layout/Layout';
+
 export default function Homepage(props) {
     const router = useRouter();
     const currentRoute = router.pathname;
@@ -31,7 +33,7 @@ export default function Homepage(props) {
     }
 
     return (
-        <div>
+        <Layout alternateLanguages={page.alternate_languages}>
             <Head>
                 <title>{metaTitle}</title>
                 <meta name="description" content={metaDescription} key="desc" />
@@ -59,11 +61,10 @@ export default function Homepage(props) {
                     key="org-jsonld"
                 />
             </Head>
-
             <main>
                 <SliceZone slices={page.data.slices} components={components} />
             </main>
-        </div>
+        </Layout>
     );
 }
 
