@@ -49,7 +49,7 @@ export default function BlogHome({
                 blogPosts={blogPosts}
             />
 
-            <section className={classes['section-blog-posts']}>
+            <section className={classes['section-blog-posts']} id="blog-posts">
                 <div className="container">
                     <h2 className="heading-secondary">Latest Blog Posts</h2>
                     {/* POST GRID */}

@@ -74,6 +74,17 @@ const PartnersBox = ({ slice }) => (
                     // placeholder="blur" // Optional blur-up while loading
                 />
                 <Image
+                    className={`${classes['partner-logo']} ${classes['crakmedia']}`}
+                    src="/logos/crakmedia-grey.svg"
+                    width={184.61}
+                    height={51.18}
+                    alt="Crakmedia logo"
+                    // width={50}
+                    // height={50}
+                    // blurDataURL="data:..." automatically provided
+                    // placeholder="blur" // Optional blur-up while loading
+                />
+                <Image
                     className={`${classes['partner-logo']} ${classes['mc2i']}`}
                     src="/logos/mc2i-grey.svg"
                     width={184.61}
@@ -90,17 +101,6 @@ const PartnersBox = ({ slice }) => (
                     width={184.61}
                     height={51.18}
                     alt="tourcrib logo"
-                    // width={50}
-                    // height={50}
-                    // blurDataURL="data:..." automatically provided
-                    // placeholder="blur" // Optional blur-up while loading
-                />
-                <Image
-                    className={`${classes['partner-logo']} ${classes['crakmedia']}`}
-                    src="/logos/crakmedia-grey.svg"
-                    width={184.61}
-                    height={51.18}
-                    alt="Crakmedia logo"
                     // width={50}
                     // height={50}
                     // blurDataURL="data:..." automatically provided
