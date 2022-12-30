@@ -1,10 +1,10 @@
 import { SliceZone } from '@prismicio/react';
 import * as prismicH from '@prismicio/helpers';
+import Head from 'next/head';
 
 import { createClient } from '../../prismicio';
 import { components } from '../../slices';
 import React from 'react';
-import Head from 'next/head';
 
 import PostHeader from '../../components/ui/Blog//PostHeader';
 
