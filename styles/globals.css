@@ -121,19 +121,7 @@ strong {
     white-space: break;
 }
 /* HEADER MAINNAV */
-header {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: #ffff; */
-    background: #1f2235;
-    /* adding height bcoz we want header to be sticky later */
-    height: 8.8rem;
-    padding: 0 6rem;
-    z-index: 9999;
-    /* overflow-x: hidden; */
-}
+
 /* STICKY HEADER */
 
 .sticky {

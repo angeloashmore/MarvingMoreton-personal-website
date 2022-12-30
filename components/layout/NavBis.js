@@ -50,20 +50,19 @@ function MainNavigation() {
                 ref={headerRef}
                 id="sticky-header"
             >
-                <header className={classes['header-mobile']}>
+                <header className={classes['header']}>
                     <div className={classes['nav-logo']}>
-                        <Link legacyBehavior href="/">
-                            <a>
-                                <Image
-                                    src={logo}
-                                    width={50}
-                                    height={50}
-                                    alt="test"
-                                    // layout="responsive"
-                                    // width={133}
-                                    // height={68}
-                                />
-                            </a>
+                        <Link href="/" className={classes['link-box']}>
+                            <Image
+                                src={logo}
+                                width={60}
+                                height={60}
+                                alt="test"
+                                // layout="responsive"
+                                // width={133}
+                                // height={68}
+                            />
+                            <h2 className={classes['name']}>Marving Moreton</h2>
                         </Link>
                     </div>
 
