@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-import type { AppProps } from 'next/app';
+import { AppProps } from 'next/app';
 import { Lato } from '@next/font/google';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
@@ -8,20 +8,27 @@ import Layout from '../components/layout/Layout';
 import Link from 'next/link';
 import { PrismicProvider } from '@prismicio/react';
 import { PrismicPreview } from '@prismicio/next';
-import { repositoryName } from '../prismicio';
+import { linkResolver, repositoryName } from '../prismicio';
 
 const lato = Lato({
     subsets: ['latin'],
     weight: ['400', '700', '900']
 });
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }) {
     const router = useRouter();
 
     const canonicalUrl = `https://marvingmoreton.com` + router.asPath;
 
     return (
-        <PrismicProvider internalLinkComponent={(props) => <Link {...props} />}>
+        <PrismicProvider
+            linkResolver={linkResolver}
+            internalLinkComponent={({ href, children, locale, ...props }) => (
+                <Link href={href} locale={locale}>
+                    <a {...props}>{children}</a>
+                </Link>
+            )}
+        >
             <PrismicPreview repositoryName={repositoryName}>
                 <Layout>
                     <Head>

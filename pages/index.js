@@ -79,10 +79,10 @@ export default function Homepage(props) {
 //   };
 // }
 
-export async function getStaticProps({ previewData }) {
+export async function getStaticProps({ previewData, locale }) {
     // Prismic client
     const clientPrismic = createClient({ previewData });
-    const page = await clientPrismic.getSingle('homepage');
+    const page = await clientPrismic.getSingle('homepage', { lang: locale });
 
     return {
         props: {
