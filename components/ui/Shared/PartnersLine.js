@@ -7,7 +7,7 @@ import continental from "../../../public/logos/continental-grey.svg";
 export default function PartnersBox() {
   return (
     <section className={classes["section--partners"]}>
-      <div className="container">
+      <div className={classes["container--partners"]}>
         <h2 className="heading-secondary">
           At Agency side, Client side or as Freelancer
         </h2>

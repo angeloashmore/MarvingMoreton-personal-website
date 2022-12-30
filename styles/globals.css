@@ -259,12 +259,6 @@ strong {
     padding: 3rem 0;
 }
 
-.container {
-    max-width: 120rem;
-    padding: 0 3.2rem;
-    margin: 0 auto;
-}
-
 /**** MEDIA QUERIES ****/
 
 /**************************/
@@ -281,7 +275,7 @@ strong {
     }
 
     h2,
-    .secondary-heading {
+    .heading-secondary {
         font-size: 3.6rem;
     }
 
@@ -332,7 +326,7 @@ strong {
     }
 
     h2,
-    .secondary-heading {
+    .heading-secondary {
         font-size: 2.8rem;
     }
 
