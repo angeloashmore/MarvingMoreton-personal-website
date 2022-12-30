@@ -1,13 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
-import BlogHero from '../../components/ui/Blog/BlogHero';
-
-import TextBoxLight from '../../components/ui/Shared/TextBoxLight';
-import ImageFeaturedRight from '../../components/ui/Shared/ImageFeaturedRight';
-import CTAHorizontal from '../../components/ui/Shared/CTAHorizontal';
-
-import Picturing from '../../components/ui/Shared/Picturing';
+import Head from 'next/head';
 
 import classes from '../../components/ui/Blog/BlogPostsList.module.css';
 
@@ -19,9 +13,36 @@ import { SliceZone } from '@prismicio/react';
 import { createClient } from '../../prismicio';
 import { components } from '../../slices';
 
-export default function BlogHome({ page, navigation, settings, blogPosts }) {
+export default function BlogHome({
+    metaTitle,
+    metaDescription,
+    ogImage,
+    page,
+    blogPosts,
+    navigation,
+    settings
+}) {
     return (
         <React.Fragment>
+            <Head>
+                <title>{metaTitle}</title>
+                <meta name="description" content={metaDescription} key="desc" />
+                {/* <!-- Twitter Card data --> */}
+                <meta name="twitter:card" content="summary" />
+                {/* <meta name="twitter:site" content="@publisher_handle" /> */}
+                <meta name="twitter:title" content={metaTitle} />
+                <meta name="twitter:description" content={metaDescription} />
+                {/* <meta name="twitter:creator" content="@author_handle" /> */}
+                {/* <-- Twitter Summary card images must be at least 120x120px --> */}
+                <meta name="twitter:image" content={ogImage} />
+                {/* <!-- Open Graph data --> */}
+                <meta property="og:title" content={metaTitle} />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="/blog" />
+                <meta property="og:image" content={ogImage} />
+                <meta property="og:description" content={metaDescription} />
+                <meta property="og:site_name" content="Dataaxy Jobs" />
+            </Head>
             <SliceZone
                 slices={page.data.slices}
                 components={components}
@@ -40,7 +61,10 @@ export default function BlogHome({ page, navigation, settings, blogPosts }) {
                                     className={classes['blog-post-card']}
                                     key={blogPost.id}
                                 >
-                                    <PrismicLink document={blogPost} className={classes['card-link']}>
+                                    <PrismicLink
+                                        document={blogPost}
+                                        className={classes['card-link']}
+                                    >
                                         <PrismicNextImage
                                             className={
                                                 classes['post-featured-image']
@@ -90,8 +114,11 @@ export async function getStaticProps({ previewData }) {
 
     return {
         props: {
-            page,
-            blogPosts: blogPosts
+            metaTitle: page.data.meta_title,
+            metaDescription: page.data.meta_description,
+            ogImage: page.data.og_image.url,
+            page: page,
+            blogPosts
         }
     };
 }
