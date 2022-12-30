@@ -54,7 +54,7 @@ function MainNavigation() {
                     <div className={classes['nav-logo']}>
                         <Link href="/" className={classes['link-box']}>
                             <Image
-                                src={logo}
+                                src="https://images.prismic.io/marving-moreton/672d8c7d-8a32-4bb8-a642-0267f05c2a99_marving-moreton-favicon.png?auto=compress,format"
                                 width={60}
                                 height={60}
                                 alt="test"
