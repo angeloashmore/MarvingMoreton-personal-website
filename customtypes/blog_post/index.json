@@ -24,7 +24,13 @@
         "config": {
           "label": "image_featured",
           "constraint": {},
-          "thumbnails": []
+          "thumbnails": [
+            {
+              "name": "ImageeFeatured",
+              "width": 250,
+              "height": 250
+            }
+          ]
         }
       },
       "excerpt": {

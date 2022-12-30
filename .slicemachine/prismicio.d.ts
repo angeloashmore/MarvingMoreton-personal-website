@@ -102,7 +102,7 @@ interface BlogPostDocumentData {
      * - **Documentation**: https://prismic.io/docs/core-concepts/image
      *
      */
-    image_featured: prismicT.ImageField<never>;
+    image_featured: prismicT.ImageField<"ImageeFeatured">;
     /**
      * excerpt field in *Blog_Post*
      *

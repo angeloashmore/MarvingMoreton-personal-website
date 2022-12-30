@@ -1,45 +1,236 @@
-
-
-.posts-section{
-  padding: 9.6rem 0;
-  margin: 0 auto;
-}
-.posts-grid {
-display: flex;
-flex-wrap:wrap;
-gap: 2.6rem;
-justify-content: center;
-
-margin: 0 auto;
-max-width: 130rem;
-}
-.post-card {
-  background: #1f2235;
-border: 1px solid rgba(226, 223, 223, 0.35);
-border-radius: 8px;
-width: 50rem;
-display: flex;
-flex-direction: column;
-gap: 1rem;
-flex-basis: 30%;
+.section-blog-posts {
+    margin: 0 auto;
+    max-width: 140rem;
+    padding: 9.6rem 0 4.8rem 0;
+    width: 100%;
+    flex-grow: 1;
 }
 
-.post-card > h3 {
-  margin-top: 3.2rem;
-  padding: 0 1.6rem;
-  width: 95%;
+.section-blog-posts > h2 {
+    margin-bottom: 4rem;
+    text-align: center;
 }
 
-.post-card > p {
-  width: 90%;
-  margin-top: 1.2rem;
-  padding: 0 1.6rem 6rem 1.6rem;
-  }
+.latest-blogs {
+    padding-left: 2rem;
+}
+.cta-see-more {
+    background: #000000;
+    border-radius: 8px;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin: 0 auto;
 
-.illustration {
-border: 1px solid rgba(226, 223, 223, 0.35);
-border-radius: 8px 4px 8px 4px;
-width:100%;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* DJ - H2 */
 
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    /* line-height: 47px; */
+    /* identical to box height */
+
+    /* display: flex;
+  align-items: center; */
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+}
+
+.cta-box {
+    text-align: center;
+}
+.box-pagination {
+    display: flex;
+    justify-content: center;
+}
+
+/* From PostGrid classes */
+
+.cards-list {
+    display: flex;
+    gap: 3.4rem;
+    row-gap: 6.8rem;
+    padding: 4rem 0;
+    /* flex-basis: 33.333333%; */
+    /* Dysfunctional overlay of button so margin-bottom: */
+    margin-bottom: 5.4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards-list > li {
+    list-style: none;
+}
+
+/* .cards-list > ul {
+  display: flex;
+
+} */
+
+/* PostItem classes */
+
+.cards-list {
+    display: flex;
+    gap: 4.8rem;
+    /* Dysfunctional overlay of button so margin-bottom: */
+    margin-bottom: 5.4rem;
+}
+/*  */
+
+.blog-post-card {
+    /* width: */
+    /* max-width: 424px; */
+    width: 60%;
+}
+
+.blog-post-card h3 {
+    padding: 0.6rem 0 1.6rem 0;
+}
+
+.excerpt {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.image-box {
+    width: 10%;
+}
+
+.image {
+    border-radius: 50%;
+}
+.post-featured-image {
+    border-radius: 8px;
+}
+
+.tag-box {
+    margin: 1.4rem auto;
+}
+.tag {
+    background: rgba(211, 235, 255, 0.8);
+    /* Purple Light intermediary */
+
+    border: 1px solid #d3ebff;
+    border-radius: 8px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0.6rem 1.2rem;
+    /* line-height: 140%; */
+    /* identical to box height, or 20px */
+
+    /* Dark Blue title */
+
+    color: #1e2f5b;
+    /* 1e2f5b */
+    width: 100%;
+}
+
+/* Post line */
+.post-details-line {
+    display: flex;
+    gap: 1.2rem;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 100%;
+    /* identical to box height, or 12px */
+
+    /* Grey text */
+
+    color: #4a4a68;
+    margin-bottom: 1rem;
+}
+
+.image {
+    border-radius: 10px;
+}
+
+.blog-post-card {
+    flex: 0 0 30%;
+}
+
+.card-link > img {
+    width: 100%;
+}
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+    .cards-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    .blog-post-card {
+        max-width: 50rem;
+    }
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+}
+
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+}
+
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 47em) {
+    .blog-post-card {
+        padding: 0 4rem;
+        width: 90%;
+    }
+
+    /* .card-link > img {
+        width: 40rem;
+        height: 40rem;
+    } */
+}
+
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 30em) {
+    .blog-post-card {
+        padding: 0 4rem;
+        width: 100%;
+    }
+}
+
+/**************************/
+/* BELOW 300px (Mobile devices) */
+/**************************/
+
+@media (max-width: 26em) {
+    .blog-post-card {
+        padding: 0 3.2rem;
+        width: 90%;
+    }
+    .card-link > img {
+        width: 100%;
+        height: 100%;
+    }
 }

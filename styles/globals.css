@@ -24,101 +24,101 @@ WHITESPACE
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 body {
-  --primary-blue: #141a31;
-  --primary-gold: #fab874;
-  --paragraph-grey: #e2dfdf;
-  --blue-header: #1f2235;
-  --blue-transparent-background: rgba(31, 34, 53, 0.8);
+    --primary-blue: #141a31;
+    --primary-gold: #fab874;
+    --paragraph-grey: #e2dfdf;
+    --blue-header: #1f2235;
+    --blue-transparent-background: rgba(31, 34, 53, 0.8);
 }
 html {
-  font-size: 62.5%;
-  /* 10px/16 px = 0.626= 62.5%; do not set a fix font-size, use % instead. *Percentage of user's browser font-size setting */
-  background-color: #141a31;
+    font-size: 62.5%;
+    /* 10px/16 px = 0.626= 62.5%; do not set a fix font-size, use % instead. *Percentage of user's browser font-size setting */
+    background-color: #141a31;
 
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 html,
 body {
-  /* padding: 0;
+    /* padding: 0;
   margin: 0; */
-  font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
-  /* DJ - Body Regular */
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 120%;
+    /* DJ - Body Regular */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 120%;
 
-  /* Dark Blue title */
+    /* Dark Blue title */
 
-  color: #ffffff;
-  overflow: hidden;
+    color: #ffffff;
+    overflow: hidden;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 a:hover {
-  color: #fab874;
+    color: #fab874;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 h1 {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 6rem;
-  line-height: 60px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 60px;
 
-  color: #ffffff;
+    color: #ffffff;
 }
 
 h2 {
-  font-size: 40px;
-  line-height: 4.4rem;
+    font-size: 40px;
+    line-height: 4.4rem;
 }
 
 h3 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 h4 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 h5 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 p,
 span {
-  font-size: 2rem;
-  color: #e2dfdf;
-  font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    color: #e2dfdf;
+    font-family: 'Lato', sans-serif;
 }
 
 hr {
-  border: 0.2px solid rgba(226, 223, 223, 0.15);
-  box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border: 0.2px solid rgba(226, 223, 223, 0.15);
+    box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.25);
 }
 
 strong {
-  white-space: break;
+    white-space: break;
 }
 
 /* ************************ */
@@ -126,139 +126,144 @@ strong {
 /* ************************ */
 
 .container {
-  /* 114px convention can be used; or 120 rem also is a convention used */
-  max-width: 140rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-  /* Reminder : "margin 0 auto" gives the same margin to the left and right side and figure out automatically --> allow to center always*/
+    /* 114px convention can be used; or 120 rem also is a convention used */
+    max-width: 140rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+    /* Reminder : "margin 0 auto" gives the same margin to the left and right side and figure out automatically --> allow to center always*/
 }
 
 .grid {
-  display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
-  /* margin-bottom: 9.6rem; */
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+    /* margin-bottom: 9.6rem; */
 }
 
 .heading-secondary {
-  text-align: center;
-  font-size: 3.4rem;
-  line-height: 1.2;
-  margin-bottom: 3.2rem;
+    text-align: center;
+    font-size: 3.4rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
 }
 
 .btn-orange,
 .btn-orange:link,
 .btn-orange:visited {
-  display: inline-block;
-  text-decoration: none !important;
-  font-size: 2.6rem;
-  font-weight: 900;
-  padding: 2.2rem 3.2rem;
-  border-radius: 12px;
-  color: #141A31;
-  background-color: #fab874;
-  box-shadow: 0px 4px 4px rgba(250, 184, 116, 0.15);
-  border: none;
-  /* Only necessary for.btn from form
+    display: inline-block;
+    text-decoration: none !important;
+    font-size: 2.6rem;
+    font-weight: 900;
+    padding: 2.2rem 3.2rem;
+    border-radius: 12px;
+    color: #141a31;
+    background-color: #fab874;
+    box-shadow: 0px 4px 4px rgba(250, 184, 116, 0.15);
+    border: none;
+    /* Only necessary for.btn from form
     border: none;
     cursor: pointer;
     font-family: inherit; */
 
-  /* trick annimation btn with CSS */
-  transition: all 0.3s;
-  /* WHAT will be animated& HOW MUICH TIME animation to happens : ALL elements for 0.3second
+    /* trick annimation btn with CSS */
+    transition: all 0.3s;
+    /* WHAT will be animated& HOW MUICH TIME animation to happens : ALL elements for 0.3second
     */
 }
 
 .btn-orange:hover {
-  color: #141A31;
+    color: #141a31;
 }
 
 .btn-orange:hover > a:hover {
-  color: #141A31;
+    color: #141a31;
 }
 
 .btn-dark,
 .btn-dark:link,
 .btn-dark:visited {
-  display: inline-block;
+    display: inline-block;
 
-  font-style: bold;
-  font-weight: 900;
-  font-size: 2.8rem;
-  line-height: 3.1rem;
-  text-decoration: none;
-  padding: 1.6rem 3.2rem;
-  border-radius: 0.8rem;
-  color: #ffff;
-  background-color: #141a31;
-  border: none;
-  /* Only necessary for.btn from form
+    font-style: bold;
+    font-weight: 900;
+    font-size: 2.8rem;
+    line-height: 3.1rem;
+    text-decoration: none;
+    padding: 1.6rem 3.2rem;
+    border-radius: 0.8rem;
+    color: #ffff;
+    background-color: #141a31;
+    border: none;
+    /* Only necessary for.btn from form
     border: none;
     cursor: pointer;
     font-family: inherit; */
 
-  /* trick annimation btn with CSS */
-  transition: all 0.3s;
-  /* WHAT will be animated& HOW MUICH TIME animation to happens : ALL elements for 0.3second
+    /* trick annimation btn with CSS */
+    transition: all 0.3s;
+    /* WHAT will be animated& HOW MUICH TIME animation to happens : ALL elements for 0.3second
     */
 }
 
 .btn-white,
 .btn-white:link,
 .btn-white:visited {
-  display: inline-block;
-  text-decoration: none !important;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  color: white;
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 12px;
-  /* Only necessary for.btn from form
+    display: inline-block;
+    text-decoration: none !important;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+    /* Only necessary for.btn from form
     border: none;
     cursor: pointer;
     font-family: inherit; */
 
-  /* trick annimation btn with CSS */
-  transition: all 0.3s;
-  /* WHAT will be animated& HOW MUICH TIME animation to happens : ALL elements for 0.3second
+    /* trick annimation btn with CSS */
+    transition: all 0.3s;
+    /* WHAT will be animated& HOW MUICH TIME animation to happens : ALL elements for 0.3second
     */
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 /* PRISMIC COLLAB */
 
 .block-img {
-  width: calc(100% + 100px);
-  margin: 50px 0;
-  margin-left: -50px;
-  margin-bottom: 6rem !important;
-  background: #1F2235;
-  box-shadow: 0px 0px 24px rgba(179, 181, 191, 0.42);
-  border-radius: 20px;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 0 0 0 0px #d3ebff;
-  height: 550px;
+    width: calc(100% + 100px);
+    margin: 50px 0;
+    margin-left: -50px;
+    margin-bottom: 6rem !important;
+    background: #1f2235;
+    box-shadow: 0px 0px 24px rgba(179, 181, 191, 0.42);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 0 0px #d3ebff;
+    height: 550px;
 }
 
 .block-img img {
-  max-width: 100%;
-  max-height: 55rem;
-  /* height: auto; */
-  height: 100%;
-  width: auto;
-  border-radius: 0.4rem;
-  padding: 3rem 0;
+    max-width: 100%;
+    max-height: 55rem;
+    /* height: auto; */
+    height: 100%;
+    width: auto;
+    border-radius: 0.4rem;
+    padding: 3rem 0;
 }
 
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
 
 /**** MEDIA QUERIES ****/
 
@@ -266,96 +271,100 @@ strong {
 /* BELOW 1200px (desktops) */
 /**************************/
 @media (max-width: 75em) {
-  html {
-    /* 9/16 = 56% */
-    font-size: 56%;
-  }
+    html {
+        /* 9/16 = 56% */
+        font-size: 56%;
+    }
 
-  h1 {
-    font-size: 6.4rem;
-  }
+    h1 {
+        font-size: 6.4rem;
+    }
 
-  h2,
-  .secondary-heading {
-    font-size: 3.6rem;
-  }
+    h2,
+    .secondary-heading {
+        font-size: 3.6rem;
+    }
 
-  h3,
-  .upper-title {
-    font-size: 2.6rem;
-  }
+    h3,
+    .upper-title {
+        font-size: 2.6rem;
+    }
 
-  h4 {
-    font-size: 1.8rem;
-  }
+    h4 {
+        font-size: 1.8rem;
+    }
 
-  h5 {
-    font-size: 1.8rem;
-  }
+    h5 {
+        font-size: 1.8rem;
+    }
 
-
-
-  .btn, .btn-dark, .btn-orange, .btn-white {
-    font-size: 2.6rem !important;
-  }
+    .btn,
+    .btn-dark,
+    .btn-orange,
+    .btn-white {
+        font-size: 2.6rem !important;
+    }
 }
 
 /**************************/
 /* BELOW 1024px (Small screens + laptops) */
 /**************************/
 @media (max-width: 64em) {
-  .block-img {
-    width: 100%;
-    margin: 0;
-    margin-left: 0;
-    padding: 5rem;
+    .block-img {
+        width: 100%;
+        margin: 0;
+        margin-left: 0;
+        padding: 5rem;
+    }
 
-  }
-
-  .block-img > img {
-    padding: 4rem;
-    border-radius: 1.2rem;
-  }
+    .block-img > img {
+        padding: 4rem;
+        border-radius: 1.2rem;
+    }
 }
 
 /**************************/
 /* BELOW 850px (tablets) */
 /**************************/
 @media (max-width: 53em) {
-  h1 {
-    font-size: 4rem;
-  }
+    h1 {
+        font-size: 4rem;
+    }
 
-  h2,
-  .secondary-heading {
-    font-size: 2.8rem;
-  }
+    h2,
+    .secondary-heading {
+        font-size: 2.8rem;
+    }
 
-  h3,
-  .upper-title {
-    font-size: 2.2rem !important;
-    margin-bottom: 0;
-  }
+    h3,
+    .upper-title {
+        font-size: 2.2rem !important;
+        margin-bottom: 0;
+    }
 
-  h4 {
-    font-size: 1.6rem;
-  }
+    h4 {
+        font-size: 1.6rem;
+    }
 
-  h5 {
-    font-size: 1.6rem;
-  }
+    h5 {
+        font-size: 1.6rem;
+    }
+    .container {
+        padding: 0;
+    }
+    .btn,
+    .btn-dark,
+    .btn-orange,
+    .btn-white {
+        font-size: 2.2rem !important;
+        padding: 2rem 1.6rem;
+    }
 
-  .btn,.btn-dark, .btn-orange, .btn-white{
-    font-size: 2.2rem !important;
-    padding: 2rem 1.6rem;
-  }
-
-  p,
-  span,
-  a {
-    font-size: 1.8rem;
-  }
-
+    p,
+    span,
+    a {
+        font-size: 1.8rem;
+    }
 }
 
 /**************************/
@@ -363,20 +372,23 @@ strong {
 /**************************/
 
 @media (max-width: 28em) {
-  .block-img {
-    width: 100%;
-    margin: 0;
-    margin-left: 0;
-    padding: 2rem;
-  }
+    .block-img {
+        width: 100%;
+        margin: 0;
+        margin-left: 0;
+        padding: 2rem;
+    }
 
-  .block-img > img {
-    padding: 2rem;
-    border-radius: 1.2rem;
-  }
+    .block-img > img {
+        padding: 2rem;
+        border-radius: 1.2rem;
+    }
 
-  .btn,.btn-dark, .btn-orange, .btn-white{
-    font-size: 2rem !important;
-    padding: 1.8rem 1.4rem;
-  }
+    .btn,
+    .btn-dark,
+    .btn-orange,
+    .btn-white {
+        font-size: 2rem !important;
+        padding: 1.8rem 1.4rem;
+    }
 }
