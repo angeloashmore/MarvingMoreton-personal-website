@@ -5,6 +5,15 @@
 
 }
 
+.cta-text-box > p {
+color: black;
+}
+
+.cta-text-box > H3 {
+  color: black;
+  margin-bottom: 1.2rem;
+  }
+
 
 /* CTA */
 
@@ -26,7 +35,7 @@
   justify-items: center;
   align-items: center;
   z-index: 2;
-  padding: 2.4rem;
+  padding: 8.2rem;
 }
 
 .btn-local-box {
@@ -35,7 +44,6 @@
   font-style: bold;
   font-weight: 900;
   font-size: 2.8rem;
-  line-height: 3.1rem;
   text-decoration: none;
   border-radius: 0.8rem;
   color: #ffff;
@@ -43,7 +51,7 @@
   border: none;
   transition: all 0.3s;
 
-  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  padding: 2.2rem 3.2rem;
 }
 
 .btn-local-box H3 {
@@ -61,4 +69,61 @@
   font-weight: 500;
   font-size: 2rem;
   line-height: 1.4;
+}
+
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+  .cta-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+  .cta-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6.4rem 4rem;
+  }
+
+  .cta-text-box{
+    width: 90%;
+  }
+}
+
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+
+
+}
+
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 47em) {
+}
+
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 30em) {
+  .cta-banner {
+    padding: 6.4rem 2.6rem;
+  }
+
 }
