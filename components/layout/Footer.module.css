@@ -3,126 +3,171 @@
 /* ************************ */
 
 .section--footer {
-  background: #1f2235;
-  position: relative;
-  padding: 1.6rem 0 0rem 0;
-  margin-top: 9.6rem;
+    background: #1f2235;
+    position: relative;
+    padding: 1.6rem 0 0rem 0;
+    margin-top: 9.6rem;
 }
 .footer-nav {
-  list-style: none;
-  display: flex;
-  padding: 4.4rem 3.4rem 3.4rem 3.4rem;
+    list-style: none;
+    display: flex;
+    padding: 4.4rem 3.4rem 3.4rem 3.4rem;
 
-  gap: 2.4rem;
-  justify-content: center;
+    gap: 2.4rem;
+    justify-content: center;
 }
 
 .footer-link {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 1.5rem;
-  /* or 75% */
-  text-align: center;
-  text-transform: capitalize;
-  color: #ffffff;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    /* or 75% */
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
 }
 .footer-link:link,
 .footer-link:visited .skill-icon-link:link,
 .skill-icon-link:visited {
-  text-decoration: none;
-  color: white;
-  transition: all 0.3s;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
 }
 
 .footer-link:hover,
 .footer-link:active,
 .skill-icon-link:hover,
 .skill-icon-link:active {
-  color: #fab874;
+    color: #fab874;
 }
 
 .social-links {
-  list-style: none;
-  display: flex;
-  gap: 2.4rem;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3.4rem;
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.4rem;
 }
 
 .social-icon {
-  height: 3rem;
-  line-height: 1.6;
-  width: 3rem;
+    height: 3rem;
+    line-height: 1.6;
+    width: 3rem;
 }
 
 .line {
-  border: 0.05px solid rgba(196, 196, 196, 0.02);
+    border: 0.05px solid rgba(196, 196, 196, 0.02);
 }
 
 .copyright {
-  text-align: center;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.9rem;
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
 
-  color: #ffffff;
-  /* margin-bottom: 5rem; */
-  padding: 3.4rem;
+    color: #ffffff;
+    /* margin-bottom: 5rem; */
+    padding: 3.4rem;
 }
 
 /* CTA */
 
 .cta-container {
-  padding: 4.8rem 6.4rem;
-  /* max-width: 140rem; */
-  /* margin: 0 auto; */
-  right: 0;
-  left: 0;
-  position: absolute;
-  display: flex;
-  justify-content: center;
+    padding: 4.8rem 6.4rem;
+    /* max-width: 140rem; */
+    /* margin: 0 auto; */
+    right: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
 
-  top: -44%;
-  /* right: 0%;
+    top: -44%;
+    /* right: 0%;
   left: 3%; */
 }
 
 .cta-banner {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  /* box-shadow: 0 2.4rem 4.8rem rgba(250, 184, 116, 0.075); */
-  border-radius: 0.8rem;
-  background-color: rgba(250, 184, 116, 1);
-  overflow: hidden;
-  color: black;
-  justify-items: center;
-  align-items: center;
-  z-index: 2;
-  padding: 2.4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* box-shadow: 0 2.4rem 4.8rem rgba(250, 184, 116, 0.075); */
+    border-radius: 0.8rem;
+    background-color: rgba(250, 184, 116, 1);
+    overflow: hidden;
+    color: black;
+    justify-items: center;
+    align-items: center;
+    z-index: 2;
+    padding: 2.4rem;
 }
 
 .cta-text-box {
-  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
 }
 
 .cta-text-box H3 {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 3rem;
-  line-height: 2;
-  padding-bottom: 1.6rem;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 2;
+    padding-bottom: 1.6rem;
 }
 .cta-text-box p {
-  font-family: "Lato";
-  color: black;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 1.4;
+    font-family: 'Lato';
+    color: black;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+/**** MEDIA QUERIES ****/
+
+/**************************/
+/* BELOW 1200px (desktops) */
+/**************************/
+@media (max-width: 75em) {
+}
+
+/**************************/
+/* BELOW 1024px (Small screens + laptops) */
+/**************************/
+@media (max-width: 64em) {
+}
+
+/**************************/
+/* BELOW 850px (tablets) */
+/**************************/
+@media (max-width: 53em) {
+}
+
+/**************************/
+/* BELOW 750px */
+/**************************/
+@media (max-width: 47em) {
+}
+
+/**************************/
+/* BELOW 480px (Mobile devices) */
+/**************************/
+
+@media (max-width: 30em) {
+    .footer-nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .line > hr {
+        display: inherit;
+    }
+    .social-icon {
+        height: 2.4rem;
+        width: 2.4rem;
+    }
 }

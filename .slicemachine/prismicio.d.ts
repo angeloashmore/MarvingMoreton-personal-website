@@ -1000,15 +1000,105 @@ interface FaqSliceDefaultPrimary {
      */
     title: prismicT.TitleField;
     /**
-     * Description field in *Faq → Primary*
+     * question_1 field in *Faq → Primary*
      *
-     * - **Field Type**: Rich Text
-     * - **Placeholder**: A nice description of your feature
-     * - **API ID Path**: faq.primary.description
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.question_1
      * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    description: prismicT.RichTextField;
+    question_1: prismicT.TitleField;
+    /**
+     * answer_1 field in *Faq → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.answer_1
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    answer_1: prismicT.RichTextField;
+    /**
+     * question_2 field in *Faq → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.question_2
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    question_2: prismicT.TitleField;
+    /**
+     * answer_2 field in *Faq → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.answer_2
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    answer_2: prismicT.RichTextField;
+    /**
+     * question_3 field in *Faq → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.question_3
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    question_3: prismicT.TitleField;
+    /**
+     * answer_3 field in *Faq → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.answer_3
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    answer_3: prismicT.RichTextField;
+    /**
+     * question_4 field in *Faq → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.question_4
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    question_4: prismicT.TitleField;
+    /**
+     * answer_4 field in *Faq → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.answer_4
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    answer_4: prismicT.RichTextField;
+    /**
+     * question_5 field in *Faq → Primary*
+     *
+     * - **Field Type**: Title
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.question_5
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    question_5: prismicT.TitleField;
+    /**
+     * answer_5 field in *Faq → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.answer_5
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    answer_5: prismicT.RichTextField;
 }
 /**
  * Default variation for Faq Slice

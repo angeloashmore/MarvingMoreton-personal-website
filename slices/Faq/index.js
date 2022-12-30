@@ -16,7 +16,14 @@ import classes from './Faq.module.css';
 export default function Faq({ slice }) {
     return (
         <section className={classes['section-faq']}>
-            <h2 className="heading-secondary">Frequently Asked Question</h2>
+            <PrismicRichText
+                field={slice.primary.title}
+                components={{
+                    heading2: ({ children }) => (
+                        <h2 className="heading-secondary">{children}</h2>
+                    )
+                }}
+            />
             <div className={classes['questions-grid']}>
                 <Accordion>
                     <AccordionSummary
@@ -25,14 +32,12 @@ export default function Faq({ slice }) {
                         id="panel1a-header"
                     >
                         <Typography className={classes.question}>
-                            Accordion 1
+                            <PrismicRichText field={slice.primary.question_1} />
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography className={classes.answer}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse malesuada lacus ex, sit amet
-                            blandit leo lobortis eget.
+                            <PrismicRichText field={slice.primary.answer_1} />
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -44,14 +49,12 @@ export default function Faq({ slice }) {
                         id="panel2a-header"
                     >
                         <Typography className={classes.question}>
-                            Accordion 2
+                            <PrismicRichText field={slice.primary.question_2} />
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography className={classes.answer}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse malesuada lacus ex, sit amet
-                            blandit leo lobortis eget.
+                            <PrismicRichText field={slice.primary.answer_2} />
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -63,55 +66,60 @@ export default function Faq({ slice }) {
                         id="panel3a-header"
                     >
                         <Typography className={classes.question}>
-                            Accordion 3
+                            <PrismicRichText field={slice.primary.question_3} />
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography className={classes.answer}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse malesuada lacus ex, sit amet
-                            blandit leo lobortis eget.
+                            <PrismicRichText field={slice.primary.answer_3} />
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
+                {slice.primary.question_4 && (
+                    <Accordion>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel4a-content"
+                            id="panel4a-header"
+                        >
+                            <Typography className={classes.question}>
+                                <PrismicRichText
+                                    field={slice.primary.question_4}
+                                />
+                            </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography className={classes.answer}>
+                                <PrismicRichText
+                                    field={slice.primary.answer_4}
+                                />
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                )}
 
-                <Accordion>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel4a-content"
-                        id="panel4a-header"
-                    >
-                        <Typography className={classes.question}>
-                            Accordion 4
-                        </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography className={classes.answer}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse malesuada lacus ex, sit amet
-                            blandit leo lobortis eget.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-
-                <Accordion>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel5a-content"
-                        id="panel5a-header"
-                    >
-                        <Typography className={classes.question}>
-                            Accordion 5
-                        </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography className={classes.answer}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse malesuada lacus ex, sit amet
-                            blandit leo lobortis eget.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
+                {slice.primary.question_5.length > 0 && (
+                    <Accordion>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel5a-content"
+                            id="panel5a-header"
+                        >
+                            <Typography className={classes.question}>
+                                <PrismicRichText
+                                    field={slice.primary.question_5}
+                                />
+                            </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography className={classes.answer}>
+                                <PrismicRichText
+                                    field={slice.primary.answer_5}
+                                />
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                )}
             </div>
         </section>
     );

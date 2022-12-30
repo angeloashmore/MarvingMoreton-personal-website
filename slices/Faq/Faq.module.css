@@ -13,9 +13,10 @@
 }
 
 .question,
-.answer {
+.answer,
+.answer > p {
     color: #141a31 !important;
-    font-family: 'Inter';
+    font-family: 'Lato';
     font-style: normal;
     line-height: 120%;
 }
