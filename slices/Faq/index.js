@@ -94,7 +94,7 @@ export default function Faq({ slice }) {
                     </Accordion>
                 )}
 
-                {slice.primary.question_5.length > 0 && (
+                {slice.primary.question_4 && (
                     <Accordion>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
