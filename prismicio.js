@@ -22,8 +22,11 @@ export function linkResolver(doc) {
     switch (doc.type) {
         case 'homepage':
             return '/';
+        case 'seo_mother':
+            return `/${doc.uid}`;
         case 'page':
             return `/${doc.uid}`;
+
         default:
             return null;
     }

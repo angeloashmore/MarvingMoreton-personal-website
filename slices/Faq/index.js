@@ -32,12 +32,12 @@ export default function Faq({ slice }) {
                         id="panel1a-header"
                     >
                         <Typography className={classes.question}>
-                            <PrismicRichText field={slice.primary.question_1} />
+                            {slice.primary.question_1}
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography className={classes.answer}>
-                            <PrismicRichText field={slice.primary.answer_1} />
+                            {slice.primary.answer_1}
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -49,12 +49,12 @@ export default function Faq({ slice }) {
                         id="panel2a-header"
                     >
                         <Typography className={classes.question}>
-                            <PrismicRichText field={slice.primary.question_2} />
+                            {slice.primary.question_2}
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography className={classes.answer}>
-                            <PrismicRichText field={slice.primary.answer_2} />
+                            {slice.primary.answer_2}
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -66,12 +66,12 @@ export default function Faq({ slice }) {
                         id="panel3a-header"
                     >
                         <Typography className={classes.question}>
-                            <PrismicRichText field={slice.primary.question_3} />
+                            {slice.primary.question_3}
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography className={classes.answer}>
-                            <PrismicRichText field={slice.primary.answer_3} />
+                            {slice.primary.answer_3}
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -83,16 +83,12 @@ export default function Faq({ slice }) {
                             id="panel4a-header"
                         >
                             <Typography className={classes.question}>
-                                <PrismicRichText
-                                    field={slice.primary.question_4}
-                                />
+                                {slice.primary.question_4}
                             </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography className={classes.answer}>
-                                <PrismicRichText
-                                    field={slice.primary.answer_4}
-                                />
+                                {slice.primary.answer_4}
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -106,9 +102,7 @@ export default function Faq({ slice }) {
                             id="panel5a-header"
                         >
                             <Typography className={classes.question}>
-                                <PrismicRichText
-                                    field={slice.primary.question_5}
-                                />
+                                {slice.primary.question_5}
                             </Typography>
                         </AccordionSummary>
                         <AccordionDetails>

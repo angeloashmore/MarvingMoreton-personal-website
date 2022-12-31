@@ -15,114 +15,54 @@
         ]
       },
       "question_1": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "heading3",
-            "content": {
-              "text": "Function"
-            }
-          }
-        ]
+        "__TYPE__": "FieldContent",
+        "value": "giving",
+        "type": "Text"
       },
       "answer_1": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Ipsum irure adipisicing aute mollit sunt. Ipsum dolor enim ad excepteur occaecat duis. Sunt duis cillum aliquip nostrud et anim nulla sint dolore dolor magna nisi non enim."
-            }
-          }
-        ]
+        "__TYPE__": "FieldContent",
+        "value": "property",
+        "type": "Text"
       },
       "question_2": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "heading3",
-            "content": {
-              "text": "Century"
-            }
-          }
-        ]
+        "__TYPE__": "FieldContent",
+        "value": "exact",
+        "type": "Text"
       },
       "answer_2": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Excepteur anim Lorem adipisicing duis officia duis non. Sunt dolor labore mollit. Consequat enim consequat aliqua deserunt quis pariatur laboris laboris id adipisicing nostrud est sit."
-            }
-          }
-        ]
+        "__TYPE__": "FieldContent",
+        "value": "arrange",
+        "type": "Text"
       },
       "question_3": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "heading3",
-            "content": {
-              "text": "Dangerous"
-            }
-          }
-        ]
+        "__TYPE__": "FieldContent",
+        "value": "dance",
+        "type": "Text"
       },
       "answer_3": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Pariatur commodo quis anim deserunt ullamco laborum irure ex esse tempor nulla exercitation. Exercitation fugiat cillum culpa sit reprehenderit."
-            }
-          }
-        ]
+        "__TYPE__": "FieldContent",
+        "value": "orange",
+        "type": "Text"
       },
       "question_4": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "heading3",
-            "content": {
-              "text": "Birth"
-            }
-          }
-        ]
+        "__TYPE__": "FieldContent",
+        "value": "asleep",
+        "type": "Text"
       },
       "answer_4": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Ipsum irure elit ipsum sunt sunt veniam officia adipisicing voluptate Lorem eiusmod anim eiusmod labore ipsum. Aliquip ad aute pariatur ea do ea ex ipsum aliqua culpa eiusmod voluptate eiusmod duis ut."
-            }
-          }
-        ]
+        "__TYPE__": "FieldContent",
+        "value": "wise",
+        "type": "Text"
       },
       "question_5": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "heading3",
-            "content": {
-              "text": "Apart"
-            }
-          }
-        ]
+        "__TYPE__": "FieldContent",
+        "value": "victory",
+        "type": "Text"
       },
       "answer_5": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Laborum veniam qui minim sint nisi voluptate et excepteur sint deserunt do nisi aliquip proident deserunt. Pariatur esse voluptate occaecat mollit laboris. Lorem ex dolore nisi ex cupidatat irure Lorem laborum commodo anim."
-            }
-          }
-        ]
+        "__TYPE__": "FieldContent",
+        "value": "old",
+        "type": "Text"
       }
     },
     "items": [
