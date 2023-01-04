@@ -38,6 +38,7 @@ export async function getStaticPaths() {
 
     const documents = await client.getAllByType('page', { lang: '*' });
 
+    console.log(doc.lang);
     return {
         paths: documents.map((doc) => {
             return { params: { uid: doc.uid }, locale: doc.lang };
