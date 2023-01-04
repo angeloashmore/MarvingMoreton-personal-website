@@ -537,14 +537,14 @@ interface SeoChildDocumentData {
     /**
      * title field in *Seo_Child*
      *
-     * - **Field Type**: Title
+     * - **Field Type**: Text
      * - **Placeholder**: *None*
      * - **API ID Path**: seo_child.title
      * - **Tab**: Main
-     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
      *
      */
-    title: prismicT.TitleField;
+    title: prismicT.KeyTextField;
     /**
      * image_featured field in *Seo_Child*
      *
@@ -838,12 +838,12 @@ type BlogPostsListSliceVariation = BlogPostsListSliceDefault;
  */
 export type BlogPostsListSlice = prismicT.SharedSlice<"blog_posts_list", BlogPostsListSliceVariation>;
 /**
- * Primary content in ChildsList → Primary
+ * Primary content in ChildsListSeo → Primary
  *
  */
 interface InternalChildsSliceDefaultPrimary {
     /**
-     * Title field in *ChildsList → Primary*
+     * Title field in *ChildsListSeo → Primary*
      *
      * - **Field Type**: Title
      * - **Placeholder**: This is where it all begins...
@@ -854,7 +854,7 @@ interface InternalChildsSliceDefaultPrimary {
     title: prismicT.TitleField;
 }
 /**
- * Default variation for ChildsList Slice
+ * Default variation for ChildsListSeo Slice
  *
  * - **API ID**: `default`
  * - **Description**: `InternalChilds`
@@ -863,12 +863,12 @@ interface InternalChildsSliceDefaultPrimary {
  */
 export type InternalChildsSliceDefault = prismicT.SharedSliceVariation<"default", Simplify<InternalChildsSliceDefaultPrimary>, never>;
 /**
- * Slice variation for *ChildsList*
+ * Slice variation for *ChildsListSeo*
  *
  */
 type InternalChildsSliceVariation = InternalChildsSliceDefault;
 /**
- * ChildsList Shared Slice
+ * ChildsListSeo Shared Slice
  *
  * - **API ID**: `internal_childs`
  * - **Description**: `InternalChilds`

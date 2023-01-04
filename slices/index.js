@@ -2,7 +2,7 @@
 
 import ArchiveOld from './ArchiveOld';
 import BlogPostsList from './BlogPostsList';
-import ChildsList from './ChildsList';
+import ChildsListSeo from './ChildsListSeo';
 import CtaHorizontal from './CtaHorizontal';
 import Expertises from './Expertises';
 import Faq from './Faq';
@@ -24,7 +24,7 @@ import VideoPlayer from './VideoPlayer';
 export {
 	ArchiveOld,
 	BlogPostsList,
-	ChildsList,
+	ChildsListSeo,
 	CtaHorizontal,
 	Expertises,
 	Faq,
@@ -47,7 +47,7 @@ export {
 export const components = {
 	partners_slider_dev: ArchiveOld,
 	blog_posts_list: BlogPostsList,
-	internal_childs: ChildsList,
+	internal_childs: ChildsListSeo,
 	cta_horizontal: CtaHorizontal,
 	expertises: Expertises,
 	faq: Faq,

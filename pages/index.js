@@ -82,9 +82,9 @@ export default function Homepage(props) {
 
 export async function getStaticProps({ previewData, locale }) {
     // Prismic client
-    const clientPrismic = createClient({ previewData });
-    const page = await clientPrismic.getSingle('homepage', { lang: locale });
-
+    const client = createClient({ previewData });
+    const page = await client.getSingle('homepage', { lang: locale });
+    // const page = await client.getByUID('homepage', { lang: locale });
     return {
         props: {
             metaTitle: page.data.meta_title,

@@ -1,7 +1,7 @@
 {
   "id": "internal_childs",
   "type": "SharedSlice",
-  "name": "ChildsList",
+  "name": "ChildsListSeo",
   "description": "InternalChilds",
   "variations": [
     {

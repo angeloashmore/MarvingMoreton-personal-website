@@ -38,7 +38,7 @@ const routes = [
     {
         type: 'seo_mother',
         lang: 'fr-wo',
-        path: '/fr/seo'
+        path: '/seo/fr'
     },
     {
         type: 'seo_child',
@@ -48,41 +48,41 @@ const routes = [
     {
         type: 'seo_child',
         lang: 'fr-wo',
-        path: 'fr/seo/:uid'
+        path: '/seo/fr/:uid'
     },
     {
         type: 'dev_mother',
         lang: 'en-ca',
         path: '/dev'
     },
-    {
-        type: 'dev_mother',
-        lang: 'fr-wo',
-        path: 'fr/dev/'
-    },
+    // {
+    //     type: 'dev_mother',
+    //     lang: 'fr-wo',
+    //     path: 'fr/dev/'
+    // },
     {
         type: 'dev_child',
         lang: 'en-ca',
         path: '/dev/:uid'
     },
-    {
-        type: 'dev_child',
-        lang: 'fr-wo',
-        path: 'fr/dev/:uid'
-    },
+    // {
+    //     type: 'dev_child',
+    //     lang: 'fr-wo',
+    //     path: 'fr/dev/:uid'
+    // },
 
     { type: 'blog_homepage', lang: 'en-ca', path: '/blog' },
-    { type: 'blog_homepage', lang: 'fr-wo', path: 'fr/blog' },
+    { type: 'blog_homepage', lang: 'fr-wo', path: '/blog/fr' },
     {
         type: 'blog_post',
         lang: 'en-ca',
         path: '/blog/:uid'
-    },
-    {
-        type: 'blog_post',
-        lang: 'fr-wo',
-        path: 'fr/blog/:uid'
     }
+    // {
+    //     type: 'blog_post',
+    //     lang: 'fr-wo',
+    //     path: 'fr/blog/:uid'
+    // }
 ];
 
 /**

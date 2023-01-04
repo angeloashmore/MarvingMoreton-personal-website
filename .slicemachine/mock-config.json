@@ -35,14 +35,7 @@
         }
       }
     },
-    "seo_child": {
-      "title": {
-        "config": {
-          "patternType": "HEADING",
-          "blocks": 1
-        }
-      }
-    }
+    "seo_child": {}
   },
   "slices": {
     "Faq": {
