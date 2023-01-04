@@ -37,8 +37,8 @@ const routes = [
     },
     {
         type: 'seo_mother',
-        lang: 'fr-wo',
-        path: '/seo/fr'
+        lang: 'fr',
+        path: 'fr/seo'
     },
     {
         type: 'seo_child',
@@ -47,42 +47,42 @@ const routes = [
     },
     {
         type: 'seo_child',
-        lang: 'fr-wo',
-        path: '/seo/fr/:uid'
+        lang: 'fr',
+        path: 'fr/seo/:uid'
     },
     {
         type: 'dev_mother',
         lang: 'en-ca',
         path: '/dev'
     },
-    // {
-    //     type: 'dev_mother',
-    //     lang: 'fr-wo',
-    //     path: 'fr/dev/'
-    // },
+    {
+        type: 'dev_mother',
+        lang: 'fr',
+        path: 'fr/dev/'
+    },
     {
         type: 'dev_child',
         lang: 'en-ca',
         path: '/dev/:uid'
     },
-    // {
-    //     type: 'dev_child',
-    //     lang: 'fr-wo',
-    //     path: 'fr/dev/:uid'
-    // },
+    {
+        type: 'dev_child',
+        lang: 'fr',
+        path: 'fr/dev/:uid'
+    },
 
     { type: 'blog_homepage', lang: 'en-ca', path: '/blog' },
-    { type: 'blog_homepage', lang: 'fr-wo', path: '/blog/fr' },
+    { type: 'blog_homepage', lang: 'fr', path: 'fr/blog' },
     {
         type: 'blog_post',
         lang: 'en-ca',
         path: '/blog/:uid'
+    },
+    {
+        type: 'blog_post',
+        lang: 'fr',
+        path: 'fr/blog/:uid'
     }
-    // {
-    //     type: 'blog_post',
-    //     lang: 'fr-wo',
-    //     path: 'fr/blog/:uid'
-    // }
 ];
 
 /**
