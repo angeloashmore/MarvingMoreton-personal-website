@@ -11,7 +11,7 @@ export const LanguageSwitcher = ({ altLangs = [] }) => {
     // console.log(altLangs);
     return (
         <ul>
-            {altLangs.map((altLang) => {
+            {/* {altLangs.map((altLang) => {
                 return (
                     <li key={altLang.lang}>
                         <PrismicLink
@@ -22,7 +22,7 @@ export const LanguageSwitcher = ({ altLangs = [] }) => {
                         </PrismicLink>
                     </li>
                 );
-            })}
+            })} */}
         </ul>
     );
 };

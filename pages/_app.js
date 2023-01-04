@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }) {
 
     return (
         <PrismicProvider
-            linkResolver={linkResolver}
+            // linkResolver={linkResolver}
             internalLinkComponent={({ href, children, locale, ...props }) => (
                 <Link legacyBehavior href={href} locale={locale}>
                     <a {...props}>{children}</a>

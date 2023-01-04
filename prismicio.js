@@ -38,7 +38,7 @@ const routes = [
     {
         type: 'seo_mother',
         lang: 'fr-wo',
-        path: '/seo/fr'
+        path: 'fr/seo/'
     },
     {
         type: 'seo_child',
