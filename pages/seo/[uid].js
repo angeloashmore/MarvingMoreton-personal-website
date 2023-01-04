@@ -17,10 +17,19 @@ const SeoChild = ({ page, navigation, settings, childList }) => {
 
 export default SeoChild;
 
-export async function getStaticProps({ params, previewData }) {
+export async function getStaticProps({ params, previewData, locale }) {
+    console.log(locale);
+    if (locale === 'fr') {
+        locale = 'fr-wo';
+    }
+    console.log(locale);
+
     const client = createClient({ previewData });
 
-    const page = await client.getByUID('seo_child', params.uid);
+    const page = await client.getByUID('seo_child', params.uid, {
+        lang: locale
+    });
+
     const childList = await client.getAllByType('seo_child');
     // console.log(pages);
     return {

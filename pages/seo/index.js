@@ -15,9 +15,9 @@ export async function getStaticProps({ previewData, locale }) {
         locale = 'fr-wo';
     }
     console.log(locale);
-    const client = createClient({ previewData });
 
-    const page = await client.getSingle('seo_mother');
+    const client = createClient({ previewData });
+    const page = await client.getSingle('seo_mother', { lang: locale });
 
     return {
         props: {
