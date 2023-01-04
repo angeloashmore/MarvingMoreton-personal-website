@@ -616,7 +616,7 @@ interface SeoChildDocumentData {
  * Slice for *Seo_Child → Slice Zone*
  *
  */
-type SeoChildDocumentDataSlicesSlice = CtaHorizontalSlice | BlogPostsListSlice | ImageAloneSlice | HeroStandardSlice | ImageFeaturedRightSlice | PartnersDevSlice | ImageFeaturedLeftSlice | PartnersLineSlice | PartnersSeoSlice | PartnersSliderDevSlice | TextBoxLightSlice | TestimonialsSlice | PartnersSliderSeoSlice | VideoPlayerSlice | TextContentSlice;
+type SeoChildDocumentDataSlicesSlice = CtaHorizontalSlice | BlogPostsListSlice | ImageAloneSlice | HeroStandardSlice | ImageFeaturedRightSlice | PartnersDevSlice | ImageFeaturedLeftSlice | PartnersLineSlice | PartnersSeoSlice | PartnersSliderDevSlice | TextBoxLightSlice | TestimonialsSlice | PartnersSliderSeoSlice | VideoPlayerSlice | TextContentSlice | InternalChildsSlice | FaqSlice | ExpertisesSlice;
 /**
  * Seo_Child document from Prismic
  *
@@ -1099,6 +1099,46 @@ interface FaqSliceDefaultPrimary {
      *
      */
     answer_5: prismicT.RichTextField;
+    /**
+     * question_6 field in *Faq → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.question_6
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    question_6: prismicT.KeyTextField;
+    /**
+     * answer_6 field in *Faq → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.answer_6
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    answer_6: prismicT.RichTextField;
+    /**
+     * question_7 field in *Faq → Primary*
+     *
+     * - **Field Type**: Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.question_7
+     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     *
+     */
+    question_7: prismicT.KeyTextField;
+    /**
+     * answer_7 field in *Faq → Primary*
+     *
+     * - **Field Type**: Rich Text
+     * - **Placeholder**: *None*
+     * - **API ID Path**: faq.primary.answer_7
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+     *
+     */
+    answer_7: prismicT.RichTextField;
 }
 /**
  * Default variation for Faq Slice

@@ -116,6 +116,48 @@ export default function Faq({ slice }) {
                         </AccordionDetails>
                     </Accordion>
                 )}
+
+                {slice.primary.question_6 && (
+                    <Accordion>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel5a-content"
+                            id="panel5a-header"
+                        >
+                            <h3 className={classes.question}>
+                                {slice.primary.question_6}
+                            </h3>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <div className={classes.answer}>
+                                <PrismicRichText
+                                    field={slice.primary.answer_6}
+                                />
+                            </div>
+                        </AccordionDetails>
+                    </Accordion>
+                )}
+
+                {slice.primary.question_7 && (
+                    <Accordion>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel5a-content"
+                            id="panel5a-header"
+                        >
+                            <h3 className={classes.question}>
+                                {slice.primary.question_7}
+                            </h3>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <div className={classes.answer}>
+                                <PrismicRichText
+                                    field={slice.primary.answer_7}
+                                />
+                            </div>
+                        </AccordionDetails>
+                    </Accordion>
+                )}
             </div>
         </section>
     );

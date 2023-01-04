@@ -83,6 +83,18 @@
               "patternType": "PARAGRAPH",
               "blocks": 1
             }
+          },
+          "answer_6": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "answer_7": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
           }
         }
       }

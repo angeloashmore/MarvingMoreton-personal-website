@@ -85,6 +85,15 @@
             },
             "text_content": {
               "type": "SharedSlice"
+            },
+            "internal_childs": {
+              "type": "SharedSlice"
+            },
+            "faq": {
+              "type": "SharedSlice"
+            },
+            "expertises": {
+              "type": "SharedSlice"
             }
           }
         }

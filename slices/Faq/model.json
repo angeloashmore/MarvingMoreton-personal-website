@@ -99,6 +99,38 @@
             "allowTargetBlank": true,
             "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
+        },
+        "question_6": {
+          "type": "Text",
+          "config": {
+            "label": "question_6",
+            "placeholder": ""
+          }
+        },
+        "answer_6": {
+          "type": "StructuredText",
+          "config": {
+            "label": "answer_6",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "question_7": {
+          "type": "Text",
+          "config": {
+            "label": "question_7",
+            "placeholder": ""
+          }
+        },
+        "answer_7": {
+          "type": "StructuredText",
+          "config": {
+            "label": "answer_7",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
         }
       },
       "items": {},
