@@ -7,8 +7,29 @@ const nextConfig = async () => {
     const client = prismic.createClient(sm.apiEndpoint);
 
     const repository = await client.getRepository();
-    const locales = repository.languages.map((lang) => lang.id);
+    const languages = repository.languages;
+    // console.log(languages);
 
+    const locales = languages.map((lang) => {
+        if (lang.id === 'fr-wo') {
+            languages[1] = '/fr';
+            return '/fr';
+        }
+        return lang.id;
+    });
+    console.dir(locales[1]);
+
+    // let locales = repository.languages.map((lang) => lang.id);
+
+    // console.log(locales);
+    // console.dir(locales);
+    console.dir(locales[1]);
+    // locales = repository.languages.map((lang) => {
+    //     if (lang.id === locales[1]) {
+    //         return '/fr';
+    //     }
+    //     return lang.id;
+    // });
     return {
         reactStrictMode: true,
         swcMinify: true,
