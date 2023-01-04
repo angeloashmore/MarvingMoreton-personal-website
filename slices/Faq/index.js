@@ -31,14 +31,14 @@ export default function Faq({ slice }) {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography className={classes.question}>
+                        <h3 className={classes.question}>
                             {slice.primary.question_1}
-                        </Typography>
+                        </h3>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography className={classes.answer}>
-                            {slice.primary.answer_1}
-                        </Typography>
+                        <div className={classes.answer}>
+                            <PrismicRichText field={slice.primary.answer_1} />
+                        </div>
                     </AccordionDetails>
                 </Accordion>
 
@@ -48,14 +48,14 @@ export default function Faq({ slice }) {
                         aria-controls="panel2a-content"
                         id="panel2a-header"
                     >
-                        <Typography className={classes.question}>
+                        <h3 className={classes.question}>
                             {slice.primary.question_2}
-                        </Typography>
+                        </h3>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography className={classes.answer}>
-                            {slice.primary.answer_2}
-                        </Typography>
+                        <div className={classes.answer}>
+                            <PrismicRichText field={slice.primary.answer_2} />
+                        </div>
                     </AccordionDetails>
                 </Accordion>
 
@@ -65,14 +65,14 @@ export default function Faq({ slice }) {
                         aria-controls="panel3a-content"
                         id="panel3a-header"
                     >
-                        <Typography className={classes.question}>
+                        <h3 className={classes.question}>
                             {slice.primary.question_3}
-                        </Typography>
+                        </h3>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <Typography className={classes.answer}>
-                            {slice.primary.answer_3}
-                        </Typography>
+                        <div className={classes.answer}>
+                            <PrismicRichText field={slice.primary.answer_3} />
+                        </div>
                     </AccordionDetails>
                 </Accordion>
                 {slice.primary.question_4 && (
@@ -82,14 +82,16 @@ export default function Faq({ slice }) {
                             aria-controls="panel4a-content"
                             id="panel4a-header"
                         >
-                            <Typography className={classes.question}>
+                            <h3 className={classes.question}>
                                 {slice.primary.question_4}
-                            </Typography>
+                            </h3>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography className={classes.answer}>
-                                {slice.primary.answer_4}
-                            </Typography>
+                            <div className={classes.answer}>
+                                <PrismicRichText
+                                    field={slice.primary.answer_4}
+                                />
+                            </div>
                         </AccordionDetails>
                     </Accordion>
                 )}
@@ -101,16 +103,16 @@ export default function Faq({ slice }) {
                             aria-controls="panel5a-content"
                             id="panel5a-header"
                         >
-                            <Typography className={classes.question}>
+                            <h3 className={classes.question}>
                                 {slice.primary.question_5}
-                            </Typography>
+                            </h3>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography className={classes.answer}>
+                            <div className={classes.answer}>
                                 <PrismicRichText
                                     field={slice.primary.answer_5}
                                 />
-                            </Typography>
+                            </div>
                         </AccordionDetails>
                     </Accordion>
                 )}

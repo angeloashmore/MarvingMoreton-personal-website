@@ -28,10 +28,12 @@
           }
         },
         "answer_1": {
-          "type": "Text",
+          "type": "StructuredText",
           "config": {
             "label": "answer_1",
-            "placeholder": ""
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
         "question_2": {
@@ -42,10 +44,12 @@
           }
         },
         "answer_2": {
-          "type": "Text",
+          "type": "StructuredText",
           "config": {
             "label": "answer_2",
-            "placeholder": ""
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
         "question_3": {
@@ -56,10 +60,12 @@
           }
         },
         "answer_3": {
-          "type": "Text",
+          "type": "StructuredText",
           "config": {
             "label": "answer_3",
-            "placeholder": ""
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
         "question_4": {
@@ -70,10 +76,12 @@
           }
         },
         "answer_4": {
-          "type": "Text",
+          "type": "StructuredText",
           "config": {
             "label": "answer_4",
-            "placeholder": ""
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
         "question_5": {
@@ -84,10 +92,12 @@
           }
         },
         "answer_5": {
-          "type": "Text",
+          "type": "StructuredText",
           "config": {
             "label": "answer_5",
-            "placeholder": ""
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         }
       },

@@ -1012,13 +1012,13 @@ interface FaqSliceDefaultPrimary {
     /**
      * answer_1 field in *Faq → Primary*
      *
-     * - **Field Type**: Text
+     * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
      * - **API ID Path**: faq.primary.answer_1
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    answer_1: prismicT.KeyTextField;
+    answer_1: prismicT.RichTextField;
     /**
      * question_2 field in *Faq → Primary*
      *
@@ -1032,13 +1032,13 @@ interface FaqSliceDefaultPrimary {
     /**
      * answer_2 field in *Faq → Primary*
      *
-     * - **Field Type**: Text
+     * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
      * - **API ID Path**: faq.primary.answer_2
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    answer_2: prismicT.KeyTextField;
+    answer_2: prismicT.RichTextField;
     /**
      * question_3 field in *Faq → Primary*
      *
@@ -1052,13 +1052,13 @@ interface FaqSliceDefaultPrimary {
     /**
      * answer_3 field in *Faq → Primary*
      *
-     * - **Field Type**: Text
+     * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
      * - **API ID Path**: faq.primary.answer_3
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    answer_3: prismicT.KeyTextField;
+    answer_3: prismicT.RichTextField;
     /**
      * question_4 field in *Faq → Primary*
      *
@@ -1072,13 +1072,13 @@ interface FaqSliceDefaultPrimary {
     /**
      * answer_4 field in *Faq → Primary*
      *
-     * - **Field Type**: Text
+     * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
      * - **API ID Path**: faq.primary.answer_4
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    answer_4: prismicT.KeyTextField;
+    answer_4: prismicT.RichTextField;
     /**
      * question_5 field in *Faq → Primary*
      *
@@ -1092,13 +1092,13 @@ interface FaqSliceDefaultPrimary {
     /**
      * answer_5 field in *Faq → Primary*
      *
-     * - **Field Type**: Text
+     * - **Field Type**: Rich Text
      * - **Placeholder**: *None*
      * - **API ID Path**: faq.primary.answer_5
-     * - **Documentation**: https://prismic.io/docs/core-concepts/key-text
+     * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
      *
      */
-    answer_5: prismicT.KeyTextField;
+    answer_5: prismicT.RichTextField;
 }
 /**
  * Default variation for Faq Slice
