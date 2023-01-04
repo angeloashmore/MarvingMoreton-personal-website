@@ -82,8 +82,14 @@ export default function Homepage(props) {
 
 export async function getStaticProps({ previewData, locale }) {
     // Prismic client
+    console.log(locale);
+    if (locale === 'fr') {
+        locale = 'fr-wo';
+    }
+    console.log(locale);
     const client = createClient({ previewData });
     const page = await client.getSingle('homepage', { lang: locale });
+
     // const page = await client.getByUID('homepage', { lang: locale });
     return {
         props: {
@@ -92,8 +98,6 @@ export async function getStaticProps({ previewData, locale }) {
             ogImage: page.data.og_image.url,
             ogImageAlt: page.data.og_image.alt,
             page: page
-            // totalPages: totalPages,
-            // page: page,
         }
     };
 }

@@ -16,6 +16,11 @@ const Page = ({ page, navigation, settings }) => {
 export default Page;
 
 export async function getStaticProps({ params, locale, previewData }) {
+    console.log(locale);
+    if (locale === 'fr') {
+        locale = 'fr-wo';
+    }
+    console.log(locale);
     const client = createClient({ previewData });
 
     // const page = await client.getByUID('page', params.uid)

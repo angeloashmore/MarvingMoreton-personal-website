@@ -17,7 +17,7 @@ const routes = [
     },
     {
         type: 'homepage',
-        lang: 'fr-wo',
+        lang: 'fr',
         path: '/fr'
     },
     {
@@ -27,7 +27,7 @@ const routes = [
     },
     {
         type: 'page',
-        lang: 'fr-wo',
+        lang: 'fr',
         path: '/fr/:uid'
     },
     {
@@ -38,7 +38,7 @@ const routes = [
     {
         type: 'seo_mother',
         lang: 'fr-wo',
-        path: 'fr/seo/'
+        path: '/seo/fr'
     },
     {
         type: 'seo_child',
