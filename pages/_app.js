@@ -8,7 +8,7 @@ import Layout from '../components/layout/Layout';
 import Link from 'next/link';
 import { PrismicProvider } from '@prismicio/react';
 import { PrismicPreview } from '@prismicio/next';
-import { linkResolver, repositoryName } from '../prismicio';
+// import { linkResolver, repositoryName } from '../prismicio';
 
 const lato = Lato({
     subsets: ['latin'],

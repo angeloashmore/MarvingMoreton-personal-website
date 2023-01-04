@@ -200,7 +200,7 @@ function MainNavigation({ altLangs }) {
                                         </a>
                                     </Link>
                                 </li>
-                                <LanguageSwitcher altLangs={altLangs} />
+                                {/* <LanguageSwitcher altLangs={altLangs} /> */}
                             </ul>
                         </nav>
                     </div>
