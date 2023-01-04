@@ -23,8 +23,6 @@ const nextConfig = async () => {
             // defaultLocale: 'en-ca'
         },
         images: {
-            loader: 'imgix',
-            path: '',
             domains: [
                 'marving-moreton.cdn.prismic.io',
                 'images.prismic.io',

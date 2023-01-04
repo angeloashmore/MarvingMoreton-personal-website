@@ -8,7 +8,7 @@ const LangIcon = ({ lang }) => {
 };
 
 export const LanguageSwitcher = ({ altLangs = [] }) => {
-    console.log(altLangs);
+    // console.log(altLangs);
     return (
         <ul>
             {altLangs.map((altLang) => {

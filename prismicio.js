@@ -1,57 +1,107 @@
 import * as prismic from '@prismicio/client';
-import * as prismicH from '@prismicio/helpers';
 import * as prismicNext from '@prismicio/next';
-
 import sm from './sm.json';
+import * as prismicH from '@prismicio/helpers';
 
 /**
  * The project's Prismic repository name.
  */
 export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint);
-/**
- * The project's Prismic Link Resolver. This function determines the URL for a
- * given Prismic document.
- *
- * A Link Resolver is used rather than a Route Resolver because we need to
- * resolve URLs for documents' `alternate_languages` items. The
- * `alternate_languages` array does not include URLs.
- *
- * @type {prismicH.LinkResolverFunction}
- */
-export function linkResolver(doc) {
-    console.log(doc);
-    switch (doc.type) {
-        case 'homepage':
-            return '/';
-        case 'seo_mother':
-            return `/seo`;
-        case 'seo_child':
-            return `seo/${doc.uid}`;
-        case 'dev_mother':
-            return `/dev`;
-        case 'dev_child':
-            return `dev/${doc.uid}`;
-        case 'blog_homepage':
-            return `/blog`;
-        case 'blog_post':
-            return `/blog/${doc.uid}`;
-        case 'page':
-            return `/${doc.uid}`;
-        default:
-            return null;
+// Update the routes array to match your project's route structure
+/** @type {prismic.ClientConfig['routes']} **/
+const routes = [
+    {
+        type: 'homepage',
+        lang: 'en-ca',
+        path: '/'
+    },
+    {
+        type: 'homepage',
+        lang: 'fr-wo',
+        path: '/fr'
+    },
+    {
+        type: 'page',
+        lang: 'en-ca',
+        path: '/:uid'
+    },
+    {
+        type: 'page',
+        lang: 'fr-wo',
+        path: '/fr/:uid'
+    },
+    {
+        type: 'seo_mother',
+        lang: 'en-ca',
+        path: '/seo'
+    },
+    {
+        type: 'seo_mother',
+        lang: 'fr-wo',
+        path: '/seo/fr'
+    },
+    {
+        type: 'seo_child',
+        lang: 'en-ca',
+        path: '/seo/:uid'
+    },
+    {
+        type: 'seo_child',
+        lang: 'fr-wo',
+        path: '/seo/fr/:uid'
+    },
+    {
+        type: 'dev_mother',
+        lang: 'en-ca',
+        path: '/dev'
+    },
+    {
+        type: 'dev_mother',
+        lang: 'fr-wo',
+        path: '/dev/fr'
+    },
+    {
+        type: 'dev_child',
+        lang: 'en-ca',
+        path: '/dev/:uid'
+    },
+    {
+        type: 'dev_child',
+        lang: 'fr-wo',
+        path: '/dev/fr/:uid'
+    },
+
+    { type: 'blog_homepage', lang: 'en-ca', path: '/blog' },
+    { type: 'blog_homepage', lang: 'fr-wo', path: '/blog/fr' },
+    {
+        type: 'blog_post',
+        lang: 'en-ca',
+        path: '/blog/:uid'
+    },
+    {
+        type: 'blog_post',
+        lang: 'fr-wo',
+        path: '/blog/fr/:uid'
     }
-}
+];
 
 /**
  * Creates a Prismic client for the project's repository. The client is used to
  * query content from the Prismic API.
  *
- * @param config {prismicNext.CreateClientConfig} - A configuration object to
+ * @param config {prismicNext.CreateClientConfig} - Configuration for the Prismic client.
  */
-export const createClient = ({ previewData, req, ...config } = {}) => {
-    const client = prismic.createClient(sm.apiEndpoint, config);
+export const createClient = (config = {}) => {
+    const client = prismic.createClient(sm.apiEndpoint, {
+        routes,
+        ...config
+    });
 
-    prismicNext.enableAutoPreviews({ client, previewData, req });
+    prismicNext.enableAutoPreviews({
+        client,
+        previewData: config.previewData,
+        req: config.req
+    });
 
     return client;
 };
