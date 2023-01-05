@@ -3,7 +3,6 @@ const prismic = require('@prismicio/client');
 const sm = require('./sm.json');
 
 const localeOverrides = {
-    'en-ca': 'en-ca',
     'fr-wo': 'fr'
 };
 
@@ -13,20 +12,8 @@ const nextConfig = async () => {
 
     const repository = await client.getRepository();
     const locales = repository.languages.map(
-        (lang) => localeOverrides[lang.id]
+        (lang) => localeOverrides[lang.id] || lang.id
     );
-
-    // const languages = repository.languages;
-    // // console.log(languages);
-
-    // const locales = languages.map((lang) => {
-    //     if (lang.id === 'fr-wo') {
-    //         languages[1] = '/fr';
-    //         return '/fr';
-    //     }
-    //     return lang.id;
-    // });
-    // console.dir(locales[1]);
 
     return {
         reactStrictMode: true,

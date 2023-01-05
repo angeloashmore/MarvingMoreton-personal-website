@@ -5,6 +5,8 @@ import { components } from '../slices';
 import { SliceZone } from '@prismicio/react';
 import { useRouter } from 'next/router';
 import Layout from '../components/layout/Layout';
+import { resolveLocaleFromNext } from '../lib/resolveLocaleFromNext';
+import { withAlternateLanguageURLs } from '../lib/withAlternateLanguageURLs';
 
 export default function Homepage(props) {
     const router = useRouter();
@@ -81,23 +83,24 @@ export default function Homepage(props) {
 // }
 
 export async function getStaticProps({ previewData, locale }) {
-    // Prismic client
-    console.log(locale);
-    if (locale === 'fr') {
-        locale = 'fr-wo';
-    }
-    console.log(locale);
     const client = createClient({ previewData });
-    const page = await client.getSingle('homepage', { lang: locale });
+    const resolvedLocale = resolveLocaleFromNext(locale);
 
-    // const page = await client.getByUID('homepage', { lang: locale });
+    const page = await client.getSingle('homepage', {
+        lang: resolvedLocale
+    });
+    const pageWithAlternateLanguageURLs = await withAlternateLanguageURLs(
+        page,
+        client
+    );
+
     return {
         props: {
             metaTitle: page.data.meta_title,
             metaDescription: page.data.meta_description,
             ogImage: page.data.og_image.url,
             ogImageAlt: page.data.og_image.alt,
-            page: page
+            page: pageWithAlternateLanguageURLs
         }
     };
 }

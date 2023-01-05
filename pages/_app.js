@@ -8,7 +8,7 @@ import Layout from '../components/layout/Layout';
 import Link from 'next/link';
 import { PrismicProvider } from '@prismicio/react';
 import { PrismicPreview } from '@prismicio/next';
-import { linkResolver, repositoryName } from '../prismicio';
+import { repositoryName } from '../prismicio';
 
 const lato = Lato({
     subsets: ['latin'],
@@ -21,14 +21,7 @@ export default function App({ Component, pageProps }) {
     const canonicalUrl = `https://marvingmoreton.com` + router.asPath;
 
     return (
-        <PrismicProvider
-            // linkResolver={linkResolver}
-            internalLinkComponent={({ href, children, locale, ...props }) => (
-                <Link legacyBehavior href={href} locale={locale}>
-                    <a {...props}>{children}</a>
-                </Link>
-            )}
-        >
+        <PrismicProvider internalLinkComponent={(props) => <Link {...props} />}>
             <PrismicPreview repositoryName={repositoryName}>
                 {/* <Layout> */}
                 <Head>

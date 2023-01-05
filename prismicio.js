@@ -1,87 +1,93 @@
 import * as prismic from '@prismicio/client';
 import * as prismicNext from '@prismicio/next';
 import sm from './sm.json';
-import * as prismicH from '@prismicio/helpers';
 
 /**
  * The project's Prismic repository name.
  */
 export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint);
+
+/**
+ * Locale overrides for nicer URLs.
+ */
+export const localeOverrides = {
+    'fr-wo': 'fr'
+};
+
 // Update the routes array to match your project's route structure
 /** @type {prismic.ClientConfig['routes']} **/
 const routes = [
     {
         type: 'homepage',
-        lang: 'en-ca',
-        path: '/'
+        path: '/:lang?'
     },
     {
         type: 'homepage',
-        lang: 'fr',
+        lang: 'fr-wo',
         path: '/fr'
     },
     {
         type: 'page',
-        lang: 'en-ca',
-        path: '/:uid'
+        path: '/:lang?/:uid'
     },
     {
         type: 'page',
-        lang: 'fr',
+        lang: 'fr-wo',
         path: '/fr/:uid'
     },
     {
         type: 'seo_mother',
-        lang: 'en-ca',
-        path: '/seo'
+        path: '/:lang?/seo'
     },
     {
         type: 'seo_mother',
-        lang: 'fr',
-        path: 'fr/seo'
+        lang: 'fr-wo',
+        path: '/fr/seo'
     },
     {
         type: 'seo_child',
-        lang: 'en-ca',
-        path: '/seo/:uid'
+        path: '/:lang?/seo/:uid'
     },
     {
         type: 'seo_child',
-        lang: 'fr',
-        path: 'fr/seo/:uid'
+        lang: 'fr-wo',
+        path: '/fr/seo/:uid'
     },
     {
         type: 'dev_mother',
-        lang: 'en-ca',
-        path: '/dev'
+        path: '/:lang?/dev'
     },
     {
         type: 'dev_mother',
-        lang: 'fr',
-        path: 'fr/dev/'
+        lang: 'fr-wo',
+        path: '/fr/dev'
     },
     {
         type: 'dev_child',
-        lang: 'en-ca',
-        path: '/dev/:uid'
+        path: '/:lang?/dev/:uid'
     },
     {
         type: 'dev_child',
-        lang: 'fr',
-        path: 'fr/dev/:uid'
-    },
-
-    { type: 'blog_homepage', lang: 'en-ca', path: '/blog' },
-    { type: 'blog_homepage', lang: 'fr', path: 'fr/blog' },
-    {
-        type: 'blog_post',
-        lang: 'en-ca',
-        path: '/blog/:uid'
+        lang: 'fr-wo',
+        path: '/fr/dev/:uid'
     },
     {
+        type: 'blog_homepage',
+        path: '/:lang?/blog'
+    },
+    {
+        type: 'blog_homepage',
+        lang: 'fr-wo',
+        path: '/fr/blog'
+    },
+    {
         type: 'blog_post',
-        lang: 'fr',
-        path: 'fr/blog/:uid'
+        path: '/:lang?/blog/:uid'
+    },
+    {
+        type: 'blog_post',
+        lang: 'fr-wo',
+        path: '/fr/blog/:uid'
     }
 ];
 
